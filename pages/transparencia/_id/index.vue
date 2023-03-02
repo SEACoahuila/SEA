@@ -6,6 +6,7 @@
         <div align="center" class="mb-7 mt-5 text-xl-h2  text-md-h2 text-h3">{{ Data.titulo }}</div>
        
         <div  class="font-weight-black"><v-icon  color="orange darken-3">mdi mdi-calendar-clock</v-icon> Fecha de Actualización: {{ Data.actualizacion }}</div>
+        <div class="mt-5 text-justify">{{ Data.descripcion }}</div>
         <v-divider class="mt-5"></v-divider>
       </v-col>
 
@@ -81,7 +82,7 @@ export default {
           secc.push({ id: sec.id, ...sec.data(), documentos: docs })
         })
         this.Data = { id: modulo.docs[0].id, ...modulo.docs[0].data(), secciones: secc }
-        
+        console.log(this.Data)
       } catch (error) {
         throw new Error(error.message)
       }
