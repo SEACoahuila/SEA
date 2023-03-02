@@ -4,7 +4,7 @@
       v-model="drawer"
       :mini-variant.sync="miniVariant"
       :clipped="clipped"
-      
+      mini-variant-width="65"
       width="auto"
       :permanent="$vuetify.breakpoint.mdAndUp"
       dark

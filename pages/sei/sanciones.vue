@@ -201,7 +201,7 @@ export default {
             {
                 titulo: 'Log-In-Instituciones',
                 icon: 'folder-account-outline.png',
-                href: '/admin/'
+                href: 'admin/'
             },
 
 
