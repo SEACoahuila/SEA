@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12">
 
-        <div align="center" class="mb-7 text-xl-h1 text-md-h2 text-h3">{{ Data.titulo }}</div>
+        <div align="center" class="mb-7 mt-5 text-xl-h2  text-md-h2 text-h3">{{ Data.titulo }}</div>
        
         <div  class="font-weight-black"><v-icon  color="orange darken-3">mdi mdi-calendar-clock</v-icon> Fecha de Actualización: {{ Data.actualizacion }}</div>
         <v-divider class="mt-5"></v-divider>
@@ -16,7 +16,7 @@
   shaped
         >
         
-        <div align="center" class=" mt-3 text-xl-h3 text-md-h4 text-h5">{{ e.subtitulo }}</div>
+        <div align="center" class=" mt-3 text-xl-h4 text-md-h4 text-h5">{{ e.subtitulo }}</div>
         <div align="center" class="  text-subtitle-1" v-if="e.descripcion">  {{ e.descripcion }}</div>
         <v-divider class="mt-5"></v-divider>
         
