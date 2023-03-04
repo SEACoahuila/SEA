@@ -813,8 +813,9 @@ export default {
                 });
         },
         userExist() { 
-            
-            if (this.usuario.data.Role == false) {
+     
+            if (this.$store.state.usuario.data.Role == false) {
+              
                 this.$router.push('/admin')
   
                 

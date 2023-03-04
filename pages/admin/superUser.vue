@@ -275,6 +275,7 @@ export default {
         
         userExist() {
             if (this.usuario.data.Role == 'ADMIN' ) {
+            this.verInstituciones()
               this.esAdmin = true
 
             } else {
@@ -288,8 +289,8 @@ export default {
 
     },
     mounted() {
-        this.userExist(),
-        this.verInstituciones()
+        this.userExist()
+      
     }
 }
 

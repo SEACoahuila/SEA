@@ -227,7 +227,7 @@ export default {
   },
   created(){
     
-    this.readUserLocalStorage()
+    // this.readUserLocalStorage()
     },
   //   beforeMount() {
   //     this.readUserLocalStorage()

@@ -110,7 +110,7 @@ export default {
             }).then(function (response) {
                 if (response) {
                     console.log(response)
-
+                   
                     _this.guardarUsuario(response.data)
                     if (response.data.usuario.CheckPass === 0) {
                         _this.dialog = true
@@ -129,9 +129,9 @@ export default {
             }).finally(() => _this.loading = false);
         },
         userExist() {
-
-            console.log('running user exist')
-              if (this.usuario.status != false && this.usuario.data.Role != false && this.usuario.data.CheckPass) {
+           
+            if (this.usuario.status != false && this.usuario.data.Role != 'ADMIN' && this.usuario.data.CheckPass) {
+                console.log('push - instit')
                 this.$router.push({ path: '/admin/instituciones' }) 
             }
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN' && this.usuario.data.CheckPass) {
@@ -147,7 +147,7 @@ export default {
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN') {
                 this.$router.push({ path: '/admin/superUser' })
             }
-            if (this.usuario.status != false && this.usuario.data.Role == 'USER-INSTITUCION') {
+            if (this.usuario.status != false && this.usuario.data.Role != 'USER-INSTITUCION') {
                 this.$router.push({ path: '/admin/instituciones' })
             }
         },
@@ -192,6 +192,7 @@ export default {
 
     },
     beforeMount() {
+        
         this.userExist()
     },
     beforeCreate() {
