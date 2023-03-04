@@ -844,14 +844,14 @@ export default {
             
 
         },
-        traerServidores() {
+       async traerServidores() {
             const _this = this;
             let config = {
                 headers: {
                     "x-token": `${this.usuario.token}`,
                 },
             };
-            axios.get(
+           await axios.get(
                     `${this.$store.state.URL}/api/servidores/institucion`,
                     config
                 )
@@ -868,14 +868,14 @@ export default {
              
                 });
         },
-        traerSancionados() {
+        async traerSancionados() {
             const _this = this;
             let config = {
                 headers: {
                     "x-token": `${this.usuario.token}`,
                 },
             };
-            axios.get(
+            await axios.get(
                     `${this.$store.state.URL}/api/sanciones/misSancionados`,
                     config
                 )
@@ -894,8 +894,11 @@ export default {
         }
 
     },
-    mounted() {
+    beforeMount(){
         this.userExist()
+    },
+    mounted() {
+     
         this.traerServidores()
         this.traerSancionados()
     }
