@@ -74,7 +74,7 @@
                     {{ icon.icon }}
                 </v-icon>
             </v-btn>
-            <v-btn v-if="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
+            <v-btn v-show="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                   mdi mdi-logout
                 </v-icon>Log-Out
