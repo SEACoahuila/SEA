@@ -814,15 +814,17 @@ export default {
         },
         userExist() { 
             
-            if (!this.usuario.data) {
+            if (this.usuario.data.Role == false) {
                 this.$router.push('/admin')
   
                 
 
-            }
+            } else {
+                this.traerServidores()
+                this.traerSancionados()
             if (this.usuario.data.Role == 'ADMIN'  || 'USER-INSTITUCION' ) {
-                console.log('Rol permitido')
-                this.userGeneral = true
+            console.log('Rol permitido')
+            this.userGeneral = true
               
                 
 
@@ -840,6 +842,11 @@ export default {
                 this.userContratos = true
 
             }
+          
+            }
+
+          
+    
            
             
 
@@ -895,12 +902,11 @@ export default {
 
     },
     beforeMount(){
-        this.userExist()
+        
     },
     mounted() {
-     
-        this.traerServidores()
-        this.traerSancionados()
+        this.userExist()
+    
     }
 }
 </script>
