@@ -129,7 +129,9 @@ export default {
             }).finally(() => _this.loading = false);
         },
         userExist() {
-              if (this.usuario.status != false && this.usuario.data.Role == 'USER-INSTITUCION' && this.usuario.data.CheckPass) {
+
+            console.log('running user exist')
+              if (this.usuario.status != false && this.usuario.data.Role != false && this.usuario.data.CheckPass) {
                 this.$router.push({ path: '/admin/instituciones' }) 
             }
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN' && this.usuario.data.CheckPass) {
@@ -137,7 +139,7 @@ export default {
             }
             
           
-            console.log('admin pass')
+           
 
         },
         patchedUser() {

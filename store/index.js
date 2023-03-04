@@ -4,7 +4,9 @@ export const state = () => ({
     URL: "https://api-pdn-local-production.up.railway.app",
     usuario: {
         status: false,
-        data: null,
+        data: {
+          Role: false,
+        },
         token: 'no token'
       },
      
@@ -19,7 +21,9 @@ export const mutations = {
     },
     LOG_OUT(state) {
       state.usuario.status = false;
-      state.usuario.data = null;
+      state.usuario.data = {
+        Role: false,
+      };
       state.usuario.token = null;
     },
   }
