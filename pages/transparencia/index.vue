@@ -5,7 +5,7 @@
         <v-col>
             <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
 
-                <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
+                <div align="center" class="mb-5 text-xl-h1 text-md-h3 text-h4 ">{{page.title}}</div>
 
             </v-alert>
 
@@ -19,22 +19,23 @@
                             <div class=" text-xl-h2 text-md-h4"> Art. 18</div>
                         </v-card-title>
                         <v-card-actions class="justify-center">
-                            <v-chip-group column>
-                                <v-chip label outlined color="info" max-width="100%" href="https://www.plataformadetransparencia.org.mx/">Plataforma Nacional de Transparencia</v-chip>
-                                <v-chip label outlined color="info" max-width="100%" href="https://goo.gl/forms/v9fUknvCjxNUqNzA2">Quejas y sugerencias</v-chip>
-                            </v-chip-group>
+                            <v-row justify="center" align="center">
+                                <v-col cols="12">
+                                    <v-chip label outlined color="info" max-width="100%" href="https://www.plataformadetransparencia.org.mx/">Plataforma Nacional de Transparencia</v-chip>
+                                </v-col>
+                                <v-col cols="12">
+                                    <v-chip label outlined color="info" max-width="100%" href="https://goo.gl/forms/v9fUknvCjxNUqNzA2">Quejas y sugerencias</v-chip>
+                                </v-col>
+                            
+                            </v-row>
+                                
 
                         </v-card-actions>
 
                     </v-col>
-                    <v-col cols="12" md="6" sm="12">
+               
 
-                        <!-- <h4 align="center">NOTA:</h4>
-                        <p align="center" class="text-justify">Puede usar el Formulario de quejas y sugerencias, enviar un mensaje vía correo electrónico a quejas.y.sugerencias@seacoahuila.org.mx, o llamar al teléfono (844) 688 2178 L-J 8:30 a 15:00 horas, V 8:30 a 14:30 horas.</p> -->
-
-                    </v-col>
-
-                    <v-col aling="center" justify="center" cols="12">
+                    <v-col align="center" justify="center" cols="12">
 
                         <v-card-title class="justify-center">
                             <div class=" text-xl-h2 text-md-h4"> Art. 20</div>

@@ -6,11 +6,11 @@
         <div align="center" class="mb-7 mt-5 text-xl-h2  text-md-h2 text-h3">{{ Data.titulo }}</div>
        
         <div  class="font-weight-black"><v-icon  color="orange darken-3">mdi mdi-calendar-clock</v-icon> Fecha de Actualización: {{ Data.actualizacion }}</div>
-        <div class="mt-5 text-justify">{{ Data.descripcion }}</div>
+        <div class="mt-5 text-justify" v-for="e, i in Data.descripcion" :key="i">{{ e.valor }}</div>
         <v-divider class="mt-5"></v-divider>
       </v-col>
 
-       <v-col class="pa-4" cols="12" v-for="e in Data.secciones">
+       <v-col class="pa-4" cols="12" v-for="e, i  in Data.secciones" :key="i">
         <v-card class="pa-3"
         elevation="2"
   outlined
