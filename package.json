@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3",
+    "gh-pages": "^5.0.0",
     "push-dir": "^0.4.1",
     "xlsx-loader": "^1.0.3"
   }
