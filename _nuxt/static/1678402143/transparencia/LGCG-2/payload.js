@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/transparencia/LGCG-2", {data:[{}],fetch:{},mutations:[]});

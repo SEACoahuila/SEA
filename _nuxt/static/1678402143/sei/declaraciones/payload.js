@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/sei/declaraciones", {data:[{}],fetch:{},mutations:[]});

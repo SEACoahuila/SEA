@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/transparencia/21-8", {data:[{}],fetch:{},mutations:[]});
