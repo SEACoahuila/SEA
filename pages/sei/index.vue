@@ -100,7 +100,7 @@ export default {
         return {
             page: {
                 color: 'cyan',
-                title: 'Sistema Estatal de información',
+                title: 'Sistema Estatal de Información',
                 icon: 'mdi-graphql'
             },
             botones: [{
@@ -122,7 +122,7 @@ export default {
             ],
             sistemas: [{
                     numero: 'S1',
-                    nombre: 'Declaraciónes',
+                    nombre: 'Declaraciones',
                     sub: 'Sistema de evolución patrimonial, de declaración de intereses y constancia de presentación de declaración fiscal',
                     icon: 'mdi-book-open-outline',
                     color: 'green darken-3',
@@ -130,7 +130,7 @@ export default {
                 },
                 {
                     numero: 'S2',
-                    nombre: 'Servidores en contrataciónes',
+                    nombre: 'Servidores en contrataciones',
                     sub: 'Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas',
                     icon: 'mdi-account-tie-outline',
                     color: 'pink darken-3',

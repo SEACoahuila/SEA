@@ -143,13 +143,13 @@
                     <p>Si te interesa colaborar con CPC activamente en los proyectos estratégicos y/o formar parte de la RPC (Red de Participación Ciudadana) te invitamos a llenar este formato y en breve un consejero se comunicará contigo.
 
                     </p>
-                    <v-btn block elevation="3" :color="page.color" dark href="https://forms.gle/bSVMAxGydghpYWUx5"> Registrese Aqui </v-btn>
+                    <v-btn block elevation="3" :color="page.color" dark href="https://forms.gle/bSVMAxGydghpYWUx5"> Registrese Aquí </v-btn>
                 </v-card-text>
                 <v-divider class="ma-8"></v-divider>
                 <v-card-text align="center">
                     <p class="text-h5">ANTEPROYECTO</p>
                     <a href="https://www.cpccoahuila.org.mx/osc/objetivo/lineas-estrategicas.pdf">
-                        <v-img max-width="500" :src="require('@/static/img/cpc/plan.jpg')"></v-img>
+                        <v-img max-width="450" :src="require('@/static/img/cpc/' + 'plan.jpg')"></v-img>
                     </a>
                 </v-card-text>
 
@@ -286,7 +286,7 @@ export default {
             ],
             integrantes: [{
                     nombre: 'Jafia Pacheco Valtierra',
-                    cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
+                    cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
                     foto: 'cpc-jpv.jpg',
                     img: 'cc-cpc.png',
                     mail: 'jafia.pacheco@cpccoahuila.org.mx'
@@ -332,7 +332,7 @@ export default {
                 'INCIDE FEMME',
                 'KYBERNUS COAHUILA',
                 'CCI LAGUNA',
-                'JOVENES LIDERES DE LA LAGUNA',
+                'JÓVENES LÍDERES DE LA LAGUNA',
                 'ANADE LAGUNA',
                 'COPARMEX MUJERES'
             ]

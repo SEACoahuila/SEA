@@ -161,11 +161,11 @@
                     title: 'Comisión Ejecutiva',
                     icon: 'mdi-cog',
                     presentacion: [{
-                        titulo: 'Que es?',
-                        texto: 'Órgano técnico auxiliar de la Secretaría Ejecutiva integrada por el Secretario Técnico y el Consejo de Participación Ciudadana, con exepción del miembro que funja en ese momento como su Presidente.'     },
+                        titulo: '¿Que es?',
+                        texto: 'Órgano técnico auxiliar de la Secretaría Ejecutiva integrada por el Secretario Técnico y el Consejo de Participación Ciudadana, con excepción del miembro que funja en ese momento como su Presidente.'     },
                     {
                         titulo: 'Objetivo',
-                        texto: 'General los insumos técnicos necesarios para que el Comité Coordinador realice sus funciones, elaborando propuestas para ser sometidas a la aprobación de dicho Comité, respecto a las políticas integrames en prevención, control, y disuasión de faltas administrativas y hechos de corrupción, asi como la realización de informes, indicadores, evaluaciónes, y seguimiento de respecto a dichas políticas.',
+                        texto: 'Generar los insumos técnicos necesarios para que el Comité Coordinador realice sus funciones, elaborando propuestas para ser sometidas a la aprobación de dicho Comité, respecto a las políticas integrales en prevención, control, y disuasión de faltas administrativas y hechos de corrupción, asi como la realización de informes, indicadores, evaluaciónes, y seguimiento de respecto a dichas políticas.',
                     },
 
                 ]

@@ -52,7 +52,7 @@
             return {
                 page: {
                     color: 'green lighten-2',
-                    title: 'Publicaciónes',
+                    title: 'Publicaciones',
                     icon: 'mdi-comma-circle-outline'
                 }
             }

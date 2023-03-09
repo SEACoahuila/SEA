@@ -23,7 +23,7 @@
           <v-icon>mdi-apps</v-icon>
         </v-list-item-icon>
 
-        <v-list-item-title>Menu</v-list-item-title>
+        <v-list-item-title>Menú</v-list-item-title>
       </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
@@ -55,7 +55,7 @@
         </v-list-item-action>
         <v-list-item-content>
             <v-list-item-title>
-             Log-In Instituciónes
+             Log-In Instituciones
          </v-list-item-title>
           </v-list-item-content>
 
@@ -179,7 +179,7 @@ export default {
         },
         {
           icon: 'mdi-comma-circle-outline',
-          title: 'Publicaciónes',
+          title: 'Publicaciones',
           to: '/publicaciones'
         },
         {
@@ -196,7 +196,7 @@ export default {
         },
         {
           icon: 'mdi-cogs',
-          title: 'Secretaría ejecutiva',
+          title: 'Secretaría Ejecutiva',
           to: '/SE',
           color: 'pink'
         },

@@ -48,7 +48,7 @@ export default {
         btnitem: [
             {
                 title: 'Política Estatal Anticorrupción',
-                desc: 'Conoce aquí el documento rector que guiará los esfuerzos de las instituciones públicas y ciudadanas en materia de prevención, control y combate de los hechos de corrupción.',
+                desc: 'Conoce aquí el documento rector que guía los esfuerzos de las instituciones públicas y ciudadanas en materia de prevención, control y combate de los hechos de corrupción.',
                 src1: 'peac1.jpg',
                 src2: 'peac2.jpg',
                 link: '/peac'

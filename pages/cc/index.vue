@@ -227,7 +227,7 @@ export default {
 
                 {
                     nombre: 'JAFIA PACHECO VALTIERRA',
-                    cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
+                    cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
                     foto: 'cpc-jpv.jpg',
                     img: 'cc-cpc.png',
                     web: 'http://www.cpccoahuila.org.mx/',
