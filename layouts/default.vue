@@ -6,6 +6,7 @@
       :clipped="clipped"
       mini-variant-width="65"
       width="auto"
+      height="100%"
       :permanent="$vuetify.breakpoint.mdAndUp"
       dark
       :color="colorNav"
@@ -32,7 +33,7 @@
           exact
           
           
-          @click.stop="drawer = !drawer"
+          @click.stop="drawer = !drawer; miniVariant = true"
         >
           <v-list-item-action >
             
@@ -47,6 +48,22 @@
           
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <v-list-item to="/admin" @click.stop="drawer = !drawer; miniVariant = true">
+        <v-list-item-action>
+          <v-icon>mdi-badge-account</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+            <v-list-item-title>
+             Log-In Instituciónes
+         </v-list-item-title>
+          </v-list-item-content>
+
+        </v-list-item>
+        
+       
+        
+      </template>
     </v-navigation-drawer>
 
 
@@ -195,15 +212,15 @@ export default {
           to: '/contacto',
           color: 'cyan darken-3'
         },
-        {
-          icon: 'mdi-badge-account',
-          title: 'Log-in Instituciónes',
-          to: '/admin',
-          color: ''
-        },
+        // {
+        //   icon: 'mdi-badge-account',
+        //   title: 'Log-in Instituciónes',
+        //   to: '/admin',
+        //   color: ''
+        // },
       
       ],
-      miniVariant: true,
+      miniVariant: false,
       right: true,
       rightDrawer: false,
       title: 'Sea Coahuila',
