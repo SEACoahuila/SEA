@@ -67,22 +67,31 @@ export default {
   methods: {
     async moduloByFraccion(articulo) {
       try {
-        const modulo = await this.$fire.firestore.collection("modulos").where('articulo', '==', articulo.toString()).get();
-        if (modulo.docs.length == 0) {
-          return {}
+        const art = articulo.split('-')[0];
+        const fra = articulo.split('-')[1].toString();
+        let secc = [], docs = [];
+        const mods = await this.$fire.firestore.collection('modulos').where('articulo','==',art).where('fraccion','==',fra).get();
+        if(mods.docs.length == 1){
+            const secs = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones').orderBy('uid','asc').get();
+            secs.docs.forEach(async(sec) => {
+                const docus = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones/'+sec.id+'/documentos').orderBy('uid','asc').get();
+                docus.docs.forEach((docu) => {
+                    docs.push({id:docu.id, ...docu.data()});
+                })
+                secc.push({ id:sec.id, ...sec.data(), documentos:docs });
+            });
+            let encNombre = '', encCargo = '';
+            const dptoID = mods.docs[0].data().encargado;
+            const dpto = await this.$fire.firestore.doc('departamentos/'+dptoID).get();
+            const userID = dpto.data().titular;
+            const user = await this.$fire.firestore.doc('usuarios/'+userID).get();
+            
+            encNombre = user.data().nombre;
+            encCargo = user.data().cargo+' de '+dpto.data().nombre;
+            this.Data = { id:mods.docs[0].id, ...mods.docs[0].data(), encargado:{nombre:encNombre,cargo:encCargo}, secciones:secc }
+        }else{
+          this.Data = {};
         }
-        const secc = [];
-        const secciones = await this.$fire.firestore.collection("modulos/" + modulo.docs[0].id + "/secciones").orderBy('uid', 'asc').get();
-        secciones.forEach(async (sec) => {
-          const docs = [];
-          const documentos = await this.$fire.firestore.collection('modulos/' + modulo.docs[0].id + '/secciones/' + sec.id + '/documentos').orderBy('uid', 'asc').get();
-          documentos.forEach((doc) => {
-            docs.push({ id: doc.id, ...doc.data() })
-          })
-          secc.push({ id: sec.id, ...sec.data(), documentos: docs })
-        })
-        this.Data = { id: modulo.docs[0].id, ...modulo.docs[0].data(), secciones: secc }
-        console.log(this.Data)
       } catch (error) {
         throw new Error(error.message)
       }
