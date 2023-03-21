@@ -73,7 +73,7 @@
                             <v-col cols="12" md="4" v-for="(fraccion, i) in fracciones" :key="i">
                                 <v-list color="bluegreyt">
 
-                                    <v-list-item class="justify-center" align="center" :to="'transparencia/'+fraccion.to" router exact>
+                                    <v-list-item class="justify-center" align="center" :to="'/transparencia/'+fraccion.to" router exact>
                                         <v-row>
                                             <v-col cols="12">
                                                 <v-btn icon class="text-h4">{{i +1}}</v-btn>
