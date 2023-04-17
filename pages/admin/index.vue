@@ -147,7 +147,7 @@ export default {
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN') {
                 this.$router.push({ path: '/admin/superUser' })
             }
-            if (this.usuario.status != false && this.usuario.data.Role != 'USER-INSTITUCION') {
+            if (this.usuario.status != false && this.usuario.data.Role != 'ADMIN') {
                 this.$router.push({ path: '/admin/instituciones' })
             }
         },
@@ -168,13 +168,14 @@ export default {
             )
                 .then(res => {
                     _this.dialog = false,
-                        _this.limpiarDatos();
-                    _this.patchedUser();
+                    _this.limpiarDatos();
+                  
                     _this.$swal({
                         title: 'Exito!',
                         text: "El password cambio con éxito",
                         icon: 'success'
                     });
+                    _this.patchedUser();
                 })
                 .catch(e => {
                     _this.$swal({

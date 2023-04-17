@@ -89,6 +89,7 @@ export default {
             encNombre = user.data().nombre;
             encCargo = user.data().cargo+' de '+dpto.data().nombre;
             this.Data = { id:mods.docs[0].id, ...mods.docs[0].data(), encargado:{nombre:encNombre,cargo:encCargo}, secciones:secc }
+            console.log(this.Data)
         }else{
           this.Data = {};
         }
