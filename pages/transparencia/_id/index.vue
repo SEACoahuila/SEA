@@ -67,25 +67,19 @@ export default {
   methods: {
     async moduloByFraccion(articulo) {
       try {
-        const art = articulo.toString().split('-')[0];
-        const fra = articulo.toString().split('-')[1];
-        let secs = [], docs = [];
-        
+        const art = articulo.split('-')[0];
+        const fra = articulo.split('-')[1].toString();
+        let secc = [], docs = [];
         const mods = await this.$fire.firestore.collection('modulos').where('articulo','==',art).where('fraccion','==',fra).get();
-        
         if(mods.docs.length == 1){
-            const secc = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones').orderBy('uid','asc').get();
-            secc.docs.forEach(async(sec) => {
-              const docus = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones/'+sec.id+'/documentos').orderBy('uid','asc').get();
-              
-              docs = [];
-              docus.docs.forEach((docu) => {
+            const secs = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones').orderBy('uid','asc').get();
+            secs.docs.forEach(async(sec) => {
+                const docus = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones/'+sec.id+'/documentos').orderBy('uid','asc').get();
+                docus.docs.forEach((docu) => {
                     docs.push({id:docu.id, ...docu.data()});
                 })
-                
-                secs.push({ id:sec.id, ...sec.data(), documentos:docs });
+                secc.push({ id:sec.id, ...sec.data(), documentos:docs });
             });
-            
             let encNombre = '', encCargo = '';
             const dptoID = mods.docs[0].data().encargado;
             const dpto = await this.$fire.firestore.doc('departamentos/'+dptoID).get();
