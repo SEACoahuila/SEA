@@ -11,57 +11,20 @@
                 <v-layout class="" >
 
                     <v-row justify="center">
-                        <!-- <v-col cols="12" xl="3" lg="3" md="4" v-if="userContratos || userGeneral">
-                            <v-btn block @click="nuevaInstitucion = false">
-                                <v-icon>mdi mdi-file-delimited-outline</v-icon>
+         
+                  
 
-                                Carga masiva S-Contratos
-                            </v-btn>
-                        </v-col> -->
-                        <v-col cols="12" xl="2" lg="3" md="4"  v-if="userContratos || userGeneral">
-                            <v-btn  block @click="nuevaInstitucion = true;verSancionados = false; verContratos = false; nuevoSancionado =false">
-                                <v-icon>mdi mdi-plus-circle-outline</v-icon>
-                                Nuevo S-Contratos
-                            </v-btn>
-                        </v-col>
-
-                        <v-col   cols="12" xl="2" lg="3" md="4" v-if="userSancionados || userGeneral">
+                        <v-col   cols="10" xl="6" v-if="userSancionados || userGeneral">
                             <v-btn  block @click="nuevaInstitucion = false; verSancionados = false; verContratos = false; nuevoSancionado = true">
                                 <v-icon>mdi mdi-plus-circle-outline</v-icon>
                                 Nuevo Sancionado
                             </v-btn>
                         </v-col>
-                        <v-col  cols="12" xl="2" lg="3" md="4" v-if="userContratos || userGeneral">
-                            <v-btn  block @click="nuevaInstitucion = false ; nuevoSancionado =false; verSancionados = false; verContratos = true">
-                                <v-icon>mdi mdi-eye-settings</v-icon>
-
-                                Ver Serv-Contratos
-                            </v-btn>
-                        </v-col>
-                        <v-col cols="12" xl="2" lg="3" md="4" v-if="userSancionados || userGeneral">
-                            <v-btn  block @click="nuevaInstitucion = false ; nuevoSancionado =false; verContratos = false; verSancionados = true">
-                                <v-icon>mdi mdi-eye-settings</v-icon>
-
-                                Ver Serv-Sancionados
-                            </v-btn>
-                        </v-col>
+                    
+                   
                         
 
-
-                        <v-col cols="12" xl="2" lg="3" md="4" v-if="userSancionados">
-                            <v-btn  block @click="nuevaInstitucion = false">
-                                <v-icon>mdi mdi-eye-settings</v-icon>
-
-                                Ver Sancionados
-                            </v-btn>
-                        </v-col> 
-                        <v-col cols="12" xl="2" lg="2" md="4">
-                            <v-btn dark block @click="cerrarSesion">
-                                <v-icon>mdi mdi-logout</v-icon>
-
-                                Cerrar Sesión
-                            </v-btn>
-                        </v-col>
+                    
 
                     </v-row>
 
@@ -69,133 +32,9 @@
 
             </v-col>
 
-            <v-col cols="12" md="8" v-if="nuevaInstitucion">
-                <v-card elevation="4" align="center" >
+      
 
-                    <v-card-subtitle></v-card-subtitle>
-                    <h3><strong>ALTA SERVIDOR EN CONTRATACIONES </strong></h3>
-                    <v-card-text>
-
-                        <v-form ref="form" v-model="valid">
-                            <v-row class="mt-4">
-                                <v-col cols="12">
-                                    <h3><strong>DATOS DE FUNCIONARIO </strong></h3>
-                                </v-col>
-
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Nombre" dense v-model="Nombres" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Primer Apellido" dense v-model="PrimerApellido" :counter="25" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Segundo Apellido" dense v-model="SegundoApellido" :counter="25" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-select label="Género" dense v-model="Genero" :items="[
-                                            { text: 'Masculino', value: 'M' },
-                                            { text: 'Femenino', value: 'F' },
-                                            { text: 'Otro', value: 'O' }
-                                        ]" required :rules="notNullRule"></v-select>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Puesto" dense v-model="Puesto" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="ID de Puesto" dense v-model="IdPuesto" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="CURP" dense v-model="CURP" :counter="18" required :rules="CURPRules"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="RFC" dense v-model="RFC" :counter="13" required :rules="RFCRules"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-select label="Año de Ejercicio Fiscal" dense v-model="EjercicioFiscal" :items="YearsEjesicioFiscal" required :rules="notNullRule"></v-select>
-                                </v-col>
-
-                                <v-col cols="12" md="6">
-                                    <v-select label="ID de Ramo" dense v-model="IDRamo" :items="[{ text: 'Estatal', value: 1 }, { text: 'Municipal', value: 2 }]" required :rules="notNullRule"></v-select>
-                                </v-col>
-                                <v-col cols="12">
-                                    <h3><strong>DATOS DE SUPERIOR INMEDIATO </strong></h3>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato Nombre" dense v-model="SINombres" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato Primer Apellido" dense v-model="SIPrimerApellido" :counter="25" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato Segundo Apellido" dense v-model="SISegundoApellido" :counter="25" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-select label="Superior Inmediato Género" dense v-model="SIGenero" :items="[
-                                            { text: 'Masculino', value: 'M' },
-                                            { text: 'Femenino', value: 'F' },
-                                            { text: 'Otro', value: 'O' }
-                                        ]" required :rules="notNullRule"></v-select>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato Puesto" dense v-model="SIPuesto" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato Siglas Puesto" dense v-model="SIIdPuesto" :counter="50" required :rules="notNullRule"></v-text-field>
-                                </v-col>
-
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato CURP" dense v-model="SICURP" :counter="18" required :rules="CURPRules"></v-text-field>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-text-field label="Superior Inmediato RFC" dense v-model="SIRFC" :counter="13" required :rules="RFCRules"></v-text-field>
-                                </v-col>
-                                <v-col cols="12">
-                                    <h3><strong>DATOS DE SERVIDOR SOBRE RESPONSABILIDADES EN CONTRATOS </strong></h3>
-                                </v-col>
-                                <v-col cols="12" md="6">
-
-                                    <v-select label="Áreas del Servidor" dense v-model="AreasServidor" :items="[
-                                            { text: 'Técnica', value: 'T' },
-                                            { text: 'Responsable de la ejecución de los trabajos', value: 'RE' },
-                                            { text: 'Responsable de la contratación', value: 'RC' },
-                                            { text: 'Otra', value: 'O' },
-                                            { text: 'Contratante', value: 'C' },
-                                            { text: 'Requirente', value: 'R' }]" multiple required :rules="notNullRule"></v-select>
-                                </v-col>
-
-                                <v-col cols="12" md="6">
-                                    <v-select label="Responsabilidades del Servidor" dense v-model="ResponsabilidadesServidor" :items="[
-                                                { text: 'Atención', value: 'A' },
-                                                { text: 'Tramitación', value: 'T' },
-                                                { text: 'Resolución', value: 'R' },
-                                                { text: 'Otro', value: 'O' }]" multiple required :rules="notNullRule"></v-select>
-                                </v-col>
-                                <v-col cols="12" md="6">
-                                    <v-select label="Procedimientos del Servidor" dense v-model="ProcedimientosServidor" :items="[
-                                                { text: 'Contrataciones Públicas', value: 1 },
-                                                { text: 'Concesiones, licencias, permisos, autorizaciones y sus prórrogas', value: 2 },
-                                                { text: 'Enajenación de bienes muebles', value: 3 },
-                                                { text: 'Asignación y emisión de dictámenes de avalúos nacionales', value: 4 },
-                                                { text: 'Otro', value: 5 }
-                                            ]" multiple required :rules="notNullRule"></v-select>
-                                </v-col>
-                                <v-col cols="12">
-                                    <v-card-actions>
-                                        <v-btn block color="teal accent-4" @click="enviarDatos" :disabled="!valid">Enviar</v-btn>
-
-                                    </v-card-actions>
-
-                                </v-col>
-                            </v-row>
-
-                        </v-form>
-                    </v-card-text>
-
-                </v-card>
-
-            </v-col>
-
-            <v-col cols="12" md="8" v-if="nuevoSancionado">
+            <v-col cols="12" xl="10" v-if="nuevoSancionado">
                 <v-card elevation="4" align="center" >
 
                     <v-card-subtitle></v-card-subtitle>
@@ -395,52 +234,8 @@
 
             </v-col>
 
-            <v-col cols="12"  v-if="verSancionados">
-                <template>
-                         <v-card-title>
-                 <v-text-field
-                     v-model="search"
-                     append-icon="mdi-magnify"
-                     label="Buscar"
-                     single-line
-                     hide-details
-                 ></v-text-field>
-                 </v-card-title>
-                 <v-data-table
-                     dense
-                     :search="search"
-                     :headers="sancionadosColumnas"
-                     :items="allSancionados"
-                     item-key="IdServidorPubSancionado"
-                     class="elevation-1"
-                 ></v-data-table>
-                 </template>
-            </v-col>
-            <v-col cols="12" v-if="verContratos">
-                     
-                     <template>
-                         <v-card-title>
-                 <v-text-field
-                     v-model="search2"
-                     append-icon="mdi-magnify"
-                     label="Buscar"
-                     single-line
-                     hide-details
-                 ></v-text-field>
-                 </v-card-title>
-                 <v-data-table
-                     dense
-                     :search="search2"
-                     :headers="nombresColumnas"
-                     :items="AllUsers"
-                     item-key="IdServidorEnContrataciones"
-                     class="elevation-1"
-                 ></v-data-table>
-                 </template>
- 
-                
-             </v-col>
-   
+       
+
 
         </v-row>
    
@@ -510,7 +305,7 @@ export default {
             AreasServidor: null,
             ResponsabilidadesServidor: null,
             ProcedimientosServidor: null,
-            Expediente: "Expediente",
+            Expediente: "",
             AutoridadSancionadora: "",
             IdTipoFalta: "",
             DescripFalta: "",

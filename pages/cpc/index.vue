@@ -192,7 +192,11 @@
                             <div class=" text-xl-h3 text-md-h4"> Planes</div>
                         </v-card-title>
                         <v-card-actions class="justify-center">
-                            <v-btn v-for=" (e,i) in planes" :key="i" :href="require('@/static/cpc/' + e.src)">{{ e.year }}</v-btn>
+                            <div v-for=" (e,i) in planes" :key="i">
+                               <v-btn  v-if="e.src" :href="require('@/static/cpc/' + e.src)">{{ e.year }}</v-btn>  
+                               <v-btn  v-if="e.to" :href="e.to">{{ e.year }}</v-btn> 
+                            </div>
+                           
 
                         </v-card-actions>
 
@@ -248,7 +252,8 @@ export default {
 
             // Termina page
 
-            informes: [{
+            informes: [
+                {
                     year: '2021-2022',
                     src: 'cpc-coahuila-informe-resultados-2021-2022.pdf'
                 },
@@ -271,15 +276,19 @@ export default {
                     src: 'plan-de-comunicacion-cpc.pdf'
                 },
                 {
-                    year: '2020',
+                    year: '2021-2022',
+                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/2lIvc2aFyVqrZZw4fJGI%2FYFHlnCOlgSnI90J1wDAs%2Fprograma-anual-cpc-22.pdf?alt=media&token=e238731f-1d3d-4c2d-833d-043869fbe9bf'
+                },
+                {
+                    year: '2020-2021',
                     src: 'plan-de-trabajo-cpc-2020.pdf'
                 },
                 {
-                    year: '2019',
+                    year: '2019-2020',
                     src: 'plan-de-trabajo-cpc-2019.pdf'
                 },
                 {
-                    year: '2018',
+                    year: '2018-2019',
                     src: 'plan-de-trabajo-cpc-2018.pdf'
                 },
 

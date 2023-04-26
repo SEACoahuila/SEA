@@ -132,7 +132,7 @@ export default {
            
             if (this.usuario.status != false && this.usuario.data.Role != 'ADMIN' && this.usuario.data.CheckPass) {
                 console.log('push - instit')
-                this.$router.push({ path: '/admin/instituciones' }) 
+                this.$router.push({ path: '/admin/vistas' }) 
             }
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN' && this.usuario.data.CheckPass) {
                 this.$router.push({ path: '/admin/superUser' })
@@ -148,7 +148,7 @@ export default {
                 this.$router.push({ path: '/admin/superUser' })
             }
             if (this.usuario.status != false && this.usuario.data.Role != 'ADMIN') {
-                this.$router.push({ path: '/admin/instituciones' })
+                this.$router.push({ path: '/admin/vistas' })
             }
         },
         renovarPassword() {

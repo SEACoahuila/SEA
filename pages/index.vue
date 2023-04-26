@@ -1,20 +1,18 @@
 <template>
 <div>
- 
 
     <v-container>
-        
+
         <Carrusel />
-      
+
         <Data />
-   <Organismos />
-        
+        <Organismos />
+
     </v-container>
 </div>
 </template>
 
 <script>
-
 import Carrusel from '@/components/Carousel'
 import Organismos from '@/components/Organismos'
 import Data from '@/components/Datos'
@@ -27,8 +25,6 @@ export default {
         Data,
         lineUp
     },
-
-
 
 }
 </script>
