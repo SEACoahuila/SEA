@@ -11,7 +11,7 @@
                 <v-list-item-title>Menú</v-list-item-title>
             </v-list-item>
 
-            <div v-if="!$store.state.usuario.status">
+            <div v-show="!$store.state.usuario.status">
 
                 <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact @click.stop="drawer = !drawer; miniVariant = true">
 
@@ -60,7 +60,7 @@
 
         </v-list>
         <template v-slot:append>
-          <div v-if="!$store.state.usuario.status">
+          <div v-show="!$store.state.usuario.status">
                 <v-list-item to="/admin" @click.stop="drawer = !drawer; miniVariant = true">
                 <v-list-item-action>
                     <v-icon>mdi-badge-account</v-icon>
@@ -73,7 +73,7 @@
 
             </v-list-item>
           </div>
-          <div v-if="$store.state.usuario.status">
+          <div v-show="$store.state.usuario.status">
                 <v-list-item to="/admin" @click.stop="cerrarSesion">
                 <v-list-item-action>
                     <v-icon>mdi-badge-account</v-icon>
