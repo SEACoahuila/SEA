@@ -9,9 +9,9 @@
 
                     <v-row justify="center">
 
-                        <v-col cols="12" md="6" v-if="userContratos || userGeneral">
+                        <v-col cols="12" md="3" v-if="userContratos || userGeneral">
                             <v-btn block @click="nuevaInstitucion = true;verSancionados = false; verContratos = false; nuevoSancionado =false">
-                                <v-icon>mdi mdi-plus-circle-outline</v-icon>
+                                <v-icon color="teal darken-1" class="pa-1">mdi mdi-plus-circle-outline</v-icon>
                                 Nuevo servidor
                             </v-btn>
                         </v-col>

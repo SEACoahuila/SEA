@@ -239,7 +239,7 @@ export default {
                 },
                 {
                     icon: 'mdi-file-document-plus-outline',
-                    title: 'Agregar servidor sancionado',
+                    title: 'Agregar sancionado',
                     to: '/admin/ServidoresSancionados',
                     color: 'amber darken-1 '
                 },

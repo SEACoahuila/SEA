@@ -19,18 +19,25 @@
 
                     <v-row justify="center" >
                 
-                        <v-col  cols="12" xl="6" lg="6" md="6" v-if="userContratos || userGeneral">
-                            <v-btn block @click="nuevaInstitucion = false ; nuevoSancionado =false; verSancionados = false; verContratos = true">
+                        <v-col  cols="12" xl="4" lg="4" md="4" v-if="userContratos || userGeneral">
+                            <v-btn block @click="verPartSancionado = false ; verSancionados = false; verContratos = true">
                                 <v-icon color="info">mdi mdi-eye-settings</v-icon>
 
                                 Ver Servidores en Contratos <p style="color:green">{{ AllUsers.length }}</p>
                             </v-btn>
                         </v-col>
-                        <v-col cols="12"  xl="6" lg="6" md="6" v-if="userSancionados || userGeneral">
-                            <v-btn  block @click="nuevaInstitucion = false ; nuevoSancionado =false; verContratos = false; verSancionados = true">
+                        <v-col cols="12"  xl="4" lg="4" md="4" v-if="userSancionados || userGeneral">
+                            <v-btn  block @click="verPartSancionado =false; verContratos = false; verSancionados = true">
                                 <v-icon color="warning">mdi mdi-eye-settings</v-icon>
 
-                                Ver Sancionados <p style="color:red">{{ allSancionados.length }}</p>
+                                Servidores Sancionados <p style="color:red">{{ allSancionados.length }}</p>
+                            </v-btn>
+                        </v-col>
+                        <v-col cols="12"  xl="4" lg="4" md="4" v-if="userSancionados || userGeneral">
+                            <v-btn  block @click="verPartSancionado = true; verContratos = false; verSancionados = false">
+                                <v-icon color="danger">mdi mdi-eye-settings</v-icon>
+
+                                Particulares Sancionados <p style="color:red">{{ allParticularesSancionados.length }}</p>
                             </v-btn>
                         </v-col>
                         
@@ -46,7 +53,7 @@
             </v-col>
 
  
-
+            
             <v-col cols="12"  v-if="verSancionados">
                 <template>
                          <v-card-title>
@@ -66,6 +73,39 @@
                      item-key="IdServidorPubSancionado"
                      class="elevation-1"
                  ></v-data-table>
+                 </template>
+            </v-col>
+            
+            <v-col cols="12"  v-if="verPartSancionado">
+                <template>
+                         <v-card-title>
+                 <v-text-field
+                     v-model="search"
+                     append-icon="mdi-magnify"
+                     label="Buscar"
+                     single-line
+                     hide-details
+                 ></v-text-field>
+                 </v-card-title>
+                 <v-data-table
+                     dense
+                     :search="search"
+                     :headers="patSancionadosColumnas"
+                     :items="allParticularesSancionados"
+                     item-key="IdServidorPubSancionado"
+                     class="elevation-1"   
+                 >
+                 
+                 <template v-slot:item.URLResolucion="{ item }">
+                    <a :href="item.URLResolucion">
+                    <v-chip
+                     >
+                     Ver Resolución
+                    </v-chip>
+                </a>
+                 </template>
+
+                </v-data-table>
                  </template>
             </v-col>
             <v-col cols="12" v-if="verContratos">
@@ -123,6 +163,7 @@ export default {
             nuevoSancionado: false,
             verSancionados: false,
             verContratos: false,
+            verPartSancionado: false,
             hidden: true,
             valid: false,
             loading: false,
@@ -142,6 +183,7 @@ export default {
             userContratos: false,
             AllUsers: [],
             allSancionados: [],
+            allParticularesSancionados: [],
             search: '',
             search2: '',
             nombresColumnas: [
@@ -183,6 +225,41 @@ export default {
             {
                 text: 'Ramo',
                 value: 'Ramo.Ramo',
+            },
+
+            ],
+            patSancionadosColumnas: [
+            {
+                text: 'Nombre / Razón Social',
+                value: 'Particular.NombreRazonSocial'
+            },
+            {
+                text: 'Objeto Social',
+                value: 'Particular.ObjetoSocial'
+            },
+            {
+                text: 'Expediente',
+                value: 'Expediente',
+            },
+            {
+                text: 'Falta',
+                value: 'Acto',
+            },
+            {
+                text: 'Autoridad Sancionadora',
+                value: 'AutoridadSancionadora',
+            },
+            {
+                text: 'Sentido de la resolución',
+                value: 'SentidoResolucion',
+            },
+            {
+                text: 'Resolución',
+                value: 'URLResolucion',
+            },
+            {
+                text: 'Teléfono',
+                value: 'Particular.Telefono'
             },
 
             ],
@@ -266,6 +343,7 @@ export default {
             } else {
                 this.traerServidores()
                 this.traerSancionados()
+                this.traerParticularesSancionados()
             if (this.usuario.data.Role == 'ADMIN'  || 'USER-INSTITUCION' ) {
             console.log('Rol permitido')
             this.userGeneral = true
@@ -342,7 +420,32 @@ export default {
                     });
              
                 });
+        },
+        async traerParticularesSancionados() {
+            const _this = this;
+            let config = {
+                headers: {
+                    "x-token": `${this.usuario.token}`,
+                },
+            };
+            await axios.get(
+                    `${this.$store.state.URL}/api/sanciones/misParticularesSancionados`,
+                    config
+                )
+                .then(res => {
+                this.allParticularesSancionados = res.data.SancionadosParticulares
+                console.log(this.allParticularesSancionados)
+                })
+                .catch(e => {
+                    _this.$swal({
+                        title: 'Error!',
+                        text: e.response.data.errors,
+                        icon: 'error'
+                    });
+             
+                });
         }
+
 
     },
     beforeMount(){
