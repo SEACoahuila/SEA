@@ -38,7 +38,7 @@
                 </v-list-item>
             </div>
 
-            <div v-if="$store.state.usuario.status">
+            <div v-show="$store.state.usuario.status">
 
              
 
