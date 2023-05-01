@@ -138,7 +138,7 @@
                                             :counter=" 200 " required :rules=" notNullRule "></v-text-field>
                                     </v-col>
                                     <v-col cols="12">
-                                        <v-text-field label="Causa/Motivo de los hechos" dense :counter=" 200 "
+                                        <v-text-field label="Causa / Motivo de los hechos" dense :counter=" 200 "
                                             v-model=" CausaMotivoHechos " :rules=" notNullRule " required></v-text-field>
                                     </v-col>
                                     <v-col cols="12" xl="3" md="5">
