@@ -50,7 +50,7 @@
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
-                  {
+                 {
                      src: "gira-municipios-2023.png",
                      to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
                  },
