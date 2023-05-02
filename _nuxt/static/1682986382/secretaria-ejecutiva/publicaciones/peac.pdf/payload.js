@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/secretaria-ejecutiva/publicaciones/peac.pdf", {data:[{}],fetch:{},mutations:[]});
