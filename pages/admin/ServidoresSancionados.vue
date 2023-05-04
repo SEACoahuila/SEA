@@ -5,6 +5,9 @@
     <div>
 
         <v-container class="flex-grow-1 min-height-vh">
+   
+
+
 
             <v-row justify="center">
                 <v-col cols="12" class="mb-10">
@@ -14,14 +17,15 @@
 
 
 
-                            <v-col cols="10" xl="4" v-if="userSancionados || userGeneral">
-                                <v-btn block @click="nuevoPartSancionado = false; nuevoSancionado = true">
+                            <v-col cols="10" xl="4" md="6" v-if="userSancionados || userGeneral">
+                                
+                                <v-btn block @click="nuevoPartSancionado = false; nuevoSancionado = true; colorS='blue-grey lighten-4'; colorP=''" :color="colorS">
                                     <v-icon color="warning" class="pa-1">mdi mdi-plus-circle-outline</v-icon>
                                     Nuevo Servidor Sancionado
                                 </v-btn>
                             </v-col>
-                            <v-col cols="10" xl="4" v-if=" userSancionados || userGeneral ">
-                                <v-btn block @click=" nuevoSancionado = false; nuevoPartSancionado = true ">
+                            <v-col cols="10" xl="4" md="6" v-if=" userSancionados || userGeneral ">
+                                <v-btn block @click=" nuevoSancionado = false; nuevoPartSancionado = true; colorP='blue-grey lighten-4'; colorS=''" :color="colorP" >
                                     <v-icon color="info" class="pa-1">mdi mdi-plus-circle-outline</v-icon>
                                     Nuevo Particular Sancionado
                                 </v-btn>
@@ -159,9 +163,13 @@
                                             v-model=" DescripcionSancion " :rules=" notNullRule " required></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
-                                        <v-text-field label="Documento de la resolución (URL)" v-model=" URLResolucion "
-                                            :rules=" notNullRule " dense required></v-text-field>
-                                    </v-col>
+                                        <v-file-input  type="file" counter
+                                            show-size label='Documento de la resolución' 
+                                            @change="subirDocumentoResolucion" 
+                                            truncate-length="25"
+                                            dense
+                                            required></v-file-input>
+                                        </v-col>
 
                                     <!-- DATE PICKERS -->
                                     <v-col cols="12" md="6">
@@ -199,9 +207,14 @@
                                             :counter=" 100 " required :rules=" notNullRule "></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
-                                        <v-text-field label="Dirección pública del documento" v-model=" URLDoc " dense
-                                            :counter=" 25 " required :rules=" notNullRule "></v-text-field>
-                                    </v-col>
+
+                                        <v-file-input  type="file" counter
+                                            show-size label='Documento de Sanción' 
+                                            @change="subirDocumentoSancion" 
+                                            truncate-length="25"
+                                            dense
+                                            required></v-file-input>
+                                        </v-col>
 
                                     <v-col cols="12" md="6">
                                         <v-menu ref="menu3" v-model=" menu3 " :close-on-content-click=" false "
@@ -509,9 +522,14 @@
                                             v-model=" DescripcionSancion " :rules=" notNullRule " required></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
-                                        <v-text-field label="Documento de la resolución (URL)" v-model=" URLResolucion "
-                                            :rules=" notNullRule " dense required></v-text-field>
-                                    </v-col>
+
+                                        <v-file-input  type="file" counter
+                                            show-size label='Documento de la resolución' 
+                                            @change="subirDocumentoResolucion" 
+                                            truncate-length="25"
+                                            dense
+                                            required></v-file-input>
+                                        </v-col>
 
                                     <!-- DATE PICKERS -->
                                     <v-col cols="12" md="6">
@@ -535,7 +553,7 @@
                                             required :rules=" notNullRule "></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
-                                        <v-select label="Tipo del documento" dense v-model=" IdTipoDoc " :items="
+                                        <v-select label="Tipo del documento" dense v-model="IdTipoDoc " :items="
                                             [
                                                 { text: 'Constancia de abstención', value: 'CA' },
                                                 { text: 'Constancia de inhabilitación', value: 'CI' },
@@ -549,8 +567,13 @@
                                             :counter=" 100 " required :rules=" notNullRule "></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
-                                        <v-text-field label="Dirección pública del documento" v-model=" URLDoc " dense
-                                            :counter=" 25 " required :rules=" notNullRule "></v-text-field>
+
+                                        <v-file-input  type="file" counter
+                                            show-size label='Documento de Sanción' 
+                                            @change="subirDocumentoSancion" 
+                                            truncate-length="25"
+                                            dense
+                                            required></v-file-input>
                                     </v-col>
 
                                     <v-col cols="12" md="6">
@@ -648,12 +671,13 @@
 
 <script>
 import axios from "axios";
-
+import {uuid} from "vue-uuid";
 import {
     mapState,
     mapActions
 } from 'vuex'
 export default {
+    
     name: 'SuperUser',
     data() {
         return {
@@ -663,6 +687,7 @@ export default {
                 icon: 'mdi-cogs'
             },
             menuFechaResolucion: false,
+            uuid: uuid.v1(),
             nuevaInstitucion: false,
             nuevoSancionado: false,
             nuevoPartSancionado: false,
@@ -779,6 +804,13 @@ export default {
             Entidades: [],
             Municipios: [],
             Localidades: [],
+            selectedDoc: '',
+            uploadValue: '',
+            docRef: '',
+            resolucionId: '',
+            sancionId: '',
+            colorS: '',
+            colorP: '',
             nombresColumnas: [
                 {
                     text: 'Nombre',
@@ -1065,6 +1097,7 @@ export default {
                     _this.nuevaInstitucion = false,
                         _this.nuevoSancionado = false,
                         _this.limpiarDatos();
+                        _this. docsID();
                     _this.$swal({
                         title: 'Registro Exitoso!',
                         text: "Sancionado registrado con éxito",
@@ -1158,6 +1191,7 @@ export default {
 
                     _this.nuevoPartSancionado = false,
                         _this.limpiarDatos();
+                        _this. docsID();
                     _this.$swal({
                         title: 'Registro Exitoso!',
                         text: "Sancionado registrado con éxito",
@@ -1337,15 +1371,55 @@ export default {
                     });
 
                 });
-        }
+        },
+        subirDocumentoSancion(event) {
+            this.selectedDoc = event
+            const storage = this.$fire.storage
+            var storageRef = storage.ref();
+           
+            const docRef = storageRef.child(`SANCIONADOS/${this.sancionId}`)
+            
+            const uploadTask = docRef.put(this.selectedDoc).then((snapshot) => {
+                console.log('Archivo subido correctamente');
+                snapshot.ref.getDownloadURL().then((downloadURL) => {
+                this.URLDoc = downloadURL
+                console.log('File available at', downloadURL);
+                });
+            });;
+        
+            
+        },
+        subirDocumentoResolucion(event) {
+            this.selectedDoc = event
+            const storage = this.$fire.storage
+            var storageRef = storage.ref();
+           
+            const docRef = storageRef.child(`SANCIONADOS/${this.resolucionId}`)
+            
+            const uploadTask = docRef.put(this.selectedDoc).then((snapshot) => {
+                console.log('Archivo subido correctamente');
+                snapshot.ref.getDownloadURL().then((downloadURL) => {
+                this.URLResolucion = downloadURL
+                console.log('File available at', downloadURL);
+                });
+            });;
+        
+            
+        },
+         docsID() {
+              this.resolucionId =   uuid.v4()
+              this.sancionId = uuid.v4()
+        },
+      
 
     },
     beforeMount() {
-
+       
     },
     mounted() {
         this.userExist()
-
+        this. docsID()
+       
 
     }
 }

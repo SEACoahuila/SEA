@@ -31,7 +31,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/vuex-persist', ssr: false }
+    { src: '~/plugins/vuex-persist', ssr: false },
+    { src: '~/plugins/vue-uuid.js', ssr: false}
     
   ],
 
@@ -53,8 +54,10 @@ export default {
     '@nuxtjs/firebase',
     
     
+    
   ],
   // MIDDLEWARES
+
   firebase: {
     terminateDatabasesAfterGenerate: true,
     config: {
@@ -67,9 +70,10 @@ export default {
   },
   services: {
     auth: true, // Just as example. Can be any other service.
-    firestore: true
+    firestore: true,
+    storage: true
   },
-
+ 
   },
   // hooks: {
   //   generate: {
@@ -139,6 +143,7 @@ export default {
       }
     }
   },
+  
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
