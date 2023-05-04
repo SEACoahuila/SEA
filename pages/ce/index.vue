@@ -193,21 +193,21 @@
                 },
                 {
                     nombre: 'Yolanda Guadalupe Montes Martínez',
-                    cargo: 'Integrante de la de la Comisión Ejecutiva',
+                    cargo: 'Integrante',
                     foto: 'cpc-ygmm.jpg',
                     img: 'cc-cpc.png',
                     mail: 'yolanda.montes@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Juan Carlos Guzmán Escobedo',
-                    cargo: 'Integrante de la de la Comisión Ejecutiva',
+                    cargo: 'Integrante',
                     foto: 'cpc-jcge.jpg',
                     img: 'cc-cpc.png',
                     mail: 'carlos.guzman@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Karla Samperio Flores',
-                    cargo: 'Integrante de la de la Comisión Ejecutiva',
+                    cargo: 'Integrante',
                     foto: 'cpc-ksf.png',
                     img: 'cc-cpc.png',
                     mail: 'karla.samperio@cpccoahuila.org.mx'

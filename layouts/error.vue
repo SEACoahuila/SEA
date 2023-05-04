@@ -16,6 +16,8 @@
 export default {
   name: 'EmptyLayout',
   layout: 'empty',
+
+  
   props: {
     error: {
       type: Object,
@@ -25,7 +27,7 @@ export default {
   data () {
     return {
       pageNotFound: '404 Página no encontrada',
-      otherError: 'An error occurred'
+      otherError: 'Ocurrio un error'
     }
   },
   head () {
@@ -34,7 +36,14 @@ export default {
     return {
       title
     }
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.$router.push('/')
+    }, 2000);
+  
+
+    }
 }
 </script>
 

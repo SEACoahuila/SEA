@@ -45,7 +45,7 @@
                         </v-card-actions>
                         <v-card-actions class="justify-center">
                             <v-chip-group column>
-                                <v-chip v-for="(e,i) in art20" :key="i" label outlined color="info" max-width="100%" :to="('transparencia/' + e.to)" download>{{ e.año }}</v-chip>
+                                <v-chip v-for="(e,i) in art20" :key="i" label outlined color="info" max-width="100%" :to="('/transparencia/' + e.to)" download>{{ e.año }}</v-chip>
                             </v-chip-group>
                         </v-card-actions>
 
@@ -177,13 +177,7 @@
 
                                     </v-list-item>
 
-                                    <v-list-item  to="/transparencia/70-2" router exact>
-                                        <v-row >
-
-                                            <v-icon large >mdi-table-cog</v-icon> <v-col > Tabla de Acttualización y Conservación</v-col>
-                                        </v-row>
-                    
-                                    </v-list-item>
+                                  
 
                                 </v-list>
                             </v-col>
@@ -517,14 +511,14 @@ export default {
                     icon: 'mdi-account-multiple-remove'
                 },
                 {
-                    titulo: 'Información catastral',
+                    titulo: 'Listado del parque vehicular',
                     to: '21-48',
-                    icon: 'mdi-domain'
+                    icon: 'mdi-car-hatchback'
                 },
                 {
-                    titulo: 'Listado del parque vehicular',
+                    titulo: 'Información catastral',
                     to: '21-49',
-                    icon: 'mdi-car-hatchback'
+                    icon: 'mdi-domain'
                 },
                 {
                     titulo: 'Proceso catastral de valuación',

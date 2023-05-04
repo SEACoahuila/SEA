@@ -61,7 +61,7 @@ export default {
                         'Telefono: (844) 688 2178',
                         'Correo: informacion@seacoahuila.org.mx',
                         'Dirección: Blvd. Luis Donaldo Colosio No. 703 Piso 3 Fracc. Valle Real Saltillo, Coahuila de Zaragoza, México. C.P. 25205.',
-                        'Horario de atención: De 08:30 a 17:00 de lunes a jueves, de 08:30 a 14:30 viernes.'
+                        'Horario de atención: Lunes a jueves de 08:30 a 17:00 hrs, viernes de 08:30 a 14:30 hrs.'
                     ]
                 },
                 {

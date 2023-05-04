@@ -30,7 +30,7 @@
         <v-alert class="mx-auto text-justify" min-height="190" border="left" colored-border color="purple lighten-2" elevation="8" icon="mdi-account-search" prominent>
 
             <v-card-title>
-                Comité de Participación Ciudadana
+                Consejo de Participación Ciudadana
             </v-card-title>
 
             <v-card-subtitle>
