@@ -1,26 +1,31 @@
 <template>
 <v-container class="min-height-vh ">
 
-    <v-row>
-        <v-col>
+    <v-row >
+        <v-col justify="center" align="center" cols="12">
             <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
 
-                <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
+                <div align="center" class="mb-5 text-xl-h1 text-md-h3  text-h4">{{page.title}}</div>
 
             </v-alert>
 
-            <v-card class="mt-10 pa-5" color="article">
+           
+ 
+         
+        </v-col>
+        <v-col cols="12" lg="9" class="pa-0">
+            <v-card class="mt-4 pa-5" color="article" height="100%">
                 <v-row class="mt-5" v-for="(e,i) in page.presentacion" :key="i">
-                    <v-col aling="center" justify="center">
-                        <v-card-title class="justify-center">
+                    <v-col align="center" justify="center" >
+                        <v-card-title class="justify-center"  >
                             <div class=" text-xl-h3 text-md-h4"> {{e.titulo}}</div>
                         </v-card-title>
 
                     </v-col>
                     <v-divider vertical></v-divider>
-                    <v-col cols="12" md="9" sm="12">
+                    <v-col cols="12" md="8" sm="12" >
 
-                        <p align="center" class="text-justify">
+                        <p align="center" justify="center" class="text-justify">
                             {{ e.texto }}
                         </p>
 
@@ -29,8 +34,34 @@
                 </v-row>
 
             </v-card>
-
         </v-col>
+    
+             <v-col cols="12" lg="3">
+
+                <v-card class="mt-4 pa-8" color="article" height="100%" >
+                    <div align="center" class="mb-5 text-xl-h3 text-md-h4  text-h5">Valores</div>
+                    <v-divider class="mb-3"></v-divider>
+                    <v-row align="center" justify="center"  v-for="(e, index) in Valores" :key="index">
+                        <v-col align="center" cols="12" justify="center">
+                            <!-- <v-card-title align-self="center" class="justify-center"> -->
+                                <div class=""> {{ e.valor }}</div>
+                            <!-- </v-card-title> -->
+
+                        </v-col>
+                        <!-- <v-divider vertical></v-divider>
+                        <v-col cols="12" md="8" align-self="center">
+
+                            <p align-self="center" class="text-justify">
+                                {{ e.texto }}
+                            </p>
+                    
+                        </v-col> -->
+
+                    </v-row>
+
+                </v-card>
+
+            </v-col>
     </v-row>
 </v-container>
 </template>
@@ -56,11 +87,45 @@ export default {
                     {
                         titulo: 'Visión',
                         texto: 'Seremos un organismo ejemplo a nivel nacional en el diseño, implementación y evaluación de políticas públicas para la prevención, combate, reducción y erradicación de la corrupción, faltas administrativas y control de recursos públicos, generando un alto grado de confianza ciudadana, con un trabajo imparcial, profesional y efectivo.'
-                    }
+                    },
+                ],
+            },
+            Valores: [
+                {
+                    valor: 'Transparencia',
+                    texto: ' Implica actuar con rectitud y decoro en el desempeño de las facultades que la Ley otorga a quienes integran el CPC, correspondiendo con creces a la confianza otorgada.',
+                },
+                {
+                    valor: 'Honestidad',
+                    texto: ' Conlleva la necesaria alineación de los actos individuales con las aspiraciones del CPC y del Sistema Anticorrupción.',
+                },
+                {
+                    valor: 'Imparcialidad',
+                    texto: ' Refiere a la firme decisión de poner al servicio del CPC y del Sistema Anticorrupción, las competencias, conocimientos y habilidades de que dispone cada integrante y dedicando su tiempo efectivo a la implementación de acciones destinadas a prevenir actos de corrupción.',
+                },
+                {
+                    valor: 'Atonomía',
+                    texto: ' Señala la férrea voluntad para no escatimar esfuerzos en el cumplimiento de las facultades y atribuciones que por Ley tienen quienes integran el CPC acorde a su conformación como grupo multidisciplinario.',
+                },
+                {
+                    valor: 'Integridad',
+                    texto: ' Indica el esfuerzo indispensable que tienen que realizar quienes integran el CPC para comprender las distintas perspectivas ciudadanas con relación al fenómeno de la corrupción, sus causas, efectos y costos.',
+                },
+                {
+                    valor: 'Responsabilidad',
+                    texto: ' Supone la madurez para reconocer las consecuencias de cada decisión tomada y cada acción realizada, así como también de las omisiones por parte de cada integrante del CPC.',
+                },
+                {
+                    valor: 'Compromiso Social',
+                    texto: ' Implica la disposición para colaborar de manera decidida con la labor del resto de los integrantes del CPC, de las entidades que conforman el Sistema Anticorrupción y de la sociedad en su conjunto.',
+                },
+                {
+                    valor: 'Objetividad',
+                    texto: ' Apunta a la necesidad de empatar la acción, individual y colectiva, con el discurso, con el fin de elevar la efectividad y la incidencia del CPC y del Sistema Anticorrupción al que pertenecen.',
+                },
+              
 
-                ]
-
-            }
+            ],
         }
 
     }

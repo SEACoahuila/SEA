@@ -5,7 +5,7 @@
         <v-col cols="12">
             <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
 
-                <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
+                <div align="center" class="mb-5 text-xl-h1 text-md-h3  text-h3 ">{{page.title}}</div>
 
             </v-alert>
 

@@ -5,7 +5,7 @@
         <v-col cols="12">
             <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
 
-                <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
+                <div align="center" class="mb-5 text-xl-h1  text-h3 ">{{page.title}}</div>
 
             </v-alert>
 
@@ -209,7 +209,7 @@
                     <v-col aling="center" justify="center" cols="12">
 
                         <v-card-title class="justify-center">
-                            <div class=" text-xl-h3 text-md-h4"> Informes</div>
+                            <div class=" text-xl-h3 text-md-h4"> Informes / Declaraciones</div>
                         </v-card-title>
                         <v-divider class="mb-5"></v-divider>
                         <v-card-actions class="justify-center">
@@ -220,6 +220,7 @@
                         </v-card-actions>
                         <v-divider class="mt-5"></v-divider>
                     </v-col>
+  
                 </v-row>
 
             </v-card>
@@ -261,9 +262,14 @@ export default {
                     text: 'Informes anuales de resultados',
                     src: 'https://www.cpccoahuila.org.mx/transparencia/CPC-7'
                 },
-           
+                {
+                    text: 'Declaracion 3 de 3',
+                    src: 'https://www.cpccoahuila.org.mx/transparencia/CPC-6'
+                },
+             
 
             ],
+            
             planes: [{
                     year: 'Plan de Comunicación',
                     src: 'plan-de-comunicacion-cpc.pdf'

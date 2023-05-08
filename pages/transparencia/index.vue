@@ -411,7 +411,7 @@ export default {
                 },
                 {
                     titulo: 'Proveedores y contratistas',
-                    to: '21.28',
+                    to: '21-28',
                     icon: 'mdi-account-tie-woman'
                 },
                 {

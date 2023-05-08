@@ -6,7 +6,7 @@
                 <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2"
                     :icon="page.icon" prominent>
 
-                    <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{ page.title }}</div>
+                    <div align="center" class="mb-5 text-xl-h1 text-md-h3  text-h4 ">{{ page.title }}</div>
 
                 </v-alert>
 
@@ -126,7 +126,7 @@ export default {
         return {
             page: {
                 color: 'amber',
-                title: 'Política Estatal Anticorrupción.',
+                title: 'Política Estatal Anticorrupción',
                 icon: 'mdi-dots-horizontal'
             },
             botones: [{
