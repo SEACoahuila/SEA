@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/secretaria-ejecutiva/transparencia/art-21-03-directorio", {data:[{}],fetch:{},mutations:[]});

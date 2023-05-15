@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/secretaria-ejecutiva/transparencia/art-21-40-informe-de-actividades", {data:[{}],fetch:{},mutations:[]});

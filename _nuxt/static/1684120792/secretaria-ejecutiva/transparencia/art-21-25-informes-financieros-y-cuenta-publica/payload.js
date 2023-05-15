@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/secretaria-ejecutiva/transparencia/art-21-25-informes-financieros-y-cuenta-publica", {data:[{}],fetch:{},mutations:[]});

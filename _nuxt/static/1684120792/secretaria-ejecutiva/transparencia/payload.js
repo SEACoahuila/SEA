@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/secretaria-ejecutiva/transparencia", {data:[{}],fetch:{},mutations:[]});
