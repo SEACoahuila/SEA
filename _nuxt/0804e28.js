@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{841:function(n,t,e){"use strict";e.r(t);var c={mounted:function(){this.$router.push("/transparencia/21-03/")}},o=e(67),component=Object(o.a)(c,(function(){return(0,this._self._c)("h1",[this._v("Redireccionando...")])}),[],!1,null,"4fdd506c",null);t.default=component.exports}}]);
