@@ -7,7 +7,7 @@
   
       mounted() {
       
-          this.$router.push('/transparencia/21-02/')
+          this.$router.push('/transparencia/21-2/')
      
   
         }
