@@ -20,8 +20,8 @@
                        
                         
                         <v-row class="mt-3">
-                            <v-card class="mx-auto" max-width="344">
-                                <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FImagen1.jpeg?alt=media&token=382e2de7-578f-4d00-b89b-fee09e7d131a" height="200px"></v-img>
+                            <v-card class="mx-auto mb-3" max-width="">
+                                <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FImagen1.jpeg?alt=media&token=382e2de7-578f-4d00-b89b-fee09e7d131a" height=""></v-img>
 
                                 <v-card-title>
                                     Refrendan su compromiso por la Justicia Abierta
@@ -42,7 +42,7 @@
                                 </v-card-actions>
 
                             </v-card>
-                            
+                       
                             
                         </v-row>
                          
