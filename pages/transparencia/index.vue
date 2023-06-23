@@ -550,28 +550,3 @@ export default {
 <style lang="scss" scoped>
 
 </style>
-63e6af16992ad88d27d73df4 bernardo
-63f537c2b62204c08b6cc673 patto
-
-
-{
-    "$oid": "63fce482b62204c08b6d74e6"
-  },
-  {
-    "$oid": "63fce4f9b62204c08b6d751f"
-  },
-  {
-    "$oid": "63fce551b62204c08b6d7537"
-  },
-  {
-    "$oid": "63fce5b4b62204c08b6d755d"
-  },
-  {
-    "$oid": "63fce616b62204c08b6d7571"
-  },
-  {
-    "$oid": "63fce692b62204c08b6d7583"
-  },
-  {
-    "$oid": "63fce74eb62204c08b6d75a5"
-  }
