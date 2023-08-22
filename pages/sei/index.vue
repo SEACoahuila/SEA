@@ -26,6 +26,23 @@
 
                             </v-card>
                         </v-col>
+                        <v-col cols="12" md="4" xs="12" v-for="(e,i) in botones" :key="i">
+                            <v-card color="bluegreyt" href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform">
+
+                                <v-card-actions class="justify-center">
+                                    <v-avatar size="35" tile>
+
+                                        <v-icon
+                                        large
+                                        color="pink darken-3"
+                                        >
+                                        mdi-domain
+                                      </v-icon>
+                                    </v-avatar> Registro de instituciones públicas
+                                </v-card-actions>
+
+                            </v-card>
+                        </v-col>
 
                     </v-row>
 
@@ -145,7 +162,7 @@ export default {
                     src: '/sei/sanciones'
                 },
                 {
-                    numero: 'S4',
+                    numero: 'S5',
                     nombre: 'Denuncias',
                     sub: 'Denuncias públicas de faltas administrativas y hechos de corrupción',
                     icon: 'mdi-account-voice',

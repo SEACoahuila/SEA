@@ -75,7 +75,7 @@
                             pre-registro.
 
                         </p>
-                        <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Regístro de instituciónes públicas</v-btn>
+                        <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Registro de instituciónes públicas</v-btn>
                     </v-card-text>
 
                 </v-card>

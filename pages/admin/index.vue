@@ -6,7 +6,7 @@
 
                 <v-card class="pa-10"> <v-form ref="form" v-model="valid">
                         <v-card-title>
-                            Por favor cambie su password
+                            Por favor ingrese un nuevo password
                         </v-card-title>
                         <v-card-item>
 
@@ -199,6 +199,7 @@ export default {
     beforeCreate() {
 
     },
+    
 }
 
 </script>
