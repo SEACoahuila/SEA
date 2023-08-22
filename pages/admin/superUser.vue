@@ -28,7 +28,7 @@
 
                         Usuarios
                     </v-btn>
-                    <v-btn @click="nuevoUsuario = false; verUsuarios= false; verDependenciasCoahuila = true">
+                    <v-btn @click="nuevoUsuario = false; verUsuarios= false; verDependenciasCoahuila = !verDependenciasCoahuila">
                         <v-icon>mdi mdi-eye-settings</v-icon>
 
                        Dependencias
@@ -57,7 +57,7 @@
                                     
                                   
                                     <v-col cols="12">
-                                        <v-text-field label="Nombre de la dependencia" dense v-model="nombreInstitucion" :counter="50" required  :rules="notNullRule"></v-text-field>
+                                        <v-text-field label="Nombre de la dependencia" dense v-model="nombreInstitucion" :counter="200" required  :rules="notNullRule"></v-text-field>
                                     </v-col>
                                     <v-col cols="12" lg="4" md="6">
                                         <v-text-field label="Siglas de la dependencia" dense v-model="siglasInstitucion" :counter="25"
