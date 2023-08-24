@@ -52,7 +52,7 @@
                         
                         <v-card-text align="center" class="pa-12">
 
-                            <p class="text-h5">Que es?</p>
+                            <p class="text-h5">¿Qué es?:</p>
                             <p>Es un canal de comunicación directa entre el ciudadano y las
                                 instituciones públicas, con el fin de crear para los ciudadanos un proceso de atención y
                                 comunicación efectiva sin intermediarios y por otra parte prevenir y fortalecer a las

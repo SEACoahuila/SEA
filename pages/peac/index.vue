@@ -172,7 +172,7 @@ export default {
             },
             ],
             btnitem: [{
-                title: 'Que es:',
+                title: '¿Qué es?:',
                 desc: 'La Política Estatal Anticorrupción (PEAC) es el documento rector que guiará los esfuerzos de las instituciones públicas y ciudadanas en materia de prevención, control y combate de los hechos de corrupción. Los insumos con los que se construyó surgen de mecanismos de participación ciudadana, de análisis académico y de alineación con la Política Nacional Anticorrupción (PNA).',
                 src1: 'peac1.jpg',
                 src2: 'peac2.jpg',

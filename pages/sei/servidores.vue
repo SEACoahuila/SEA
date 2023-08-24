@@ -43,14 +43,14 @@
                                 <img :src="require('@/pages/sei/icons/logo_SEI.png')" alt="alt">
                             </v-avatar>
 
-                            Sistema Estatal de servidores públicos en contrataciónes
+                            Sistema Estatal de servidores públicos en contrataciones
                         </div>
                     </v-card-title>
                     <v-divider></v-divider>
 
                     <v-card-text align="center" class="pa-12">
 
-                        <p class="text-h5">Que es?</p>
+                        <p class="text-h5">¿Qué es?:</p>
                         <p>Es un sistema que establece el mecanismo para que todas las dependencias y entidades de la
                             Administración Pública, identifiquen y clasifiquen el nivel de responsabilidad de los servidores
                             públicos que participan en los procedimientos de contratación. El objetivo es incrementar la
@@ -64,18 +64,18 @@
                         <p class="text-h5">Formato de pre-inscripción para incorporar el sistema dirigido las entidades
                             públicas del Estado</p>
 
-                        <p class="text-justify">
-                            Con la finalidad de establecer un canal directo es necesaria la integración de el sistema con
-                            cada una de las instituciónes de Coahuila. Las instituciónes por medio de un servidor públicos
-                            en cualquera sus áreas involucradas, como titulares de área, directivos, administrativos,
-                            recursos humanos, cabildos podrán acceder y llevar a cabo
-                            el registro y seguimiento para incorporas a la instutución en dichos procesos. </p>
-                        <p>Para instituciónes públicas del estado de Coahuila interesadas en incorporar el sistema estatal
-                            de servidores públicos en procesos de contratación le invitamos a llenar este formato de
-                            pre-registro.
-
-                        </p>
-                        <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Registro de instituciónes públicas</v-btn>
+                            <p class="text-justify">
+                                Con la finalidad de establecer un canal directo, es necesaria la integración del sistema con
+                                cada una de las instituciones de Coahuila. Las instituciones, a través de un servidor público
+                                en cualquiera de sus áreas involucradas, como titulares de área, directivos, administrativos,
+                                recursos humanos y cabildos, podrán acceder y llevar a cabo
+                                el registro y seguimiento para incorporar a la institución en dichos procesos.
+                            </p>
+                            <p>Para instituciones públicas del estado de Coahuila interesadas en incorporar el sistema estatal
+                                de servidores públicos en procesos de contratación, les invitamos a llenar este formato de
+                                pre-registro.
+                            </p>
+                        <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Registro de instituciones públicas</v-btn>
                     </v-card-text>
 
                 </v-card>
@@ -241,7 +241,7 @@ export default {
                 value: 'NivelesResponsabilidad',
             },
             {
-                text: 'Tipo de contrataciónes',
+                text: 'Tipo de contrataciones',
                 value: 'TipoProcedimiento',
             },
             {
