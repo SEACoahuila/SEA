@@ -202,7 +202,7 @@ export default {
 
             ],
             btnitem: [{
-                title: 'Servidores Públicos en Contrataciónes:',
+                title: 'Servidores Públicos en Contrataciones:',
                 desc: 'Se basa en los servidores públicos que llevan una responsabilidad con los ciudadanos ya que intervienen en procedimientos como: -Contrataciones públicas -Tramite, atención y resolución de contratos. -Concesiones, licencias, permisos o autorizaciones.',
                 desc2: 'Las contrataciones públicas son uno de los pilares de un buen gobierno. Estos procesos permiten que las instituciones adquieran bienes y servicios en beneficio de las personas. Es necesario conocer quiénes son los servidores públicos responsables de llevar correctamente los procesos del gobierno.',
                 src1: 'sistema1.jpg',

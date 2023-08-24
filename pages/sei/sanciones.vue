@@ -43,7 +43,7 @@
                                 <img :src="require('@/pages/sei/icons/logo_SEI.png')" alt="alt">
                             </v-avatar>
 
-                            Sistema Estatal de servidores públicos sancionados
+                            Sistema Estatal de servidores públicos y particulares sancionados
                         </div>
                     </v-card-title>
                     <v-divider></v-divider>
