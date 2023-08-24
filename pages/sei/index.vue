@@ -53,7 +53,7 @@
             <v-card class="mt-10 pa-10" color="sei">
 
                 <v-card-title class="justify-center">
-                    <div class=" text-xl-h2 text-md-h4"> Módulos </div>
+                    <div class=" text-xl-h2 text-md-h4"> Sistemas </div>
                 </v-card-title>
                 <v-divider></v-divider>
                 <v-row>

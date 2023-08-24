@@ -31,6 +31,23 @@
 
                         <v-form ref="form" v-model="valid">
                             <v-row class="mt-4">
+                                <v-col v-if="$store.state.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA' ">
+                                    <v-col cols="12">
+                                    <h3><strong>DEPENDENCIA A LA QUE PERTENECE EL FUNCIONARIO</strong></h3><h4>{{  siglasInstitucion }}</h4>
+                                    </v-col>
+                                    <v-col cols="10" >
+                                        <v-select
+                                    v-model="dependencia"
+                                    :items="DependenciasCoahuila"
+                                    item-text="Dependencia"
+                                    item-value="SiglasDependencia"
+                                    label="Selecciona una dependencia"
+                                  
+                                    @change="updateVariables"
+                                    ></v-select>     
+                                    </v-col>
+                                    
+                                </v-col>
                                 <v-col cols="12">
                                     <h3><strong>DATOS DE FUNCIONARIO </strong></h3>
                                 </v-col>
@@ -251,6 +268,10 @@ export default {
             allSancionados: [],
             search: '',
             search2: '',
+            DependenciasCoahuila: [],
+            IdInstitucion: '',
+            siglasInstitucion: '',
+            dependencia: ''
 
         }
 
@@ -277,6 +298,39 @@ export default {
     methods: {
 
         ...mapActions(['guardarUsuario', 'cerrarSesion']),
+        updateVariables() {
+            const selectedDependencia = this.DependenciasCoahuila.find( dep => dep.SiglasDependencia === this.dependencia);
+            if (selectedDependencia){
+                this.siglasInstitucion = selectedDependencia.SiglasDependencia;
+                this.IdInstitucion = selectedDependencia.IdDependencia;
+              
+            }
+        },
+
+        verDependencias(){
+            const _this = this;
+            let config = {
+                headers: {
+                    "x-token": `${this.usuario.token}`,
+                },
+            };
+            axios.get(
+                    `${this.$store.state.URL}/api/institucion/dependencias`,
+                    config
+                )
+                .then(res => {
+                this.DependenciasCoahuila = res.data.dependencias
+          
+                })
+                .catch(e => {
+                    _this.$swal({
+                        title: 'Error!',
+                        text: e.response.data.msg,
+                        icon: 'error'
+                    });
+             
+                });
+        },
 
         save(FechaResolucion) {
             this.$refs.menu.save(FechaResolucion)
@@ -305,6 +359,9 @@ export default {
                 AreasServidor: this.AreasServidor,
                 ResponsabilidadesServidor: this.ResponsabilidadesServidor,
                 ProcedimientosServidor: this.ProcedimientosServidor,
+                Dependencia: this.IdInstitucion,
+                siglasDependencia: this.siglasInstitucion
+               
             }
             console.log(userData)
             const _this = this;
@@ -330,7 +387,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
 
@@ -377,7 +434,9 @@ export default {
                 this.Titulo = '',
                 this.Descripcion = '',
                 this.URLDoc = '',
-                this.Fecha = ''
+                this.Fecha = '',
+                this.IdInstitucion= '',
+                this.siglasInstitucion= ''
         },
 
         userExist() {
@@ -388,23 +447,16 @@ export default {
 
             } else {
                 this.traerServidores()
+                this.verDependencias()
 
                 if (this.usuario.data.Role == 'ADMIN' || 'USER-INSTITUCION') {
-                    console.log('Rol permitido')
                     this.userGeneral = true
-
                 }
                 if (this.usuario.data.Role == 'USER-SANCION') {
-                    console.log('Rol permitido')
-
                     this.userSancionados = true
-
                 }
                 if (this.usuario.data.Role == 'USER-CONTRATOS') {
-                    console.log('Rol permitido')
-
                     this.userContratos = true
-
                 }
 
             }
@@ -423,12 +475,12 @@ export default {
                 )
                 .then(res => {
                     this.AllUsers = res.data.ServidoresContrataciones
-                    console.log(this.AllUsers)
+                    
                 })
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
 

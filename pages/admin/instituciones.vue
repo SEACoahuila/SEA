@@ -702,7 +702,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
 
@@ -808,7 +808,7 @@ export default {
                     console.log(e)
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
 
@@ -872,7 +872,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
@@ -896,7 +896,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              

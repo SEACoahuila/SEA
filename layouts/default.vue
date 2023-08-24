@@ -37,16 +37,14 @@
 
                 </v-list-item>
             </div>
-
+            
             <div v-show="$store.state.usuario.status">
-
+                
+              <v-list-item v-for="(item, i) in tipoItem" two-line :key="i" :to="item.to" router exact @click.stop="drawer = !drawer; miniVariant = true">
              
-
-                <v-list-item v-for="(item, i) in itemsUser" two-line :key="i" :to="item.to" router exact @click.stop="drawer = !drawer; miniVariant = true">
-
                     <v-list-item-action>
-
-                        <div v-if="item.icon">
+                        
+                        <div>
                             <v-icon :color="item.color">{{ item.icon }} </v-icon>
                         </div>
                   
@@ -225,23 +223,44 @@ export default {
 
             ],
             itemsUser:[
+               
+
+            ],
+            itemsUserSancion:[
                 {
                     icon: 'mdi-eye-circle',
                     title: 'Mis datos',
                     to: '/admin/vistas',
-                    color: 'blue lighten-3'
+                    color: 'blue lighten-3',
+                    
                 },
                 {
                     icon: 'mdi-account-plus',
                     title: 'Agregar servidor involucrado en contratos',
                     to: '/admin/contrataciones',
-                    color: 'cyan darken-1 '
+                    color: 'cyan darken-1 ',
                 },
                 {
                     icon: 'mdi-file-document-plus-outline',
                     title: 'Agregar sancionado',
                     to: '/admin/ServidoresSancionados',
-                    color: 'amber darken-1 '
+                    color: 'amber darken-1 ',
+                    
+                },
+
+            ],
+            itemsUserContratos:[
+                {
+                    icon: 'mdi-eye-circle',
+                    title: 'Mis datos',
+                    to: '/admin/vistas',
+                    color: 'blue lighten-3',
+                },
+                {
+                    icon: 'mdi-account-plus',
+                    title: 'Agregar servidor involucrado en contratos',
+                    to: '/admin/contrataciones',
+                    color: 'cyan darken-1 ',
                 },
 
             ],
@@ -262,22 +281,106 @@ export default {
                     to: 'https://www.youtube.com/@sistemaanticorrupciondeles8877'
                 }
             ],
+            tipoItem: ''
 
         }
     },
     methods: {
-        ...mapActions(['readUserLocalStorage', 'cerrarSesion'])
+        ...mapActions(['readUserLocalStorage', 'cerrarSesion']),
+updateMenuItems(newRole) {
+    switch (newRole) {
+      case "ADMIN":
+      case "USER-INSTITUCION-CONCENTRADORA":
+      case "USER-INSTITUCION":
+        this.tipoItem = [
+          {
+            icon: "mdi-eye-circle",
+            title: "Mis datos",
+            to: "/admin/vistas",
+            color: "blue lighten-3",
+          },
+          {
+            icon: "mdi-account-plus",
+            title: "Agregar servidor involucrado en contratos",
+            to: "/admin/contrataciones",
+            color: "cyan darken-1 ",
+          },
+          {
+            icon: "mdi-file-document-plus-outline",
+            title: "Agregar sancionado",
+            to: "/admin/ServidoresSancionados",
+            color: "amber darken-1 ",
+          },
+        ];
+        break;
+        
+      case "USER-SANCIONES":
+      case "USER-SANCIONES-CONCENTRADORA":
+        this.tipoItem = [
+          {
+            icon: "mdi-eye-circle",
+            title: "Mis datos",
+            to: "/admin/vistas",
+            color: "blue lighten-3",
+          },
+          {
+            icon: "mdi-file-document-plus-outline",
+            title: "Agregar sancionado",
+            to: "/admin/ServidoresSancionados",
+            color: "amber darken-1 ",
+          },
+        ];
+        break;
+        
+      case "USER-CONTRATOS":
+      case "USER-CONTRATOS-CONCENTRADORA":
+        this.tipoItem = [
+      {
+        icon: "mdi-eye-circle",
+        title: "Mis datos",
+        to: "/admin/vistas",
+        color: "blue lighten-3",
+      },
+      {
+        icon: "mdi-account-plus",
+        title: "Agregar servidor involucrado en contratos",
+        to: "/admin/contrataciones",
+        color: "cyan darken-1 ",
+      },
+    ];
+    break;
+
+  default:
+    this.tipoItem = [];
+    break;
+      }
+    
+  }
+},
+
+    computed: {
+   
     },
     created() {
-
-        // this.readUserLocalStorage()
+        if (this.$store.state.usuario) {
+        this.updateMenuItems(this.$store.state.usuario.data.Role);
+  }
     },
     //   beforeMount() {
     //     this.readUserLocalStorage()
 
     // },
+    mounted() {
+       
+        },
+ watch: {
+  "$store.state.usuario.data.Role": function(newRole) {
+    this.updateMenuItems(newRole);
+  },
+
     // beforeCreate(){
     //   this.readUserLocalStorage()
     // }
+},
 }
 </script>

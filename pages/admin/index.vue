@@ -107,7 +107,8 @@ export default {
             await axios.post(`${this.$store.state.URL}/api/auth/login`, {
                 Correo: this.Correo,
                 Password: this.Password
-            }).then(function (response) {
+            })
+            .then(function (response) {
                 if (response) {
                     console.log(response)
                    
@@ -120,13 +121,15 @@ export default {
 
                 } else {
                     console.log("Fallo no encuentra datos")
-                    _this.$swal({ title: 'Oops...!', text: response.data.error, icon: 'error' });
+                    _this.$swal({ title: 'Oops...!', text: response.data.msg, icon: 'error' });
                 }
-            }).catch(error => {
-                console.log("Fallo en peticion"),
-                    error
-                _this.$swal({ title: 'Usuario y/o contraseña incorrectos', text: error.message, icon: 'error' });
-            }).finally(() => _this.loading = false);
+            })
+            .catch(function (error) {
+      
+                console.log("Fallo en peticion");
+                _this.$swal({ title: 'Usuario y/o contraseña incorrectos', text: error, icon: 'error' });
+            })
+            .finally(() => _this.loading = false);
         },
         userExist() {
            
@@ -180,7 +183,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
 

@@ -186,6 +186,8 @@ export default {
             allParticularesSancionados: [],
             search: '',
             search2: '',
+            permitidosSancion: ['ADMIN', 'USER-INSTITUCION', 'USER-SANCION', 'USER-SANCIONES-CONCENTRADORA', 'USER-INSTITUCION-CONCENTRADORA'],
+            permitidosContratos: ['ADMIN', 'USER-INSTITUCION', 'USER-CONTRATOS', 'USER-CONTRATOS-CONCENTRADORA', 'USER-INSTITUCION-CONCENTRADORA'],
             nombresColumnas: [
             {
                 text: 'Nombre',
@@ -344,25 +346,14 @@ export default {
                 this.traerServidores()
                 this.traerSancionados()
                 this.traerParticularesSancionados()
-            if (this.usuario.data.Role == 'ADMIN'  || 'USER-INSTITUCION' ) {
-            console.log('Rol permitido')
-            this.userGeneral = true
-              
-                
-
+            if (this.usuario.data.Role === 'ADMIN'  || this.usuario.data.Role === 'USER-INSTITUCION' ) {
+                this.userGeneral = true
             }
-            if (this.usuario.data.Role == 'USER-SANCION') {
-                console.log('Rol permitido')
-              
+            else if (this.usuario.data.Role === 'USER-SANCIONES' || this.usuario.data.Role === 'USER-SANCIONADOS-CONCENTRADORA') {
                 this.userSancionados = true
-            
-
             }
-            if (this.usuario.data.Role == 'USER-CONTRATOS') {
-                console.log('Rol permitido')
-  
+            else if (this.usuario.data.Role === 'USER-CONTRATOS' || this.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA') {
                 this.userContratos = true
-
             }
           
             }
@@ -380,22 +371,25 @@ export default {
                     "x-token": `${this.usuario.token}`,
                 },
             };
-           await axios.get(
-                    `${this.$store.state.URL}/api/servidores/institucion`,
-                    config
-                )
-                .then(res => {
-                this.AllUsers = res.data.ServidoresContrataciones
-                console.log(this.AllUsers)
-                })
-                .catch(e => {
-                    _this.$swal({
-                        title: 'Error!',
-                        text: e.response.data.errors,
-                        icon: 'error'
-                    });
-             
-                });
+        if (_this.permitidosContratos.includes(this.usuario.data.Role)) {
+            
+            await axios.get(
+                     `${this.$store.state.URL}/api/servidores/institucion`,
+                     config
+                 )
+                 .then(res => {
+                 this.AllUsers = res.data.ServidoresContrataciones
+                 console.log(this.AllUsers)
+                 })
+                 .catch(e => {
+                     _this.$swal({
+                         title: 'Error!',
+                         text: e.response.data.msg,
+                         icon: 'error'
+                     });
+              
+                 });
+        }
         },
         async traerSancionados() {
             const _this = this;
@@ -404,22 +398,26 @@ export default {
                     "x-token": `${this.usuario.token}`,
                 },
             };
+      
+        if (_this.permitidosSancion.includes(this.usuario.data.Role) ){
+            
             await axios.get(
                     `${this.$store.state.URL}/api/sanciones/misSancionados`,
                     config
                 )
                 .then(res => {
                 this.allSancionados = res.data.Sancionados
-                console.log(this.allSancionados)
+        
                 })
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
                 });
+        }
         },
         async traerParticularesSancionados() {
             const _this = this;
@@ -428,22 +426,26 @@ export default {
                     "x-token": `${this.usuario.token}`,
                 },
             };
+    
+        if (_this.permitidosSancion.includes(this.usuario.data.Role) ){ 
+
             await axios.get(
                     `${this.$store.state.URL}/api/sanciones/misParticularesSancionados`,
                     config
                 )
                 .then(res => {
                 this.allParticularesSancionados = res.data.SancionadosParticulares
-                console.log(this.allParticularesSancionados)
+               
                 })
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
                 });
+        }
         }
 
 

@@ -316,9 +316,10 @@ export default {
                         });
                 })
                 .catch(e => {
+                    console.log(e.response)
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
@@ -360,9 +361,10 @@ export default {
                         });
                 })
                 .catch(e => {
+                    
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
@@ -386,7 +388,7 @@ export default {
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
@@ -405,12 +407,12 @@ export default {
                 )
                 .then(res => {
                 this.DependenciasCoahuila = res.data.dependencias
-                console.log(this.DependenciasCoahuila)
+             
                 })
                 .catch(e => {
                     _this.$swal({
                         title: 'Error!',
-                        text: e.response.data.errors,
+                        text: e.response.data.msg,
                         icon: 'error'
                     });
              
@@ -429,7 +431,8 @@ export default {
         this.Role= '',
         this.Password= '1q2w3e',
         this.nuevoUsuario= false,
-        this.nuevaDependencia= false
+        this.nuevaDependencia= false,
+        this.dependencia = ''
         },
         
         userExist() {
