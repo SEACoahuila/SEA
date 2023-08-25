@@ -263,7 +263,7 @@ export default {
                 {
                     nombre: 'MIGUEL FELIPE MERY AYUP',
                     dialog: false,
-                    cargo: 'Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Coahuila de Zaragoza.',
+                    cargo: 'Magistrado Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Coahuila de Zaragoza.',
                     foto: 'cc-pjecz-mfma.jpg',
                     img: 'cc-pjecz.png',
                     web: 'https://www.pjecz.gob.mx/',

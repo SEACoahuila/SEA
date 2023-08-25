@@ -1,9 +1,9 @@
 <template>
 <v-app dark>
     <v-navigation-drawer v-model="drawer" :mini-variant.sync="miniVariant" :clipped="clipped" mini-variant-width="65" width="auto" height="100%" :permanent="$vuetify.breakpoint.mdAndUp" dark :color="colorNav" fixed app>
-        <v-list>
+        <v-list dense>
 
-            <v-list-item @click.stop="miniVariant = !miniVariant">
+            <v-list-item  @click.stop="miniVariant = !miniVariant">
                 <v-list-item-icon>
                     <v-icon>mdi-apps</v-icon>
                 </v-list-item-icon>
@@ -192,7 +192,7 @@ export default {
                 },
                 {
                     avatar: 'cpclog.png',
-                    title: 'Comité de Participación Ciudadana',
+                    title: 'Consejo de Participación Ciudadana',
                     to: '/CPC',
                     color: 'purple lighten-2'
                 },
@@ -267,7 +267,7 @@ export default {
             miniVariant: false,
             right: true,
             rightDrawer: false,
-            title: 'Sea Coahuila',
+            title: 'SEA Coahuila',
             icons: [{
                     icon: 'mdi-facebook',
                     to: 'https://www.facebook.com/seseacoah'

@@ -22,11 +22,7 @@
 export default {
     data() {
         return {
-            cc: [{
-                    img: 'pj-logo-azul.png',
-                    web: 'https://www.pjecz.gob.mx/',
-                    size: '100'
-                },
+            cc: [
                 {
                     img: 'ASEC.png',
                     web: 'https://www.asecoahuila.gob.mx/',
@@ -41,6 +37,11 @@ export default {
                     img: 'cc-sefirc.png',
                     web: 'http://www.sefircoahuila.gob.mx/',
                     size: '120'
+                },
+                {
+                    img: 'pj-logo-azul.png',
+                    web: 'https://www.pjecz.gob.mx/',
+                    size: '100'
                 },
                 {
                     img: 'cc-ica.png',

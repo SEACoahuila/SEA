@@ -64,7 +64,7 @@
                         </v-card-title>
                         <v-card-text class="pa-3 text-md-h6" align="center"> De la "Ley de Acceso a la Información Pública para el Estado de
                             Coahuila de Zaragoza" Art. 21 y "Ley General de Transparencia y Acceso
-                            a la Información pública" (Art. 70).</v-card-text>
+                            a la Información Pública" (Art. 70).</v-card-text>
 
                         <v-divider></v-divider>
                     </v-col>
