@@ -19,21 +19,21 @@
 
                     <v-row justify="center" >
                 
-                        <v-col  cols="12" xl="4" lg="4" md="4" v-if="userContratos || userGeneral">
+                        <v-col  cols="12" xl="4" lg="4"  v-if="userContratos || userGeneral">
                             <v-btn block @click="verPartSancionado = false ; verSancionados = false; verContratos = true">
                                 <v-icon color="info">mdi mdi-eye-settings</v-icon>
 
                                 Ver Servidores en Contratos <p style="color:green">{{ AllUsers.length }}</p>
                             </v-btn>
                         </v-col>
-                        <v-col cols="12"  xl="4" lg="4" md="4" v-if="userSancionados || userGeneral">
+                        <v-col cols="12"  xl="4" lg="4"  v-if="userSancionados || userGeneral">
                             <v-btn  block @click="verPartSancionado =false; verContratos = false; verSancionados = true">
                                 <v-icon color="warning">mdi mdi-eye-settings</v-icon>
 
                                 Servidores Sancionados <p style="color:red">{{ allSancionados.length }}</p>
                             </v-btn>
                         </v-col>
-                        <v-col cols="12"  xl="4" lg="4" md="4" v-if="userSancionados || userGeneral">
+                        <v-col cols="12"  xl="4" lg="4"  v-if="userSancionados || userGeneral">
                             <v-btn  block @click="verPartSancionado = true; verContratos = false; verSancionados = false">
                                 <v-icon color="danger">mdi mdi-eye-settings</v-icon>
 

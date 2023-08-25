@@ -376,7 +376,7 @@ export default {
                 )
                 .then(res => {
                     _this.nuevaInstitucion = false,
-                        _this.limpiarDatos();
+                    _this.limpiarDatos();
                     _this.traerServidores();
                     _this.$swal({
                         title: 'Registro Exitoso!',
