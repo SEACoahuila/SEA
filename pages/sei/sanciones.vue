@@ -90,35 +90,35 @@
                 </v-card>
                
 
-<template>
-<v-data-table
-    :headers="headers"
-    :items="allSancionados"
-   
-    :expanded.sync="expanded"
-    item-key="IdServidorPubSancionado"
-    show-expand
-    class="elevation-1"
->
-    <template v-slot:top>
-    <v-toolbar flat>
-        <v-toolbar-title>Servidores Sancionados</v-toolbar-title>
-        <v-spacer></v-spacer>
-     
-    </v-toolbar>
-    </template>
-    <template v-slot:expanded-item="{ headers, item }">
-    <td :colspan="headers.length">
-        <h4>Descripción de Falta:</h4> {{item.DescripFalta}} 
-        <h4>Fecha de resolución</h4> {{item.FechaResolucion}} 
-        <h4>Causa motivos y hechos:</h4> {{item.CausaMotivoHechos}} 
-        <h4 v-if="item.MontoMulta">Monto de multa:</h4> {{item.MontoMulta + item.IdMonedaMulta}}
-        <h4 v-if="item.Observaciones">Observaciónes</h4> {{item.Observaciones}}
-        <h4 v-if="item.PlazoInhabilitacion">Plazo de Inhabilitación</h4> {{item.PlazoInhabilitacion}}
-    </td>
-    </template>
-</v-data-table>
-</template>
+                <template>
+                <!-- <v-data-table
+                    :headers="headers"
+                    :items="allSancionados"
+                
+                    :expanded.sync="expanded"
+                    item-key="IdServidorPubSancionado"
+                    show-expand
+                    class="elevation-1"
+                >
+                    <template v-slot:top>
+                    <v-toolbar flat>
+                        <v-toolbar-title>Servidores Sancionados</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                    
+                    </v-toolbar>
+                    </template>
+                    <template v-slot:expanded-item="{ headers, item }">
+                    <td :colspan="headers.length">
+                        <h4>Descripción de Falta:</h4> {{item.DescripFalta}} 
+                        <h4>Fecha de resolución</h4> {{item.FechaResolucion}} 
+                        <h4>Causa motivos y hechos:</h4> {{item.CausaMotivoHechos}} 
+                        <h4 v-if="item.MontoMulta">Monto de multa:</h4> {{item.MontoMulta + item.IdMonedaMulta}}
+                        <h4 v-if="item.Observaciones">Observaciónes</h4> {{item.Observaciones}}
+                        <h4 v-if="item.PlazoInhabilitacion">Plazo de Inhabilitación</h4> {{item.PlazoInhabilitacion}}
+                    </td>
+                    </template>
+                </v-data-table> -->
+                </template>
 
 
                 <v-card class="mt-3 mb-3" color="peac">

@@ -12,7 +12,7 @@ export default {
     titleTemplate: '%s - SeaCoahuila',
     title: 'SeaCoahuila',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
