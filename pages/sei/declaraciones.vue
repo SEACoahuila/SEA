@@ -128,7 +128,7 @@ export default {
         return {
             page: {
                 color: 'green darken-3',
-                title: 'Declaraciónes',
+                title: 'Declaraciones',
                 icon: 'mdi-book-open-outline'
             },
             botones: [{
