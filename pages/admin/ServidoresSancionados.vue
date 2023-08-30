@@ -10,7 +10,15 @@
 
 
             <v-row justify="center">
+                <cols cols="12">
+
+                    <div class="text-h2" align="center">S3</div>
+                    <h3 align="center" class="mb-5">Servidores públicos y particulaes sancionados</h3>
+                    <v-divider></v-divider>
+                </cols>
+                
                 <v-col cols="12" class="mb-10">
+                  
                     <v-layout class="">
 
                         <v-row justify="center">
@@ -21,13 +29,13 @@
                                 
                                 <v-btn block @click="nuevoPartSancionado = false; nuevoSancionado = true; colorS='blue-grey lighten-4'; colorP=''" :color="colorS">
                                     <v-icon color="warning" class="pa-1">mdi mdi-plus-circle-outline</v-icon>
-                                    Nuevo Servidor Sancionado
+                                    Nuevo Servidor 
                                 </v-btn>
                             </v-col>
                             <v-col cols="10" xl="4" md="6" v-if=" userSancionados || userGeneral ">
                                 <v-btn block @click=" nuevoSancionado = false; nuevoPartSancionado = true; colorP='blue-grey lighten-4'; colorS=''" :color="colorP" >
                                     <v-icon color="info" class="pa-1">mdi mdi-plus-circle-outline</v-icon>
-                                    Nuevo Particular Sancionado
+                                    Nuevo Particular 
                                 </v-btn>
                             </v-col>
 
@@ -1170,7 +1178,6 @@ export default {
                 Descripcion: this.Descripcion,
                 URL: this.URLDoc,
                 Fecha: this.Fecha,
-
                 DescripFalta: this.DescripFalta,
 
 
@@ -1188,10 +1195,11 @@ export default {
                 config
             )
                 .then(res => {
+                    console.log(res)
 
                     _this.nuevoPartSancionado = false,
-                        _this.limpiarDatos();
-                        _this. docsID();
+                        // _this.limpiarDatos();
+                        _this.docsID();
                     _this.$swal({
                         title: 'Registro Exitoso!',
                         text: "Sancionado registrado con éxito",
@@ -1373,11 +1381,13 @@ export default {
                 });
         },
         subirDocumentoSancion(event) {
-            this.selectedDoc = event
+            this.selectedDoc = event;
             const storage = this.$fire.storage
             var storageRef = storage.ref();
-           
-            const docRef = storageRef.child(`SANCIONADOS/${this.sancionId}`)
+            const fileExtension = event.name.split('.').pop();
+            const docRef = storageRef.child(`SANCIONADOS/${this.sancionId}.${fileExtension}`)
+          
+            console.log(docRef)
             
             const uploadTask = docRef.put(this.selectedDoc).then((snapshot) => {
                 console.log('Archivo subido correctamente');
@@ -1393,8 +1403,8 @@ export default {
             this.selectedDoc = event
             const storage = this.$fire.storage
             var storageRef = storage.ref();
-           
-            const docRef = storageRef.child(`SANCIONADOS/${this.resolucionId}`)
+            const fileExtension = event.name.split('.').pop();
+            const docRef = storageRef.child(`SANCIONADOS/${this.resolucionId}.${fileExtension}`)
             
             const uploadTask = docRef.put(this.selectedDoc).then((snapshot) => {
                 console.log('Archivo subido correctamente');

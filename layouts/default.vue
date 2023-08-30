@@ -110,8 +110,8 @@
                 mdi mdi-logout
             </v-icon>Salir
         </v-btn>
-        <v-switch class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset label="M-Obscuro" persistent-hint></v-switch>
-
+        <v-switch v-if="!$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset label="M-Obscuro" persistent-hint></v-switch>
+        <v-switch v-if="$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset  persistent-hint></v-switch>
     </v-app-bar>
 
     <v-main>

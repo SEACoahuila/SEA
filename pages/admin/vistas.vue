@@ -8,8 +8,13 @@
 
         <v-row justify="center">
            
-                <h2>{{ $store.state.usuario.data.siglasInstitucion }}</h2>
-              
+               
+                <cols cols="12">
+
+                <div class="text-h2" align="center">{{ $store.state.usuario.data.siglasInstitucion }}</div>
+                <h3 align="center" class="mb-5">Datos</h3>
+                <v-divider></v-divider>
+                </cols>
             
             
          

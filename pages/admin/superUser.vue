@@ -23,7 +23,7 @@
                     Dependencia
                     </v-btn>
 
-                    <v-btn @click="nuevoUsuario = false; verUsuarios= !verUsuarios;  verDependenciasCoahuila = false">
+                    <v-btn @click="nuevoUsuario = false; verUsuarios= !verUsuarios;  verDependenciasCoahuila = false; nuevaDependencia = false">
                         <v-icon>mdi mdi-eye-settings</v-icon>
 
                         Usuarios
