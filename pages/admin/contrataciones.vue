@@ -442,7 +442,8 @@ export default {
                 this.URLDoc = '',
                 this.Fecha = '',
                 this.IdInstitucion= '',
-                this.siglasInstitucion= ''
+                this.siglasInstitucion= '',
+                this.ProcedimientosServidor = ''
         },
 
         userExist() {

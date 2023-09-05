@@ -461,13 +461,17 @@
                                     <v-col cols="12">
                                         <h3><strong>DATOS DE LA SANCION </strong></h3>
                                     </v-col>
-                                    <v-col cols="12" md="6">
+                                    <v-col cols="12" md="3">
                                         <v-text-field label="Numero, folio o referencia de expediente" dense
                                             v-model=" Expediente " :counter=" 25 " required :rules=" notNullRule "></v-text-field>
                                     </v-col>
 
-                                    <v-col cols="12" lg="6">
-                                        <v-select label="Tipo de Falta" dense v-model=" IdTipoFalta " :items="
+                                    <v-col cols="12" md="9">
+
+                                        <v-text-field label="Tipo de Falta: EJ: soborno, participación ilícita, tráfico de influencias, uso información falsa,colusión, obstrucción de facultades, contratación indebida, uso indebido de recusos públicos." dense
+                                            v-model="IdTipoFalta" :counter=" 100 " required :rules=" notNullRule "></v-text-field>
+
+                                        <!-- <v-select label="Tipo de Falta" dense v-model=" IdTipoFalta " :items="
                                             [
                                                 { text: 'Negligencia Administrativa', value: 'NAD' },
                                                 { text: 'Violación a Procedimientos de Contratación', value: 'VPC' },
@@ -496,7 +500,7 @@
                                                 { text: 'Desacato', value: 'DSCT' },
                                                 { text: 'Obstrucción de la Justicia', value: 'OJUST' }]
                                         " required
-                                            :rules=" notNullRule "></v-select>
+                                            :rules=" notNullRule "></v-select> -->
                                     </v-col>
 
                                     <v-col cols="12">
@@ -1198,7 +1202,7 @@ export default {
                     console.log(res)
 
                     _this.nuevoPartSancionado = false,
-                        // _this.limpiarDatos();
+                        _this.limpiarDatos();
                         _this.docsID();
                     _this.$swal({
                         title: 'Registro Exitoso!',
