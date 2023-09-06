@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a,b,c){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1693968064",layout:"default",error:a,state:{URL:"https:\u002F\u002Fapi-pdn-local-production.up.railway.app",usuario:{status:b,data:{Role:b},token:"no token"},storage:{}},serverRendered:true,routePath:c,config:{_app:{basePath:c,assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null,false,"\u002F"));
