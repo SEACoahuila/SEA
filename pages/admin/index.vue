@@ -1,15 +1,16 @@
 <template>
     <v-container class="flex-grow-1 min-height-vh">
         <div class="text-center">
-            <v-dialog v-model="dialog" width="50%">
+            <v-dialog v-model="dialog" width="85%">
 
 
-                <v-card class="pa-10"> <v-form ref="form" v-model="valid">
-                        <v-card-title>
-                            Por favor ingrese un nuevo password
-                        </v-card-title>
+                <v-card class="pa-10 text-center" > <v-form ref="form" v-model="valid">
+                    <v-icon x-large color="orange">mdi-lock-reset </v-icon>
+                        <h2>
+                            Por seguridad ingrese un nuevo password
+                        </h2>
                         <v-card-item>
-
+                            <v-divider class="mb-5"></v-divider>
                             <v-col cols="12">
                                 <v-text-field type="password" dense v-model="nuevoPassword" :counter="10" label="Password"
                                     :rules="passrule1" required></v-text-field>
