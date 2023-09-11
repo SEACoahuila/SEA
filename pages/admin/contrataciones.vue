@@ -8,7 +8,7 @@
 
             <div class="text-h2" align="center">S2</div>
             <h3 align="center" class="mb-5">Servidores públicos que intervienen en contrataciones</h3>
-            <v-divider></v-divider>
+            <v-divider ></v-divider>
             </cols>
             <v-col cols="12" class="mb-10">
                 <v-layout class="">
@@ -30,19 +30,24 @@
 
             <v-col cols="12" xl="9" v-if="nuevaInstitucion">
                 <v-card elevation="4" align="center">
-
-                    <v-card-subtitle></v-card-subtitle>
+                    <v-col align="right">
+                            <v-icon  color="teal lighten-3" large class="pa-1 mr-8">mdi mdi-plus-circle-multiple</v-icon>
+                        </v-col>
+                   
+                    
                     <h3><strong>ALTA SERVIDOR EN CONTRATACIONES </strong></h3>
                     <v-card-text>
+                        <v-divider inset></v-divider>
 
                         <v-form ref="form" v-model="valid">
                             <v-row class="mt-4">
-                                <v-col v-if="$store.state.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA' ">
+                                <v-col v-if="$store.state.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA' || $store.state.usuario.data.Role === 'USER-INSTITUCION-CONCENTRADORA'">
+                                    <v-icon large color="orange">mdi-office-building-marker-outline</v-icon><h4>{{  siglasInstitucion }}</h4>
                                     <v-col cols="12">
-                                    <h3><strong>DEPENDENCIA A LA QUE PERTENECE EL FUNCIONARIO</strong></h3><h4>{{  siglasInstitucion }}</h4>
+                                    <h3><strong>DEPENDENCIA A LA QUE PERTENECE EL FUNCIONARIO</strong></h3>
                                     </v-col>
                                     <v-col cols="10" >
-                                        <v-select
+                                        <v-autocomplete
                                     v-model="dependencia"
                                     :items="DependenciasCoahuila"
                                     item-text="Dependencia"
@@ -50,11 +55,14 @@
                                     label="Selecciona una dependencia"
                                   
                                     @change="updateVariables"
-                                    ></v-select>     
+                                    ></v-autocomplete>     
                                     </v-col>
+                                    <v-divider ></v-divider>
                                     
                                 </v-col>
+                               
                                 <v-col cols="12">
+                                    <v-icon x-large color="blue darken-3">mdi-account-tie</v-icon>
                                     <h3><strong>DATOS DE FUNCIONARIO </strong></h3>
                                 </v-col>
 
@@ -87,7 +95,7 @@
                                     <v-text-field label="RFC" dense v-model="RFC" :counter="13" required :rules="RFCRules"></v-text-field>
                                 </v-col>
                                 <v-col cols="12" md="6">
-                                    <v-select label="Año de Ejercicio Fiscal" dense v-model="EjercicioFiscal" :items="YearsEjesicioFiscal" required :rules="notNullRule"></v-select>
+                                    <v-select label="Año de Ejercicio Fiscal" dense v-model="EjercicioFiscal" :items="YearsEjercicioFiscal" required :rules="notNullRule"></v-select>
                                 </v-col>
 
                                 <v-col cols="12" md="6">
@@ -186,7 +194,7 @@ import {
     mapActions
 } from 'vuex'
 export default {
-    name: 'SuperUser',
+    name: 'Contrataciones',
     data() {
         return {
             page: {
@@ -217,67 +225,67 @@ export default {
             ],
 
             //    Variables a enviar
-            Nombres: '',
-            PrimerApellido: '',
-            SegundoApellido: '',
-            Genero: '',
-            Puesto: '',
-            IdPuesto: '',
-            CURP: '',
-            RFC: '',
-            EjercicioFiscal: '',
-            IDRamo: '',
-            SINombres: '',
-            SIPrimerApellido: '',
-            SISegundoApellido: '',
-            SIGenero: '',
-            SIIdPuesto: '',
-            SIPuesto: '',
-            SICURP: '',
-            SIRFC: '',
+            allSancionados: [],
+            AllUsers: [],
             AreasServidor: null,
-            ResponsabilidadesServidor: null,
-            ProcedimientosServidor: null,
-            Expediente: "Expediente",
             AutoridadSancionadora: "",
-            IdTipoFalta: "",
-            DescripFalta: "",
             CausaMotivoHechos: "",
-            URLResolucion: "",
-            FechaResolucion: "",
-            MontoMulta: "",
-            IdMonedaMulta: "",
-            PlazoInhabilitacion: "",
-            FechaInicialInhabilitacion: "",
-            FechaFinalInhabilitacion: "",
-            Observaciones: "",
-            IdTipoSancion: [],
-            DescripcionSancion: "",
-            IdTipoDoc: "",
-            Titulo: "",
+            CURP: '',
+            dependencia: '',
+            DependenciasCoahuila: [],
             Descripcion: "",
-            URLDoc: "",
+            DescripcionSancion: "",
+            DescripFalta: "",
+            EjercicioFiscal: '',
+            Expediente: "Expediente",
             Fecha: "",
-            YearsEjesicioFiscal: ['2022', '2023'],
-            picker: null,
-            picker1: null,
-            picker2: null,
+            FechaFinalInhabilitacion: "",
+            FechaInicialInhabilitacion: "",
+            FechaResolucion: "",
+            Genero: '',
+            IdInstitucion: '',
+            IdMonedaMulta: "",
+            IdPuesto: '',
+            IDRamo: '',
+            IdTipoDoc: "",
+            IdTipoFalta: "",
+            IdTipoSancion: [],
             menu: false,
             menu1: false,
             menu2: false,
             menu3: false,
             monedasMulta: ['MXN', 'USD'],
-            userGeneral: false,
-            userSancionados: false,
-            userContratos: false,
-            AllUsers: [],
-            allSancionados: [],
+            MontoMulta: "",
+            Nombres: '',
+            Observaciones: "",
+            picker: null,
+            picker1: null,
+            picker2: null,
+            PlazoInhabilitacion: "",
+            PrimerApellido: '',
+            ProcedimientosServidor: null,
+            Puesto: '',
+            ResponsabilidadesServidor: null,
+            RFC: '',
             search: '',
             search2: '',
-            DependenciasCoahuila: [],
-            IdInstitucion: '',
+            SegundoApellido: '',
+            SICURP: '',
+            SIGenero: '',
             siglasInstitucion: '',
-            dependencia: ''
+            SIIdPuesto: '',
+            SINombres: '',
+            SIPrimerApellido: '',
+            SIPuesto: '',
+            SIRFC: '',
+            SISegundoApellido: '',
+            Titulo: "",
+            URLDoc: "",
+            URLResolucion: "",
+            userContratos: false,
+            userGeneral: false,
+            userSancionados: false,
+            YearsEjercicioFiscal: ['2022', '2023'],
 
         }
 
@@ -442,7 +450,7 @@ export default {
                 this.URLDoc = '',
                 this.Fecha = '',
                 this.IdInstitucion= '',
-                this.siglasInstitucion= '',
+                this.siglasInstitucion= ''
                 this.ProcedimientosServidor = ''
         },
 
@@ -454,15 +462,16 @@ export default {
 
             } else {
                 this.traerServidores()
-                this.verDependencias()
-
-                if (this.usuario.data.Role == 'ADMIN' || 'USER-INSTITUCION') {
+                
+                if (this.usuario.data.Role == 'ADMIN' || 'USER-INSTITUCION'  || this.usuario.data.Role === 'USER-INSTITUCION-CONCENTRADORA') {
+                    this.verDependencias()
                     this.userGeneral = true
                 }
                 if (this.usuario.data.Role == 'USER-SANCION') {
                     this.userSancionados = true
                 }
-                if (this.usuario.data.Role == 'USER-CONTRATOS') {
+                if (this.usuario.data.Role == 'USER-CONTRATOS' || this.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA') {
+                    this.verDependencias()
                     this.userContratos = true
                 }
 
