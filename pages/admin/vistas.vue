@@ -354,7 +354,7 @@ export default {
             if (this.usuario.data.Role === 'ADMIN'  || this.usuario.data.Role === 'USER-INSTITUCION' || this.usuario.data.Role === 'USER-INSTITUCION-CONCENTRADORA' ) {
                 this.userGeneral = true
             }
-            else if (this.usuario.data.Role === 'USER-SANCIONES' || this.usuario.data.Role === 'USER-SANCIONADOS-CONCENTRADORA' ) {
+            else if (this.usuario.data.Role === 'USER-SANCIONES' || this.usuario.data.Role === 'USER-SANCIONES-CONCENTRADORA' ) {
                 this.userSancionados = true
             }
             else if (this.usuario.data.Role === 'USER-CONTRATOS' || this.usuario.data.Role === 'USER-CONTRATOS-CONCENTRADORA' ) {

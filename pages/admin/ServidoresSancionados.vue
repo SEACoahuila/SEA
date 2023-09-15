@@ -344,7 +344,7 @@
                                 <v-row class="mt-4">
                                     
                                     <v-col cols="12">
-                                        <v-icon  color="deep-orange darken-2" x-large class="pa-1">mdi-store-edit</v-icon>
+                                        <v-icon  color="blue darken-3" x-large class="pa-1">mdi-store-edit</v-icon>
                                         <h3><strong>DATOS DE PARTICULAR </strong></h3>
                                     </v-col>
 
