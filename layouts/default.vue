@@ -116,13 +116,18 @@
 
     <v-main>
         <lineUp />
+        
         <v-container class="mb-8 pa-3">
+           
             <v-row justify="center">
                 <v-col cols="12" xl="11">
                     <Nuxt />
                 </v-col>
+                
             </v-row>
+           
         </v-container>
+        
         <footerN />
     </v-main>
 
@@ -130,6 +135,7 @@
 </template>
 
 <script>
+
 import lineUp from '@/components/LineUp'
 import footerN from '@/components/Footer'
 import {

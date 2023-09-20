@@ -1,4 +1,5 @@
 <template >
+<div>
 <v-card class="pa-4"><v-row justify="center" align="center" class="mt-5">
     <v-col cols="12" align="center" >
         <h2>Organismos que integran el Sistema Estatal Anticorrupción</h2>
@@ -80,16 +81,23 @@
         </v-alert>
     </v-col>
 
-</v-row></v-card>
+</v-row> 
+</v-card>
+<AvisoPrivacidad />
+</div>
+
 
 </template>
 
 <script>
+import AvisoPrivacidad from '@/components/AvisoPrivacidad.vue';
+
 export default {
     data: () => ({
         show1: false,
         show2: false,
         show3: false,
     }),
+    components: { AvisoPrivacidad }
 }
 </script>
