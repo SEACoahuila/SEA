@@ -116,7 +116,7 @@
 
             <v-card class="mt-10 pa-4" color="article">
                 <v-row justify="center" align="center">
-                    <v-col align="center" justify="center" cols="12">
+                    <!-- <v-col align="center" justify="center" cols="12">
 
                         <v-card-title class="justify-center">
                             <div class=" text-xl-h2 text-md-h4">Calendario de sesiones</div>
@@ -126,18 +126,22 @@
 
                         </v-card-actions>
 
-                    </v-col>
+                    </v-col> -->
 
                     <v-col aling="center" justify="center" cols="12">
 
                         <v-card-title class="justify-center">
-                            <div class=" text-xl-h2 text-md-h4"> Acuerdos</div>
+                            <div class=" text-xl-h3 text-md-h3 text-h4 mb-5">Actas de sesiones</div>
                         </v-card-title>
 
                         <v-card-actions class="justify-center">
-                            <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2" v-for="(e,index) in acuerdos" :key="index" label color="" max-width="100%">{{ e.year }}</v-btn>
+                                <v-col cols="12" v-for="(e,index) in acuerdos" :key="index" align="center">
+                                    <h2>{{ e.year }}</h2>
+                                    <v-divider></v-divider>
+                                    <v-btn class="ma-2" v-for="( acta ,index) in e.actas" label color="" :href="acta.link" max-width="100%">{{ acta.nombre }}</v-btn>
+                                </v-col>
+                               
                             </v-row>
                         </v-card-actions>
 
@@ -174,6 +178,91 @@
             // Termina page
 
             acuerdos: [
+                {
+                    year: '2022-2023',
+                    actas: [
+                        {
+                            nombre: 'Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1ObHuFyhDTZPg7hQPrbbkmt-o062_UoQ3/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Segunda Ordinaria',
+                            link: 'https://drive.google.com/file/d/1AajDaxxOOBuOShi6N9LmQErN17mPy-QH/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Tercera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1SgKaBBJC5U6SU2vDKCLH9zZljZ9kX5lv/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Cuarta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1-x6lHByW2jcg3APB7WxxXQzLO43UePyp/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Quinta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1X5dt2FsNFg3_ES8RUAOxiNie_zL08wC4/view?usp=drive_link',
+                        }
+                    ]  
+                },
+                {
+                    year: '2021-2022',
+                    actas: [
+                        {
+                            nombre: 'Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1stwV7KAHylhSruXqwDTpp7Nsma0RZ_go/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Segunda Ordinaria',
+                            link: 'https://drive.google.com/file/d/1CoAjwvKrgyqObMV_i9vHuovd1IJdwLRN/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Tercera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1MvuHydxSvLYbJsQzbvGCOxWvSTQnRSn_/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Cuarta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1OMiYsRY5NB9mMO6ySSgrHZpuXOcDwSfV/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Quinta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1HwK_tUTO1hDSDdAptc2eECwdbUodIpSe/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Sexta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1VjmKrlaNdcahRV9ClHcjinfGgN2OUvwJ/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Séptima Ordinaria',
+                            link: 'https://drive.google.com/file/d/1FbJ5L7IHaIEEMpDbh0ZU5EQkwVKptEoe/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Octava Ordinaria',
+                            link: 'https://drive.google.com/file/d/1-SNFaTWnduPDx35A2qYy4-bhGji18_bv/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Novena Ordinaria',
+                            link: 'https://drive.google.com/file/d/1SsZwGyhc0o6PYdFAW6LumpIX6jloOSUG/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Décima Ordinaria',
+                            link: 'https://drive.google.com/file/d/124-DmoMGtAbittp0shYzBs7P_2oMpl9N/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Décima Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1cORXspHpxGI2gKZHyJ_R6EknIHaq1kyg/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Décima Segunda Ordinaria',
+                            link: 'https://drive.google.com/file/d/1uMMkEW7d1gI1KKZF81I5_80jTo6x3aR-/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Primera Extraordinaria',
+                            link: 'https://drive.google.com/file/d/1yPJ5TP_rs-dmnVGKrSlBz2kBwNK_IveC/view?usp=drive_link',
+                        },
+                        
+
+                    ]  
+                },
+                
 
             ],
             integrantes: [
