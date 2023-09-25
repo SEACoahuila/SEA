@@ -2,7 +2,7 @@
 
 export const state = () => ({
   // URL:"http://127.0.0.1:8081",
-  URL:"https://api-pdn-local-production.up.railway.app",
+    URL:"https://api-pdn-local-production.up.railway.app",
     usuario: {
         status: false,
         data: {
@@ -10,6 +10,7 @@ export const state = () => ({
         },
         token: 'no token'
       },
+      avisoPrivacidad: true
      
 })
 
@@ -27,11 +28,18 @@ export const mutations = {
       };
       state.usuario.token = null;
     },
+    SET_aviso(state, data){
+      state.avisoPrivacidad = data;
+    }
   }
 
 
 
   export const actions = {
+    noAvisoPrivacidad({commit}, data){
+      commit('SET_aviso', data);
+    },
+
     guardarUsuario({ commit }, data){
       
       if (data!==null) {

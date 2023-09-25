@@ -10,12 +10,12 @@
 
 
             <v-row justify="center">
-                <cols cols="12">
+                <v-col cols="12">
 
                     <div class="text-h2" align="center">S3</div>
                     <h3 align="center" class="mb-5">Servidores públicos y particulaes sancionados</h3>
                     <v-divider></v-divider>
-                </cols>
+                </v-col>
 
                 <v-col cols="12" class="mb-10">
 

@@ -47,6 +47,7 @@
     </template>
     
     <script>
+    import {  mapActions } from 'vuex'
     export default {
         name: 'azimut',
         data() {
@@ -59,7 +60,13 @@
     
             }
     
-        }
+        },
+        methods: {
+        ...mapActions(['guardarUsuario', 'noAvisoPrivacidad']),
+        },
+        mounted() {
+           this.noAvisoPrivacidad(false)
+        },
     }
     </script>
     

@@ -72,6 +72,7 @@
 <script>
 import axios from "axios";
 import { mapState, mapActions } from 'vuex'
+import AvisoPrivacidad from '@/components/AvisoPrivacidad.vue';
 export default {
     name: 'log-in',
     data() {
@@ -100,7 +101,7 @@ export default {
     },
     methods: {
 
-        ...mapActions(['guardarUsuario']),
+        ...mapActions(['guardarUsuario', 'noAvisoPrivacidad']),
 
         async logIn() {
             const _this = this;
@@ -114,6 +115,7 @@ export default {
                     console.log(response)
                    
                     _this.guardarUsuario(response.data)
+                    _this.noAvisoPrivacidad(true)
                     if (response.data.usuario.CheckPass === 0) {
                         _this.dialog = true
                     } else {

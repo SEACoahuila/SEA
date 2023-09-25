@@ -4,17 +4,20 @@
 <template>
 <div>
 
+
+
+
     <v-container class="flex-grow-1 min-height-vh">
 
         <v-row justify="center">
            
                
-                <cols cols="12">
+                <v-col cols="12">
 
                 <div class="text-h2" align="center">{{ $store.state.usuario.data.siglasInstitucion }}</div>
                 <h3 align="center" class="mb-5">Datos</h3>
                 <v-divider></v-divider>
-                </cols>
+                </v-col>
             
             
          
@@ -144,6 +147,43 @@
 
     </v-container>
 
+    <v-dialog
+      v-model="dialog"
+      max-width="90%"
+      v-if="dialog"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+            AVISO DE PRIVACIDAD SIMPLIFICADO
+        </v-card-title>
+        
+        <v-card-text>
+            La Secretaría Ejecutiva del Sistema Anticorrupción del Estado de Coahuila de Zaragoza, utilizará los datos personales aquí recabados para los trámites correspondientes del Organismo como lo son: solicitudes de información, procedimientos de recursos de revisión, contratos de prestación de servicios, servicios de proveedores, eventos de capacitación realizados por las Direcciones y Unidades Administrativas. Su información no será compartida con ninguna entidad, institución u órgano. En caso de que por alguna razón se tuviese que compartir algún dato personal, se avisará al titular de estos. Usted cuenta con la posibilidad de ejercer los derechos de Acceso, Rectificación, Cancelación y Oposición, así como el de portabilidad de los datos, ante la Dirección de Asuntos Jurídicos y Transparencia de este Secretaría Ejecutiva, ubicada en Blvd. Luis Donaldo Colosio # 703, Piso 3, Fracc. Valle Real, en Saltillo, Coahuila, una vez que haya otorgado su consentimiento para el tratamiento de estos, y se encuentren en poder de esta dependencia pública.
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+
+          <v-btn
+            color="amber darken-2"
+            text
+            to="../aviso-de-privacidad/"
+            @click="dialog = false;"
+          >
+            Ver aviso integral
+          </v-btn>
+
+          <v-btn
+            color=""
+            text
+            @click="noAvisoPrivacidad(false); dialog = false"
+          >
+            Cerrar
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  
 </div>
 </template>
 
@@ -172,6 +212,7 @@ export default {
             hidden: true,
             valid: false,
             loading: false,
+            dialog: false,
            
             //    Variables a enviar
            
@@ -331,7 +372,7 @@ export default {
 
     methods: {
 
-        ...mapActions(['guardarUsuario', 'cerrarSesion']),
+        ...mapActions(['guardarUsuario', 'cerrarSesion', 'noAvisoPrivacidad']),
 
         save(FechaResolucion) {
             this.$refs.menu.save(FechaResolucion)
@@ -351,6 +392,7 @@ export default {
                 this.traerServidores()
                 this.traerSancionados()
                 this.traerParticularesSancionados()
+
             if (this.usuario.data.Role === 'ADMIN'  || this.usuario.data.Role === 'USER-INSTITUCION' || this.usuario.data.Role === 'USER-INSTITUCION-CONCENTRADORA' ) {
                 this.userGeneral = true
             }
@@ -451,15 +493,22 @@ export default {
              
                 });
         }
+        },
+        dialogtrue() {
+            if (this.$store.state.avisoPrivacidad){
+                this.dialog = true
+            }
+            
         }
 
 
     },
     beforeMount(){
-        
+       
     },
     mounted() {
         this.userExist()
+        this.dialogtrue()
     
     }
 }

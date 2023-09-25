@@ -50,6 +50,7 @@
                                             <v-card-subtitle class="text-justify">
                                                 {{ e.desc }}
                                             </v-card-subtitle>
+                                            <span class="text-bold">Anexos</span>
                                         </v-col>
 
                                         <v-col cols="12" lg="6" sm="12">

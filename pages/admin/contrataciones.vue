@@ -4,12 +4,12 @@
     <v-container class="flex-grow-1 min-height-vh">
 
         <v-row justify="center">
-            <cols cols="12">
+            <v-col cols="12">
 
             <div class="text-h2" align="center">S2</div>
             <h3 align="center" class="mb-5">Servidores públicos que intervienen en contrataciones</h3>
             <v-divider ></v-divider>
-            </cols>
+            </v-col>
             <v-col cols="12" class="mb-10">
                 <v-layout class="">
 
