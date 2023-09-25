@@ -50,7 +50,12 @@
                                             <v-card-subtitle class="text-justify">
                                                 {{ e.desc }}
                                             </v-card-subtitle>
-                                            <span class="text-bold">Anexos</span>
+                                            <v-divider></v-divider>
+                                          
+                                        <v-btn x-small dark color="amber darken-2" href="/secretaria-ejecutiva/publicaciones/peac.pdf">PEAC</v-btn>
+                                        <span>--</span>
+                                        <v-btn x-small dark color="grey darken-3" href="/secretaria-ejecutiva/publicaciones/peac-anexos.pdf">Anexos</v-btn>
+                                        
                                         </v-col>
 
                                         <v-col cols="12" lg="6" sm="12">
