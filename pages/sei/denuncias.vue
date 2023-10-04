@@ -252,7 +252,7 @@ export default {
                     logo: true,
                     titulo: 'Sistema Estatal de Denuncias SEAC',
                     icon: 'logo_SEI.png',
-                    to: 'https://seicoahuila.org.mx/'
+                    to: 'https://www.plataformadigitalnacional.org/'
                 },
                 {
                     logo: true,

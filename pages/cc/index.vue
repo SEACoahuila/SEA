@@ -167,7 +167,13 @@ export default {
     name: 'sei',
     data() {
         return {
-            informes: [{
+            
+            informes: [
+                {
+                    year: '2022-2023',
+                    src: 'informeCC-2023.pdf'
+                },
+                {
                     year: '2021-2022',
                     src: 'informeCC-2022.pdf'
                 },
