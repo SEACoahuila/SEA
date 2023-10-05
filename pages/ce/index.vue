@@ -178,6 +178,8 @@
             // Termina page
 
             acuerdos: [
+            
+           
                 {
                     year: '2022-2023',
                     actas: [
@@ -260,6 +262,16 @@
                         },
                         
 
+                    ]  
+                },
+
+                {
+                    year: 'Informes',
+                    actas: [
+                        {
+                            nombre: '2022-2023',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FInforme%20Comisi%C3%B3n%20ejecutiva%202022-2023.pdf?alt=media&token=625a3277-21a3-47f9-9ad6-e6daadcc1fd3&_gl=1*9yv9cm*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5NjUxNjgwNi40LjEuMTY5NjUxNjgzNy4yOS4wLjA',
+                        }
                     ]  
                 },
                 
