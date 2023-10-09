@@ -225,7 +225,7 @@ export default {
                 icon: 'mdi-account-group',
                 presentacion: [{
                         titulo: 'Funciones',
-                        texto: 'El Comité Coordinador del Sistema Anticorrupción del Estado de Coahuila de Zaragoza es la instancia responsable de establecer mecanismos de coordinación entre los integrantes del Sistema Estatal, y de éste con el Sistema Nacional, y tendrá bajo su encargo el diseño, promoción y evaluación de políticas públicas locales de prevención y combate a la corrupción.'
+                        texto: 'El Comité Coordinador del Sistema Anticorrupción del Estado de Coahuila de Zaragoza es  instancia responsable de establecer mecanismos de coordinación entre los integrantes del Sistema Estatal, y de éste con el Sistema Nacional, y tendrá bajo su encargo el diseño, promoción y evaluación de políticas públicas locales de prevención y combate a la corrupción.'
                     },
                     {
                         titulo: 'Misión',
