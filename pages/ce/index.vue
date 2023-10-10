@@ -279,11 +279,11 @@
             ],
             integrantes: [
                 {
-                    nombre: 'Miguel Francisco Crespo Alvarado',
-                    cargo: 'Cooordinador de la Comisión Ejecutiva',
-                    foto: 'cpc-mfca.jpg',
+                    nombre: 'Yolanda Guadalupe Montes Martínez',
+                    cargo: 'Cooordinadora de la Comisión Ejecutiva',
+                    foto: 'cpc-ygmm.jpg',
                     img: 'cc-cpc.png',
-                    mail: 'miguel.crespo@cpccoahuila.org.mx'
+                    mail: 'yolanda.montes@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Elidé Alejandrina Acosta Reyes ',
@@ -291,13 +291,6 @@
                     foto: 'st-ear.jpg',
                     img: 'seac.png',
                     mail: 'elide.acosta@seacoahuila.org.mx'
-                },
-                {
-                    nombre: 'Yolanda Guadalupe Montes Martínez',
-                    cargo: 'Integrante',
-                    foto: 'cpc-ygmm.jpg',
-                    img: 'cc-cpc.png',
-                    mail: 'yolanda.montes@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Juan Carlos Guzmán Escobedo',
