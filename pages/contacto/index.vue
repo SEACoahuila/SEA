@@ -71,7 +71,7 @@ export default {
                         'Telefono: (844) 688 2178',
                         'Página Web: https://www.cpccoahuila.org.mx',
                         'Correos:',
-                        'jafia.pacheco@cpccoahuila.org.mx // miguel.crespo@cpccoahuila.org.mx // yolanda.montes@cpccoahuila.org.mx // carlos.guzman@cpccoahuila.org.mx //  karla.samperio@cpccoahuila.org.mx',
+                        'miguel.crespo@cpccoahuila.org.mx // yolanda.montes@cpccoahuila.org.mx // carlos.guzman@cpccoahuila.org.mx //  karla.samperio@cpccoahuila.org.mx',
                     ]
                 }
             
