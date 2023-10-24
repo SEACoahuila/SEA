@@ -136,10 +136,36 @@
 
                         <v-card-actions class="justify-center">
                             <v-row justify="center">
-                                <v-col cols="12" v-for="(e,index) in acuerdos" :key="index" align="center">
-                                    <h2>{{ e.year }}</h2>
+                                <v-col cols="12" v-for="(e,index) in seccionActas" :key="index" align="center">
+                                    <h2>{{ e.titulo }}</h2>
                                     <v-divider></v-divider>
                                     <v-btn class="ma-2" v-for="( acta ,index) in e.actas" label color="" :href="acta.link" max-width="100%">{{ acta.nombre }}</v-btn>
+                                </v-col>
+                               
+                            </v-row>
+                        </v-card-actions>
+
+                    </v-col>
+                </v-row>
+
+            </v-card>
+
+            <v-card class="mt-10 pa-4" color="article">
+                <v-row justify="center" align="center">
+
+
+                    <v-col aling="center" justify="center" cols="12">
+
+                        <v-card-title class="justify-center">
+                            <div class=" text-xl-h3 text-md-h3 text-h4 ">Acuerdos</div>
+                        </v-card-title>
+                        <v-divider></v-divider>
+                        <v-card-actions class="justify-center">
+                            <v-row justify="center">
+                                <v-col cols="12" v-for="(e,index) in acuerdos" :key="index" align="center">
+                                    <h2>{{ e.titulo }}</h2>
+                                  
+                                    <v-btn dark class="ma-2" v-for="( acta ,index) in e.actas" label color="" :href="acta.link" max-width="100%">{{ acta.nombre }}</v-btn>
                                 </v-col>
                                
                             </v-row>
@@ -177,11 +203,11 @@
 
             // Termina page
 
-            acuerdos: [
+            seccionActas: [
             
            
                 {
-                    year: '2022-2023',
+                    titulo: '2022-2023',
                     actas: [
                         {
                             nombre: 'Primera Ordinaria',
@@ -206,7 +232,7 @@
                     ]  
                 },
                 {
-                    year: '2021-2022',
+                    titulo: '2021-2022',
                     actas: [
                         {
                             nombre: 'Primera Ordinaria',
@@ -266,7 +292,7 @@
                 },
 
                 {
-                    year: 'Informes',
+                    titulo: 'Informes',
                     actas: [
                         {
                             nombre: '2022-2023',
@@ -274,9 +300,31 @@
                         }
                     ]  
                 },
+              
                 
 
             ],
+            acuerdos: [
+                {
+                    titulo: 'Calendario de sesiones',
+                    actas: [
+                        {
+                            nombre: 'Calendario',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FPropuesta%20de%20fechas%20para%20las%20sesiones%20de%20Comisi%C3%B3n%20Ejecutiva.pdf?alt=media&token=69bb8e92-cb88-4ea2-99d9-f248aa283176&_gl=1*gghg4l*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5ODE2MTE4OS45LjEuMTY5ODE2MTI4NS40NC4wLjA',
+                        }
+                    ]  
+                },
+                {
+                    titulo: 'Lienamientos para la Comisión Ejecutiva',
+                    actas: [
+                        {
+                            nombre: 'Lieneamientos',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FLINEAMIENTOS%20PARA%20LA%20COMISIO%CC%81N%20EJECUTIVA.pdf?alt=media&token=91b77538-8eb9-4ed7-87a1-a78fa9432352&_gl=1*tpqmob*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5ODE2MTE4OS45LjEuMTY5ODE2MTMzNC42MC4wLjA',
+                        }
+                    ]  
+                },
+            ],
+
             integrantes: [
                 {
                     nombre: 'Yolanda Guadalupe Montes Martínez',
