@@ -315,10 +315,10 @@
                     ]  
                 },
                 {
-                    titulo: 'Lienamientos para la Comisión Ejecutiva',
+                    titulo: 'Lineamientos para la Comisión Ejecutiva',
                     actas: [
                         {
-                            nombre: 'Lieneamientos',
+                            nombre: 'Lineamientos',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FLINEAMIENTOS%20PARA%20LA%20COMISIO%CC%81N%20EJECUTIVA.pdf?alt=media&token=91b77538-8eb9-4ed7-87a1-a78fa9432352&_gl=1*tpqmob*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5ODE2MTE4OS45LjEuMTY5ODE2MTMzNC42MC4wLjA',
                         }
                     ]  
