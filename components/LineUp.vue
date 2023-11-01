@@ -26,12 +26,12 @@ export default {
                 {
                     img: 'ASEC.png',
                     web: 'https://www.asecoahuila.gob.mx/',
-                    size: '150'
+                    size: '170'
                 },
                 {
-                    img: 'FEHC -vertical.png',
+                    img: 'cc-fehc.png',
                     web: 'https://www.fehc.gob.mx/',
-                    size: '85'
+                    size: '160'
                 },
                 {
                     img: 'cc-sefirc.png',
@@ -46,23 +46,23 @@ export default {
                 {
                     img: 'cc-ica.png',
                     web: 'http://www.icai.org.mx/',
-                    size: '110'
+                    size: '130'
                 },
 
                 {
                     img: 'cc-tjacz.png',
                     web: 'http://www.tjacoahuila.org/',
-                    size: '100'
+                    size: '120'
                 },
                 {
                     img: 'cpc.png',
                     web: 'https://www.cpccoahuila.org.mx/',
-                    size: '90'
+                    size: '85'
                 },
                 {
                     img: 'sea-icon.png',
                     web: '#',
-                    size: '80'
+                    size: '75'
                 },
                 
 
