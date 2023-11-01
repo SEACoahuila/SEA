@@ -4,11 +4,11 @@
         <v-row justify="center" >
 
             <v-col align-self="center"  align="center"  class="pa-1" cols="1" lg="" v-for=" (i,index) in cc" :key="index">
-
-                <v-img :width="i.size - 40" 
+                <a :href="i.web">
+                <v-img :width="i.size - 10" 
                 :lazy-src="require('@/static/img/' + i.img)"
                 :src="require('@/static/img/' + i.img)"
-                ></v-img>
+                ></v-img></a>
 
             </v-col>
         </v-row>
@@ -56,12 +56,12 @@ export default {
                 },
                 {
                     img: 'cpc.png',
-                    web: 'http://www.tjacoahuila.org/',
+                    web: 'https://www.cpccoahuila.org.mx/',
                     size: '90'
                 },
                 {
                     img: 'sea-icon.png',
-                    web: 'http://www.tjacoahuila.org/',
+                    web: '#',
                     size: '80'
                 },
                 
