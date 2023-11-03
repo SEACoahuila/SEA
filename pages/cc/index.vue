@@ -248,12 +248,19 @@ export default {
                     web: 'http://www.cpccoahuila.org.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
-                            lista: ['']
+                            lista: [
+                                'Doctor en Ciencias Aplicadas.',
+                                'Maestrías en Administración, Educación y en Sistemología Interpretativa.',
+                                'Licenciatura en Administración de Recursos Humanos.'
+                                ]
                         },
                         {
-                            subtitulo: 'Se ha desarrollado profesionalmente como:',
+                            subtitulo: 'Experiencia profesional:',
                             lista: [
-                                ''
+                                'CEO de Grupo GIISI.',
+                                'Miembro fundador de la Escuela Latinoamericana de Pensamiento y Diseños Sistémicos.',
+                                'Miembro permanente del Grupo de Investigación de Pensamiento Sistémico (UNAB, Colombia)',
+                                'Miembro del Grupo de Modelado y Simulación de Sistemas Sociales Complejos (Unibagué, Colombia)'
                             ]
                         }
                     ]
@@ -428,40 +435,48 @@ export default {
                 },
 
                 {
-                    nombre: 'LUIS GONZÁLEZ BRISEÑO',
-                    cargo: 'Comisionado Presidente del Instituto Coahuilense de Acceso a la Información Pública.',
+                    nombre: 'DULCE MARIA FUENTES MANCILLAS',
+                    cargo: 'Comisionada Presidente del Instituto Coahuilense de Acceso a la Información Pública.',
                     foto: 'cc-icai-lgb.jpg',
                     img: 'cc-ica.png',
                     web: 'http://www.icai.org.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [
-                                ' Licenciado en Derecho por la Facultad de Jurisprudencia de la Universidad Autónoma de Coahuila.',
-                                'Maestro en Derecho Fiscal por la Universidad del Valle de México.',
-                                'Master en Normativa de Protección de Datos en el Sector Sanitario por la Universidad de Cádiz, España.',
-                                'Especialista en Protección de Datos Personales y Privacidad por la Universidad de Murcia, España.'
+                           'Licenciatura en Derecho• noviembre del 2004 • Facultad de Jurisprudencia de la UAdeC.',
+                           'Licenciatura en Educación Media en Ciencias Sociales• Agosto del 2004 • Escuela Normal Superior de Tamaulipas.',
+                           'Maestría en Derecho Constitucional y Políticas Gubernamentales.'
                             ]
                         },
                         {
-                            subtitulo: 'Experiencia Profesiona',
+                            subtitulo: 'Experiencia',
                             lista: [
-                                'Comisionado Presidente del ICAI.',
-                                ' Miembro de la Asociación Profesional Española de Privacidad, con sede en España.',
-                                ' Miembro de la Comisión de Datos Personales de la Conferencia Mexicana para el Acceso a la Información Pública.'
+                                'Comisionada • ICAI • 04 de agosto del 2023-Actual',
+                                'Titular de la Unidad de Acceso a la Información •Municipio de Saltillo •2022-2023',
+                                'Subsecretaria del Republicano Ayuntamiento • Municipio de Saltillo. • 2019-2021',
+                                'Titular de la Unidad de Acceso a la Información •Municipio de Saltillo •2018-2019',
+                                'Catedrática en la materia de Comunicación Política •Universidad La Salle •2017',
+                                'Coordinadora de Comunicación Social •Secretaria de Fiscalización y Rendición de Cuentas del Gobierno del Estado de Coahuila •2013-2017'
+
                             ]
                         },
                         {
-                            subtitulo: 'Publicacioness',
-                            lista: [
-                                'Dentro de publicaciones se encuentran el artículo de opinión titulado "Clasificación de las boletas electorales como dato personal".publicado en la Revista Lex, julio - agosto 2011. ',
-                                '"Evolución constitucional del derecho a la información y del derecho de acceso a la información pública en México", publicado en la Revista Lex, abril - mayo 2012. '
-                            ]
-                        },
-                        {
-                            subtitulo: 'Participación en congresos, encuentros y seminarios',
-                            lista: [
-                                ' Participó en el curso "El Derecho a la Protección de Datos Personales", impartido por la Agencia Española de Protección de Datos y la Fundación CEDDET.',
-                                ' Colaboró como ponente en el "7o Congreso Nacional de Organismos Públicos Autónomos", realizado en la ciudad de Puebla, Puebla.'
+                            subtitulo: 'DIPLOMADOS Y CURSOS',
+                            lista: [                      
+                            'Curso de Actualización en Materia Jurídica 2022 • Coordinación de Posgrado Facultad de Jurisprudencia de la UAdeC.',
+                            'Curso de Gobierno Abierto 2022 • Programa de las Naciones Unidas para el Desarrollo Instituto Nacional de Transparencia, Acceso a la Información Y Protección de Datos Personales.',
+                            'Curso ABC de la Ley General de Archivos 2022• Instituto Coahuilense de Acceso a la Información Púbica.',
+                            'Curso Teórico Practico sobre el uso del Sistema de Portales de Obligaciones de Transparencia (SIPOT) •Instituto Nacional de Transparencia y Acceso a la Información en conjunto con el ICAI.',
+                            'Curso Estrategias de Redes Sociales con Resultados de Negocio 2016 • INTELEKIA.',
+                            'Seminario Marketing Político 2014 • Sufragio Consultores.',
+                            'Diplomado en Comunicación Política 2012• Universidad Nacional Autónoma de México.',
+                            'Seminario Internacional Temas Actuales del Derecho a la Información en Materia Electoral 2011• Instituto Electoral de Participación Ciudadana de Coahuila, Centro de Derechos Políticos de la Universidad Autónoma de Coahuila.',
+                            'Diplomado Psicología y Genero en la Procuración de Justicia 2008• Facultad de Psicología de la Universidad Nacional Autónoma de México.',
+                            'Seminario Internacional sobre Democracia y Gobernabilidad 2007• Facultad de Jurisprudencia de la UAdeC, Universidad de Barcelona y el Instituto Electora de Participación Ciudadana.',
+                            'Curso Taller Jornada de Inducción Docente 2017• Universidad La Salle.',
+                            'Curso Taller Negociación y Manejo de Conflictos 2008 • Universidad Iberoamericana de Torreón, Instituto de Administración Pública de Coahuila.',
+                            'Curso taller Lenguaje Incluyente •secretaria de las Mujeres del Gobierno del Estado de Coahuila de Zaragoza.',
+                            'Curso taller Violencia, Hostigamiento y Acoso Sexual Laboral, Hacia las mujeres 2011 • Instituto Coahuilense de las Mujeres.'
                             ]
                         },
 
