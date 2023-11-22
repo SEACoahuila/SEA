@@ -14,7 +14,7 @@
                            <!-- Si existe link, href se lee directo del dato -->
                         <div v-if="item.to">
                         <a :href="item.to">
-                        <v-img  :src="require('@/static/img/banners/'+item.src)"></v-img>
+                        <v-img  :src="item.src"></v-img>
                         </a>
                         </div>
                          <!-- Banner solo -->
@@ -23,6 +23,7 @@
                         <v-img  :src="require('@/static/img/banners/'+item.src)"></v-img>
                       
                         </div>
+                  
                        
                     </v-carousel-item>
                 </v-carousel>
@@ -50,13 +51,13 @@
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
+                {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2FbannerDibujaTusValores2023.jpeg?alt=media&token=d27126e2-e7a1-4f42-a847-9d070d958398",
+                    to: "publicaciones/dibuja-tus-valores"
+                },
                  {
-                     src: "gira-municipios-2023.png",
+                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2Fgira-municipios-2023.png?alt=media&token=5a4dedfc-1696-49ac-a898-2115c028ff7e",
                      to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
-                 },
-                 {
-                     src: "banner_unodc.png",
-                     to: "https://seacoahuila.github.io/comunicados/2023-03-13-metodologia-fomento-participacion-ciudadana-unodc/"
                  }
     
                 ],
