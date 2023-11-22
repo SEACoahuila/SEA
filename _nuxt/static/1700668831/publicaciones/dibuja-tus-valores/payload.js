@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/publicaciones/dibuja-tus-valores", {data:[{}],fetch:{},mutations:[]});
