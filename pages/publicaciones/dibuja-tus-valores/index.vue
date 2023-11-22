@@ -28,7 +28,7 @@
                                 </v-col>
 
 
-                                <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2FGanadores%20Dibuja%20tus%20Valores%202023%20(1).jpeg?alt=media&token=547a1fae-46fd-4b1d-9afb-6af4bc41051e" height=""></v-img>
+                                <v-img :src="cat.img" height=""></v-img>
 
                        
                              
