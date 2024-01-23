@@ -131,7 +131,11 @@
                         <v-divider class="mb-5"></v-divider>
                         <v-card-actions class="justify-center">
                             <v-row justify="center">
-                                <v-btn  class="ma-2"  v-for=" (e,i) in programas" :key="i" :href="require('@/static/comiteCoordinador/' + e.src)">{{ e.year }}</v-btn>
+                                <div  v-for=" (e,i) in programas" :key="i">
+                                    <v-btn v-if="e.src" class="ma-2"  :href="require('@/static/comiteCoordinador/' + e.src)">{{ e.year }}</v-btn>
+                                    <v-btn  v-if="e.to" class="ma-2" :href="e.to">{{ e.year }}</v-btn> 
+                                </div>
+                              
                             </v-row>
                             
 
@@ -196,6 +200,10 @@ export default {
 
             ],
             programas: [
+                {
+                    year: '2023-2024',
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/InformesCC%2FPROGRAMA%20CC.pdf?alt=media&token=640d3267-ab3a-4b6b-8c1d-94ac9d9f9c8e"
+                },
                 {
                     year: '2022-2023',
                     src: 'programa-anual-2022-2023.pdf'
