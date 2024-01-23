@@ -52,6 +52,10 @@
                 //     to: "https://www.google.com/"
                 // },
                 {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FBanner%20Programa%20Anual%20de%20Trabajo%20del%20CC%202024.png?alt=media&token=6cfbbf1b-6caa-4f91-92f3-26bad312033d",
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/InformesCC%2FPROGRAMA%20CC.pdf?alt=media&token=640d3267-ab3a-4b6b-8c1d-94ac9d9f9c8e"
+                },
+                {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2FbannerDibujaTusValores2023.jpeg?alt=media&token=d27126e2-e7a1-4f42-a847-9d070d958398",
                     to: "publicaciones/dibuja-tus-valores"
                 },
