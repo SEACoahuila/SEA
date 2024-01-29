@@ -23,20 +23,15 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    // script: [
-    //   {
-    //     async: true,
-    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-04BSCS9BS3'
-    //   },
-    //   {
-    //     innerHTML: `
-    //       window.dataLayer = window.dataLayer || [];
-    //       function gtag(){dataLayer.push(arguments);}
-    //       gtag('js', new Date());
-    //       gtag('config', 'G-04BSCS9BS3');
-    //     `
-    //   }
-    // ]
+    script: [
+      {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",
+          async: true,
+      },
+      {
+          src: "./plugins/ga.js",
+      }
+  ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -47,7 +42,7 @@ export default {
   plugins: [
     { src: '~/plugins/vuex-persist', ssr: false },
     { src: '~/plugins/vue-uuid.js', ssr: false},
-    { src: '~/plugins/vue-gtag.js', ssr: false}
+    // { src: '~/plugins/vue-gtag.js', ssr: false}
     
   ],
 
