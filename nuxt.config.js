@@ -46,7 +46,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vuex-persist', ssr: false },
-    { src: '~/plugins/vue-uuid.js', ssr: false}
+    { src: '~/plugins/vue-uuid.js', ssr: false},
+    { src: '~/plugins/vue-gtag.js', ssr: false}
     
   ],
 
@@ -57,7 +58,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,9 +69,7 @@ export default {
     '@nuxtjs/firebase',    
   ],
 
-  googleAnalytics: {
-    id: 'UA-170078176-2' // Use as fallback if no runtime config is provided
-  },
+ 
   // MIDDLEWARES
 
   firebase: {
