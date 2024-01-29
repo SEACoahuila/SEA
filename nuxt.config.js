@@ -70,7 +70,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-04BSCS9BS3' // Use as fallback if no runtime config is provided
+    id: 'UA-170078176-2' // Use as fallback if no runtime config is provided
   },
   // MIDDLEWARES
 
