@@ -23,20 +23,20 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-04BSCS9BS3'
-      },
-      {
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-04BSCS9BS3');
-        `
-      }
-    ]
+    // script: [
+    //   {
+    //     async: true,
+    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-04BSCS9BS3'
+    //   },
+    //   {
+    //     innerHTML: `
+    //       window.dataLayer = window.dataLayer || [];
+    //       function gtag(){dataLayer.push(arguments);}
+    //       gtag('js', new Date());
+    //       gtag('config', 'G-04BSCS9BS3');
+    //     `
+    //   }
+    // ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -57,6 +57,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -65,11 +66,12 @@ export default {
     '@nuxtjs/axios',
     'vue-sweetalert2/nuxt',
     '@nuxtjs/universal-storage',
-    '@nuxtjs/firebase',
-    
-    
-    
+    '@nuxtjs/firebase',    
   ],
+
+  googleAnalytics: {
+    id: 'G-04BSCS9BS3' // Use as fallback if no runtime config is provided
+  },
   // MIDDLEWARES
 
   firebase: {
