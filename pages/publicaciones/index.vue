@@ -20,6 +20,28 @@
                        
                         
                         <v-row class="mt-3">
+
+                            <v-card class="mx-auto mb-3" max-width="">
+                               
+                                <v-img :src="require('@/static/comunicados/capacitacion.jpg')" height=""></v-img>
+                        
+                                <v-card-title>
+                                    Reciben municipios capacitación sobre la Política Estatal Anticorrupción
+                                </v-card-title>
+
+                                <v-card-subtitle>
+                                    Saltillo, Coahuila a 29 de enero de 2024.- Los integrantes del Sistema Anticorrupción del Estado de Coahuila de Zaragoza concluyeron con éxito las reuniones de trabajo virtuales que abarcaron las cinco regiones del estado.
+                                </v-card-subtitle>
+
+                                <v-card-actions>
+                                    <a :href="require('@/static/comunicados/boletin_gira.pdf')">
+                                        <v-btn color="orange lighten-2"> Ver nota </v-btn>
+                                    </a>
+
+                              
+                                </v-card-actions>
+
+                            </v-card>
                             <v-card class="mx-auto mb-3" max-width="">
                                 <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FImagen1.jpeg?alt=media&token=382e2de7-578f-4d00-b89b-fee09e7d131a" height=""></v-img>
 
@@ -94,6 +116,8 @@ export default {
                 title: 'Publicaciones',
                 icon: 'mdi-comma-circle-outline'
             },
+
+           
        
         }
 

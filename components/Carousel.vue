@@ -52,6 +52,10 @@
                 //     to: "https://www.google.com/"
                 // },
                 {
+                src: "banner-gira.png",
+                doc: "boletin-gira.pdf"
+                },
+                {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FBanner%20Programa%20Anual%20de%20Trabajo%20del%20CC%202024.png?alt=media&token=6cfbbf1b-6caa-4f91-92f3-26bad312033d",
                     to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/InformesCC%2FPROGRAMA%20CC.pdf?alt=media&token=640d3267-ab3a-4b6b-8c1d-94ac9d9f9c8e"
                 },
