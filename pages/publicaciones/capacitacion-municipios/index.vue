@@ -15,7 +15,7 @@
 
                         <!--<v-col align="center" class="mb-5 text-xl-h3 text-md-h4 font-weight-bold">Capacita SAEC a los 38 municipios en materia de la Política Estatal Anticorrupción de Coahuila</v-col>-->
                         
-                        <v-img :width="800" src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FCapacitaciones%2FCaptura%20de%20pantalla%20(1217).jpg?alt=media&token=9d0e5c5f-2bf3-4332-9cbb-364ee7947f62"></v-img>
+                        <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FCapacitaciones%2FCaptura%20de%20pantalla%20(1217).jpg?alt=media&token=9d0e5c5f-2bf3-4332-9cbb-364ee7947f62"></v-img>
                         
                         <v-col align="center" class="mb-5 text-xl-h"> 
                             <br> <br>Saltillo, Coahuila a 29 de enero de 2024.- Los integrantes del Sistema Anticorrupción del Estado de Coahuila de Zaragoza concluyeron con éxito las reuniones de trabajo virtuales que abarcaron las cinco regiones del estado, llevadas a cabo del 22 al 29 de enero del presente año. El objetivo principal de esta iniciativa fue capacitar a servidores públicos de los municipios de Coahuila de Zaragoza en relación con la Política Estatal Anticorrupción.
