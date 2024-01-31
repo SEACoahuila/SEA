@@ -52,8 +52,8 @@
                 //     to: "https://www.google.com/"
                 // },
                 {
-                src: "banner-gira.png",
-                doc: "boletin-gira.pdf"
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FGira%20de%20capacitaci%C3%B3n%20(1).png?alt=media&token=9002d1fc-32b1-45c0-b72c-0d8ae2a19134",
+                    to: "publicaciones/capacitacion-municipios"
                 },
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FBanner%20Programa%20Anual%20de%20Trabajo%20del%20CC%202024.png?alt=media&token=6cfbbf1b-6caa-4f91-92f3-26bad312033d",

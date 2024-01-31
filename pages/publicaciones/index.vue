@@ -34,12 +34,22 @@
                                 </v-card-subtitle>
 
                                 <v-card-actions>
+                                    <v-btn color="orange lighten-2" text href="publicaciones/capacitacion-municipios">
+                                        Ver nota
+                                    </v-btn>
+
+                            
+
+                              
+                                </v-card-actions>
+
+                                <!-- <v-card-actions> 
                                     <a :href="require('@/static/comunicados/boletin_gira.pdf')">
                                         <v-btn color="orange lighten-2"> Ver nota </v-btn>
                                     </a>
 
                               
-                                </v-card-actions>
+                                </v-card-actions> -->
 
                             </v-card>
                             <v-card class="mx-auto mb-3" max-width="">
