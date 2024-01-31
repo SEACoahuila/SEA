@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/publicaciones/capacitacion-municipios", {data:[{}],fetch:{},mutations:[]});
