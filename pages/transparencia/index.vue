@@ -106,7 +106,7 @@
                                     <v-list-item  to="/transparencia/22-1" router exact>
                                         <v-row >
 
-                                           <v-icon large>mdi-cash</v-icon> <v-col> Gastos de publicidad</v-col>
+                                           <v-icon large>mdi-cash</v-icon> <v-col>Gastos de publicidad</v-col>
                                         </v-row>
 
                                     </v-list-item>
