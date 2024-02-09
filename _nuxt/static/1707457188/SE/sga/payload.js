@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/SE/sga", {data:[{}],fetch:{},mutations:[]});
