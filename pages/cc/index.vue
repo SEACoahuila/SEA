@@ -253,7 +253,7 @@ export default {
             actas: [
                 {
                     sesion: 'Actas',
-                    to: "http://localhost:3000/transparencia/21-21"
+                    to: "https://www.seacoahuila.org.mx/transparencia/21-21"
                 },
                 
 
