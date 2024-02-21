@@ -63,23 +63,18 @@
                                                 <v-card shaped class="mx-auto mt-3 pa-5" min-height="320">
                                                     <v-col>
                                                         <v-row align="center" justify="center" class="fill-height">
-                                                            <v-col align-self="start" class="pa-0" cols="6" md="4" xs="12">
-                                                                <v-avatar class="profile" size="164">
-                                                                    <div class=" text-h1 text-xl-h1 "> {{ i+1 }}</div>
-                                                                </v-avatar>
-                                                            </v-col>
-                                                            <v-col align-self="start" class="pa-1" cols="8" xl="6" md="8" xs="12">
+                                                            <v-col align-self="center" class="pa-1" cols="12" xl="12" md="12" xs="12">
                                                                 <v-icon size="130">mdi-file-document-outline</v-icon>
                                                                 <div style="background-color:grey; height: 2px"></div>
                                                             </v-col>
                                                             <v-col class="py-0">
                                                                 <v-list-item>
                                                                     <v-list-item-content>
-                                                                        <v-list-item-title class="text-h6">
+                                                                        <v-list-item-title class="text-h6 py-3">
                                                                             {{documento.nombre}}
                                                                         </v-list-item-title>
-                                                                        <v-divider></v-divider>
-                                                                        <v-list-item-text>{{ documento.descripcion }}</v-list-item-text>
+                                                                        <v-divider ></v-divider>
+                                                                        <v-list-item-text class="py-3">{{ documento.descripcion }}</v-list-item-text>
                                                                     </v-list-item-content>
                                                                 </v-list-item>
                                                             </v-col>
