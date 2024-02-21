@@ -2,55 +2,60 @@
     <div>
         <v-card color="accent" class="mt-10">
             <v-col cols="12">
-    
+
                 <v-carousel height="">
-                    <v-carousel-item v-for="(item,i) in items" :key="i" dark>
+                    <v-carousel-item v-for="(item, i) in items" :key="i" dark>
                         <!-- Si existe documento y usamos href con requiere para acceder a el documento -->
                         <div v-if="item.doc">
-                        <a :href="require('@/static/img/banners/'+item.doc)">
-                        <v-img  :src="require('@/static/img/banners/'+item.src)"></v-img>
-                        </a>
+                            <a :href="require('@/static/img/banners/' + item.doc)">
+                                <v-img :src="require('@/static/img/banners/' + item.src)"></v-img>
+                            </a>
                         </div>
-                           <!-- Si existe link, href se lee directo del dato -->
+                        <!-- Si existe link, href se lee directo del dato -->
                         <div v-if="item.to">
-                        <a :href="item.to">
-                        <v-img  :src="item.src"></v-img>
-                        </a>
+                            <a :href="item.to">
+                                <v-img :src="item.src"></v-img>
+                            </a>
                         </div>
-                         <!-- Banner solo -->
+                        <!-- Banner solo -->
                         <div v-if="!item.to && !item.doc">
-    
-                        <v-img  :src="require('@/static/img/banners/'+item.src)"></v-img>
-                      
+
+                            <v-img :src="require('@/static/img/banners/' + item.src)"></v-img>
+
                         </div>
-                  
-                       
+
+
                     </v-carousel-item>
                 </v-carousel>
             </v-col>
-    
+
             <v-divider></v-divider>
         </v-card>
-    
-     
+
+
     </div>
-    </template>
+</template>
     
-    <script>
-    export default {
-        data() {
-            return {
-                items: [
-    
+<script>
+export default {
+    data() {
+        return {
+            items: [
+
                 // {
                 //     src: "banner_unodc.png",
                 //     doc: "calendario-ipo-sea-coahuila-2018.pdf"
                 // },
-    
+
                 // {
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
+                {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2Fc032mwMamBjZ8fjAPZUp%2F2.png?alt=media&token=abb55483-ec5c-4226-bb81-ac4777f5706d",
+                    to: "https://www.cpccoahuila.org.mx/redCiudadana"
+                },
+
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FGira%20de%20capacitaci%C3%B3n%20(1).png?alt=media&token=9002d1fc-32b1-45c0-b72c-0d8ae2a19134",
                     to: "publicaciones/capacitacion-municipios"
@@ -63,14 +68,14 @@
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2FbannerDibujaTusValores2023.jpeg?alt=media&token=d27126e2-e7a1-4f42-a847-9d070d958398",
                     to: "publicaciones/dibuja-tus-valores"
                 },
-                 {
-                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2Fgira-municipios-2023.png?alt=media&token=5a4dedfc-1696-49ac-a898-2115c028ff7e",
-                     to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
-                 }
-    
-                ],
-            }
-        },
-    }
-    </script>
+                {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2Fgira-municipios-2023.png?alt=media&token=5a4dedfc-1696-49ac-a898-2115c028ff7e",
+                    to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
+                }
+
+            ],
+        }
+    },
+}
+</script>
     
