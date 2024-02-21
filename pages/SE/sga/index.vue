@@ -93,7 +93,7 @@
 
         <v-divider class="ma-8"></v-divider>
 
-        <v-carousel v-model="model" height="950">
+        <!--<v-carousel v-model="model" height="950">
             <v-carousel-item v-for="(img, i) in imgs" :key="i">
                
                         <v-img :src="img.src"></v-img>
@@ -101,7 +101,7 @@
 
 
             </v-carousel-item>
-        </v-carousel>
+        </v-carousel> -->
 
         <v-col cols="12">
 
@@ -135,11 +135,7 @@
                     src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FNGAsciavAJMXL4mLTlHu%2F16.png?alt=media&token=f946eae5-314b-47a4-89a6-2905959d8a08"
                     height=""></v-img>
             </v-card>
-            <v-card class="mx-auto mb-3" max-width="">
-                <v-img :position="center"
-                    src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FNGAsciavAJMXL4mLTlHu%2F17.png?alt=media&token=1d0165b8-eddf-4173-b7f2-c670d6b85530"
-                    height=""></v-img>
-            </v-card>
+            
 
         </v-col>
 

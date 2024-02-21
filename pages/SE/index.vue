@@ -69,7 +69,7 @@
 
         </v-row>
 
-        <!--<v-card class="mt-10 pa-4" color="article">
+        <v-card class="mt-10 pa-4" color="article">
             <v-row justify="center" align="center">
 
 
@@ -95,7 +95,7 @@
                 </v-col>
             </v-row>
 
-        </v-card> -->
+        </v-card>
 
        
 
