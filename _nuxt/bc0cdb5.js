@@ -1,2 +1,0 @@
-/*! For license information please see LICENSES */
-(window.webpackJsonp=window.webpackJsonp||[]).push([[55],{845:function(e,n,r){"use strict";r.r(n);var o=r(658);r.d(n,"default",(function(){return o.a}));o.a.registerVersion("firebase","9.23.0","app-compat")}}]);
