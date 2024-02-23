@@ -51,10 +51,7 @@ export default {
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
-                {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2Fc032mwMamBjZ8fjAPZUp%2F2.png?alt=media&token=abb55483-ec5c-4226-bb81-ac4777f5706d",
-                    to: "https://www.cpccoahuila.org.mx/redCiudadana"
-                },
+              
 
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FGira%20de%20capacitaci%C3%B3n%20(1).png?alt=media&token=9002d1fc-32b1-45c0-b72c-0d8ae2a19134",
