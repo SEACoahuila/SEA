@@ -478,7 +478,7 @@ export default {
 
                 {
                     nombre: 'DULCE MARIA FUENTES MANCILLAS',
-                    cargo: 'Comisionada Presidente del Instituto Coahuilense de Acceso a la Información Pública.',
+                    cargo: 'Comisionada Presidenta del Instituto Coahuilense de Acceso a la Información Pública.',
                     foto: 'cc-icai-lgb.jpg',
                     img: 'cc-ica.png',
                     web: 'http://www.icai.org.mx/',
