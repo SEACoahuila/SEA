@@ -14,7 +14,7 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col v-for="(publicacion, i) in publicaciones" cols="4">
+            <v-col v-for="(publicacion, i) in publicaciones" cols="12" md="4" xs="12" >
                 <a style="text-decoration: none;" target="_blank" :href="publicacion.enlace">
                     <v-card class="mx-auto" >
                         <v-img
