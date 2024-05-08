@@ -236,14 +236,14 @@
                                     <v-list-item  to="/transparencia/LGCG-6" router exact>
                                         <v-row >
 
-                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > Título Quinto de la LGCG</v-col>
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col >VI. Título Quinto de la LGCG</v-col>
                                         </v-row>
                     
                                     </v-list-item>
                                     <v-list-item  to="/transparencia/LGCG-7" router exact>
                                         <v-row >
 
-                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > Normatividad</v-col>
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col >VII. Normatividad</v-col>
                                         </v-row>
                     
                                     </v-list-item>
