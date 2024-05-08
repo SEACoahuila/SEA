@@ -240,7 +240,13 @@
                                         </v-row>
                     
                                     </v-list-item>
+                                    <v-list-item  to="/transparencia/LGCG-7" router exact>
+                                        <v-row >
 
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > Normatividad</v-col>
+                                        </v-row>
+                    
+                                    </v-list-item>
                                 </v-list>
                             </v-col>
                         </v-row>
