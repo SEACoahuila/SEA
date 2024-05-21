@@ -188,8 +188,6 @@
 
                     }
 
-                    console.log(this.Data);
-
                 } catch (error) {
                     throw new Error(error.message)
                 }
