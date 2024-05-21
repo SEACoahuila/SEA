@@ -51,11 +51,13 @@
                                                 {{ e.desc }}
                                             </v-card-subtitle>
                                             <v-divider></v-divider>
-                                          
-                                        <v-btn x-small dark color="amber darken-2" href="/secretaria-ejecutiva/publicaciones/peac.pdf">PEAC</v-btn>
-                                        <span>--</span>
-                                        <v-btn x-small dark color="grey darken-3" href="/secretaria-ejecutiva/publicaciones/peac-anexos.pdf">Anexos</v-btn>
-                                        
+
+                                            <v-btn x-small dark color="amber darken-2"
+                                                href="/secretaria-ejecutiva/publicaciones/peac.pdf">PEAC</v-btn>
+                                            <span>--</span>
+                                            <v-btn x-small dark color="grey darken-3"
+                                                href="/secretaria-ejecutiva/publicaciones/peac-anexos.pdf">Anexos</v-btn>
+
                                         </v-col>
 
                                         <v-col cols="12" lg="6" sm="12">
@@ -116,6 +118,41 @@
 
                         </v-row>
 
+
+                    </v-col>
+
+                    <v-card-title class="justify-center">
+                    <div class=" text-xl-h2 text-md-h4"></div>
+                    </v-card-title>
+
+                    <v-col align="center" justify="center">
+                        <v-row justify="center">
+                            <v-col cols="12" md="3" xs="12"  v-for="(e, i) in botonesSec2" :key="i" align="center" >
+                                <v-card v-if="e.to" color="bluegreyt" :href="e.to">
+
+                                    <v-card-actions class="justify-center" >
+                                        <v-avatar size="50" color="" tile>
+
+                                            <img :src="require('@/pages/peac/icons/' + e.icon)" alt="alt">
+                                        </v-avatar> {{ e.titulo }}
+                                    </v-card-actions>
+
+                                </v-card>
+                                <v-card  v-if="e.doc" color="bluegreyt" :href="require('@/static/peac/' + e.doc)">
+
+                                    <v-card-actions class="justify-center" >
+                                        <v-avatar size="50" color="" tile>
+
+                                            <img :src="require('@/pages/peac/icons/' + e.icon)" alt="alt">
+                                        </v-avatar> {{ e.titulo }}
+                                    </v-card-actions>
+
+                                </v-card>
+                            </v-col>
+
+                        </v-row>
+
+
                     </v-col>
 
                 </v-card>
@@ -174,8 +211,16 @@ export default {
             {
                 titulo: 'Indicadores de Seguimiento',
                 icon: 'indicadores.png',
-                to: '#'
+                to: 'https://n9.cl/6sgdrm'
             },
+            ],
+            botonesSec2: [
+            {
+                titulo: 'Percepción de la corrupción',
+                icon: 'ipc.png',
+                to: 'https://n9.cl/23p4q'
+            },
+           
             ],
             btnitem: [{
                 title: '¿Qué es?:',
