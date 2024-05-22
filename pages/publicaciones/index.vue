@@ -59,7 +59,7 @@ export default {
             },
             publicaciones:[],
             lastVisible:"",
-            limit:3,
+            limit:9,
             btnShow:false
         }
     },
