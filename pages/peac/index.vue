@@ -122,15 +122,15 @@
                     </v-col>
 
                     <v-card-title class="justify-center">
-                    <div class=" text-xl-h2 text-md-h4"></div>
+                        <div class=" text-xl-h2 text-md-h4"></div>
                     </v-card-title>
 
                     <v-col align="center" justify="center">
                         <v-row justify="center">
-                            <v-col cols="12" md="3" xs="12"  v-for="(e, i) in botonesSec2" :key="i" align="center" >
+                            <v-col cols="12" md="3" xs="12" v-for="(e, i) in botonesSec2" :key="i" align="center">
                                 <v-card v-if="e.to" color="bluegreyt" :href="e.to">
 
-                                    <v-card-actions class="justify-center" >
+                                    <v-card-actions class="justify-center">
                                         <v-avatar size="50" color="" tile>
 
                                             <img :src="require('@/pages/peac/icons/' + e.icon)" alt="alt">
@@ -138,9 +138,9 @@
                                     </v-card-actions>
 
                                 </v-card>
-                                <v-card  v-if="e.doc" color="bluegreyt" :href="require('@/static/peac/' + e.doc)">
+                                <v-card v-if="e.doc" color="bluegreyt" :href="require('@/static/peac/' + e.doc)">
 
-                                    <v-card-actions class="justify-center" >
+                                    <v-card-actions class="justify-center">
                                         <v-avatar size="50" color="" tile>
 
                                             <img :src="require('@/pages/peac/icons/' + e.icon)" alt="alt">
@@ -148,6 +148,30 @@
                                     </v-card-actions>
 
                                 </v-card>
+                            </v-col>
+
+                            
+
+                            <v-col aling="center" justify="center" cols="12">
+
+                                <v-divider></v-divider>
+
+                                <v-card-title class="justify-center">
+                                    <div class=" text-xl-h2 text-md-h4">Indicadores de Seguimiento</div>
+                                </v-card-title>
+
+                                <v-card-actions class="justify-center">
+                                    <v-row justify="center">
+                                        <v-col cols="12" v-for="(e, index) in seccionInd" :key="index" align="center">
+                                            <h2>{{ e.titulo }}</h2>
+                                            <v-divider></v-divider>
+                                            <v-btn class="ma-2" v-for="( indicadores, index) in e.indicadores" label color=""
+                                                :href="indicadores.link" max-width="100%">{{ indicadores.nombre }}</v-btn>
+                                        </v-col>
+
+                                    </v-row>
+                                </v-card-actions>
+
                             </v-col>
 
                         </v-row>
@@ -209,18 +233,18 @@ export default {
                 doc: 'implementacion.pdf'
             },
             {
-                titulo: 'Indicadores de Seguimiento',
+                titulo: 'Indicadores de Inicio',
                 icon: 'indicadores.png',
                 to: 'https://n9.cl/6sgdrm'
             },
             ],
             botonesSec2: [
-            {
-                titulo: 'Percepción de la corrupción',
-                icon: 'ipc.png',
-                to: 'https://n9.cl/23p4q'
-            },
-           
+                {
+                    titulo: 'Percepción de la corrupción',
+                    icon: 'ipc.png',
+                    to: 'https://n9.cl/23p4q'
+                },
+
             ],
             btnitem: [{
                 title: '¿Qué es?:',
@@ -229,6 +253,44 @@ export default {
                 src2: 'peac2.jpg',
                 link: '/peac'
             },
+
+            ],
+            
+            seccionInd: [
+
+                {
+                    titulo: '',
+                    indicadores: [
+                        {
+                            nombre: '2017',
+                            link: 'https://acortar.link/zvGfv8',
+                        },
+                        {
+                            nombre: '2018',
+                            link: 'https://acortar.link/aEublH',
+                        },
+                        {
+                            nombre: '2019',
+                            link: 'https://acortar.link/POVr5n',
+                        },
+                        {
+                            nombre: '2020',
+                            link: 'https://acortar.link/7qXjNp',
+                        },
+                        {
+                            nombre: '2022',
+                            link: 'https://acortar.link/d2tPGU',
+                        },
+                        {
+                            nombre: '2023',
+                            link: 'https://acortar.link/NiZFQI',
+                        },
+                       
+
+                    ]
+                },
+
+                
 
             ],
 
