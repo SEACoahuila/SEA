@@ -260,34 +260,7 @@ export default {
 
                 {
                     titulo: '',
-                    indicadores: [
-                        {
-                            nombre: '2017',
-                            link: 'https://acortar.link/zvGfv8',
-                        },
-                        {
-                            nombre: '2018',
-                            link: 'https://acortar.link/aEublH',
-                        },
-                        {
-                            nombre: '2019',
-                            link: 'https://acortar.link/POVr5n',
-                        },
-                        {
-                            nombre: '2020',
-                            link: 'https://acortar.link/7qXjNp',
-                        },
-                        {
-                            nombre: '2022',
-                            link: 'https://acortar.link/d2tPGU',
-                        },
-                        {
-                            nombre: '2023',
-                            link: 'https://acortar.link/NiZFQI',
-                        },
-                       
-
-                    ]
+                    indicadores: []
                 },
 
                 
@@ -296,6 +269,28 @@ export default {
 
         }
 
+    }, 
+    methods:{
+        async cargarBotones(){
+            try {
+                
+                await this.$fire.firestore.collection("modulos/7eAirGn2xkIvvwwopLTd/secciones/6pXuXnJjdvc8hotEWDKS/documentos")
+                .orderBy("uid","desc").get().then((botones) => {
+                    botones.docs.forEach((boton) => {
+                        this.seccionInd[0].indicadores.push({ 
+                            nombre:boton.data().nombre, 
+                            link:boton.data().url 
+                        });
+                    })
+                })
+
+            } catch (error) {
+                console.log("AQUI!!   - " + error)
+            }
+        }
+    },
+    created(){
+        this.cargarBotones();
     }
 }
 </script>
