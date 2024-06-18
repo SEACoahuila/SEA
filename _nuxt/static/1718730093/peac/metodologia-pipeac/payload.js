@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/peac/metodologia-pipeac", {data:[{}],fetch:{},mutations:[]});
