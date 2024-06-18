@@ -242,7 +242,7 @@ export default {
                 {
                     titulo: 'Percepción de la corrupción',
                     icon: 'ipc.png',
-                    to: 'https://n9.cl/23p4q'
+                    to: 'https://www.seacoahuila.org.mx/peac/metodologia-pipeac'
                 },
 
             ],
