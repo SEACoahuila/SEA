@@ -224,6 +224,26 @@ export default {
                             nombre: 'Tercera Ordinaria',
                             link: 'https://drive.google.com/file/d/1iAKwW27Kq-16lwxGuJ8UV7ErB7mt0pTq/view?usp=drive_link',
                         },
+                        {
+                            nombre: 'Cuarta Ordinaria',
+                            link: 'https://drive.google.com/file/d/15PNHljQdsUiwE_uVJXPaezf0kfnaXisz/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Quinta Ordinaria',
+                            link: 'https://drive.google.com/file/d/15Nqpce-NfHVQbDbpnkNOUDOr0dfrkm6a/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Sexta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1bZ3TTrDhijF1uaNlJpZQ_YOkegVGSXQr/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Séptima Ordinaria',
+                            link: 'https://drive.google.com/file/d/1oFuALzDn4Zm3MNaUGLFy_OxhctuiJjvC/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Octava Ordinaria',
+                            link: 'https://drive.google.com/file/d/1_CMTPWgZcxHEZJt0vvB87Pdu1TVUYvc4/view?usp=drive_link',
+                        },
 
                     ]
                 },
