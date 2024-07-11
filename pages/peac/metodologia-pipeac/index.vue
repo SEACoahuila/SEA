@@ -35,10 +35,12 @@
                                             <v-divider></v-divider>
 
                                             <v-btn x-small dark color="#D09286"
-                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FAnexo%204.pdf?alt=media&token=a4afdcd9-4fc8-4a74-8347-bcd13ea7a0da">ANEXO 4</v-btn>
+                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FAnexo%204.pdf?alt=media&token=a4afdcd9-4fc8-4a74-8347-bcd13ea7a0da">ANEXO
+                                                4</v-btn>
                                             <span>--</span>
                                             <v-btn x-small dark color="grey darken-3"
-                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FAnexo%205.pdf?alt=media&token=9c4d7735-0d8b-4b0d-8282-cc18adda43da">ANEXO 5</v-btn>
+                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FAnexo%205.pdf?alt=media&token=9c4d7735-0d8b-4b0d-8282-cc18adda43da">ANEXO
+                                                5</v-btn>
 
                                         </v-col>
 
@@ -63,10 +65,15 @@
                                             <v-divider></v-divider>
 
                                             <v-btn x-small dark color="#D09286"
-                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FResultados%20Principales%202023.pdf?alt=media&token=6da1bc00-3665-4372-a165-e63e8bb7a604">RESULTADOS PRICIPALES</v-btn>
+                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FResultados%20Principales%202023.pdf?alt=media&token=6da1bc00-3665-4372-a165-e63e8bb7a604">RESULTADOS
+                                                PRICIPALES</v-btn>
                                             <span>--</span>
                                             <v-btn x-small dark color="grey darken-3"
-                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FEstudio%20Experiencias%20de%20la%20corrupción%20en%20los%20habitantes%20del%20Estado%20de%20Coahuila.pdf?alt=media&token=b44584cf-0e94-442f-b433-7b61f2025951">ESTUDIO COMPLETO</v-btn>
+                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FEstudio%20Experiencias%20de%20la%20corrupción%20en%20los%20habitantes%20del%20Estado%20de%20Coahuila.pdf?alt=media&token=b44584cf-0e94-442f-b433-7b61f2025951">ESTUDIO
+                                                COMPLETO</v-btn>
+                                            <span>--</span>
+                                            <v-btn x-small dark color="#D09286"
+                                                href="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FMetadatos%20de%20la%20encuesta%20para%20el%20Estudio%20de%20Percepci%C3%B3n%20y%20Experiencias%20de%20la%20corrupcio%CC%81n%20en%20los%20habitantes%20del%20Estado%20de%20Coahuila%202023.xlsx?alt=media&token=e10268eb-42fb-4479-bedf-d999a642e05f">METADATOS</v-btn>
 
                                         </v-col>
 
