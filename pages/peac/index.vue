@@ -245,6 +245,12 @@ export default {
                     to: 'https://www.seacoahuila.org.mx/peac/metodologia-pipeac'
                 },
 
+                {
+                    titulo: 'Metodología para la PIPEAC',
+                    icon: 'metodologia_pipeac.png',
+                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FMetodología%20para%20la%20Implementación%20de%20la%20PEAC%20(3).pdf?alt=media&token=2e7559d5-f922-488f-91c6-a92d8695fa2f'
+                },
+
             ],
             btnitem: [{
                 title: '¿Qué es?:',
