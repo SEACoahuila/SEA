@@ -70,7 +70,7 @@ export default {
             categorias: [
                {
                 titulo: '',
-                img: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FWhatsApp%20Image%202024-09-09%20at%2012.11.02.jpeg?alt=media&token=2fc06c79-2e4c-43d5-aa38-c6b6e05edb49'
+                img: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FWhatsApp%20Image%202024-09-09%20at%2013.57.12.jpeg?alt=media&token=a855e4c1-fc01-40eb-b812-b301a842dc68'
                },
                
             ]
