@@ -54,7 +54,7 @@ export default {
               
 
                 {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(1).png?alt=media&token=cef26be8-dd21-4140-9566-419d2062e68c",
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(1)%20(1).png?alt=media&token=774cd029-8001-4457-a005-d2b205f0bbae",
                     to: "publicaciones/dibuja-tus-valores-6"
                 },
                 //{
