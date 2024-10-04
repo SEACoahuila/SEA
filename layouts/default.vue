@@ -95,7 +95,7 @@
         <v-toolbar-title>
             <v-btn icon @click.stop="clipped = !clipped">
                 <v-avatar size="25"> <img src="@/static/img/sea-icon.png" alt="Icono Sea" /></v-avatar>
-            </v-btn> {{ title }}
+            </v-btn> {{ title}}
         </v-toolbar-title>
 
         <v-spacer />
@@ -110,7 +110,13 @@
                 mdi mdi-logout
             </v-icon>Salir
         </v-btn>
-        <v-switch v-if="!$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset label="M-Obscuro" persistent-hint></v-switch>
+        
+        <v-switch v-if="!$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset  
+        persistent-hint>
+        <template v-slot:label>
+            <v-icon>{{ $vuetify.theme.dark ? 'mdi-lightbulb-night' : 'mdi-white-balance-sunny' }}</v-icon>
+        </template>
+        </v-switch>
         <v-switch v-if="$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset  persistent-hint></v-switch>
     </v-app-bar>
 
