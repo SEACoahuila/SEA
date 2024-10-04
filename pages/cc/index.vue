@@ -154,9 +154,12 @@
                             <v-card-actions class="justify-center">
                                 <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                                 <v-row justify="center">
-                                    <v-btn class="ma-2" v-for="(e, i) in informes" :key="i"
+                                    <div v-for="(e, i) in informes" :key="i">
+                                    <v-btn v-if="e.src" class="ma-2" 
                                         :href="require('@/static/comiteCoordinador/' + e.src)" label color=""
                                         max-width="100%">{{ e.year }}</v-btn>
+                                        <v-btn v-if="e.to" class="ma-2" :href="e.to">{{ e.year }}</v-btn>
+                                    </div>
                                 </v-row>
                             </v-card-actions>
                             <v-divider class="mt-5"></v-divider>
@@ -196,6 +199,10 @@ export default {
         return {
 
             informes: [
+                {
+                    year: '2023-2024',
+                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FInforme_final_OK%202.pdf?alt=media&token=4f80053e-1392-432a-8eb8-c9c23a528963'
+                },
                 {
                     year: '2022-2023',
                     src: 'informeCC-2023.pdf'
