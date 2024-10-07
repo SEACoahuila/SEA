@@ -1,5 +1,3 @@
-
-
 <template>
     <v-container>
 
@@ -183,7 +181,7 @@
         </v-row>
     </v-container>
 </template>
-    
+
 <script>
 export default {
     name: 'sei',
@@ -226,11 +224,11 @@ export default {
                         },
                         {
                             nombre: 'Cuarta Ordinaria',
-                            link: 'https://drive.google.com/file/d/15PNHljQdsUiwE_uVJXPaezf0kfnaXisz/view?usp=drive_link',
+                            link: 'https://drive.google.com/file/d/1CUqjeAYW6wFmwEPKNfc_PdhcpRLGwsrg/view?usp=drive_link',
                         },
                         {
                             nombre: 'Quinta Ordinaria',
-                            link: 'https://drive.google.com/file/d/15Nqpce-NfHVQbDbpnkNOUDOr0dfrkm6a/view?usp=drive_link',
+                            link: 'https://drive.google.com/file/d/1YZKGcgeWzk9fzpd6wA7tdw4wOE_wwlnf/view?usp=drive_link',
                         },
                         {
                             nombre: 'Sexta Ordinaria',
@@ -238,11 +236,23 @@ export default {
                         },
                         {
                             nombre: 'Séptima Ordinaria',
-                            link: 'https://drive.google.com/file/d/1oFuALzDn4Zm3MNaUGLFy_OxhctuiJjvC/view?usp=drive_link',
+                            link: 'https://drive.google.com/file/d/1CFr7DJ-OOeBUFk7rcIRuXscJBvL8qnVH/view?usp=drive_link',
                         },
                         {
                             nombre: 'Octava Ordinaria',
-                            link: 'https://drive.google.com/file/d/1_CMTPWgZcxHEZJt0vvB87Pdu1TVUYvc4/view?usp=drive_link',
+                            link: 'https://drive.google.com/file/d/1ZC6m5eIi4bOb3jfzi5hwpB4x-1KXAcZb/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Novena Ordinaria',
+                            link: 'https://drive.google.com/file/d/1K60XVohxW2ILx92pZAhVsmDJVrnaa0Pg/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Décima Ordinaria',
+                            link: 'https://drive.google.com/file/d/1y7gz9e7DpUVNTjUwmcd1U3CDjpl9lP5X/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Décima Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1Wh0OqmRhcf_Bp2pZyWuLnUng8fHToVSe/view?usp=drive_link',
                         },
 
                     ]
@@ -362,9 +372,13 @@ export default {
                     titulo: 'Informes',
                     actas: [
                         {
+                            nombre: '2023-2024',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FInforme%20CE2023-2024.pdf?alt=media&token=ade966ab-bd5e-4c82-a0d5-71d980b0a5e0',
+                        },
+                        {
                             nombre: '2022-2023',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FInforme%20Comisi%C3%B3n%20ejecutiva%202022-2023.pdf?alt=media&token=625a3277-21a3-47f9-9ad6-e6daadcc1fd3&_gl=1*9yv9cm*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5NjUxNjgwNi40LjEuMTY5NjUxNjgzNy4yOS4wLjA',
-                        }
+                        },
                     ]
                 },
 
@@ -379,7 +393,7 @@ export default {
                             nombre: 'Calendario',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FPropuesta%20de%20fechas%20para%20las%20sesiones%20de%20Comisi%C3%B3n%20Ejecutiva.pdf?alt=media&token=69bb8e92-cb88-4ea2-99d9-f248aa283176&_gl=1*gghg4l*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5ODE2MTE4OS45LjEuMTY5ODE2MTI4NS40NC4wLjA',
                         },
-                       
+
                     ]
                 },
                 {
@@ -430,6 +444,5 @@ export default {
     }
 }
 </script>
-    
-<style lang="scss" ></style>
-    
+
+<style lang="scss"></style>
