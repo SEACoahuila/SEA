@@ -408,12 +408,12 @@ export default {
             ],
 
             integrantes: [
-                {
-                    nombre: 'Yolanda Guadalupe Montes Martínez',
-                    cargo: 'Cooordinadora de la Comisión Ejecutiva',
-                    foto: 'cpc-ygmm.jpg',
+            {
+                    nombre: 'Juan Carlos Guzmán Escobedo',
+                    cargo: 'Cooordinador de la Comisión Ejecutiva',
+                    foto: 'cpc-jcge.jpg',
                     img: 'cc-cpc.png',
-                    mail: 'yolanda.montes@cpccoahuila.org.mx'
+                    mail: 'carlos.guzman@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Elidé Alejandrina Acosta Reyes ',
@@ -422,20 +422,7 @@ export default {
                     img: 'seac.png',
                     mail: 'elide.acosta@seacoahuila.org.mx'
                 },
-                {
-                    nombre: 'Juan Carlos Guzmán Escobedo',
-                    cargo: 'Integrante',
-                    foto: 'cpc-jcge.jpg',
-                    img: 'cc-cpc.png',
-                    mail: 'carlos.guzman@cpccoahuila.org.mx'
-                },
-                {
-                    nombre: 'Karla Samperio Flores',
-                    cargo: 'Integrante',
-                    foto: 'cpc-ksf.png',
-                    img: 'cc-cpc.png',
-                    mail: 'karla.samperio@cpccoahuila.org.mx'
-                },
+                
 
             ]
 
