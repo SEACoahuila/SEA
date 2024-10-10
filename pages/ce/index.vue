@@ -391,7 +391,7 @@ export default {
                     actas: [
                         {
                             nombre: 'Calendario',
-                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/archivos%2FPropuesta%20de%20fechas%20para%20las%20sesiones%20de%20Comisi%C3%B3n%20Ejecutiva.pdf?alt=media&token=69bb8e92-cb88-4ea2-99d9-f248aa283176&_gl=1*gghg4l*_ga*MzMwNTI3MDQ5LjE2OTE2MjQ0MDA.*_ga_CW55HF8NVT*MTY5ODE2MTE4OS45LjEuMTY5ODE2MTI4NS40NC4wLjA',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCalendario%20CE%2024-25.pdf?alt=media&token=3ead6b73-00d9-4810-8043-f587942821be',
                         },
 
                     ]

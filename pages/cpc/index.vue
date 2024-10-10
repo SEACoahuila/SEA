@@ -298,15 +298,8 @@ export default {
             ],
             integrantes: [
                 {
-                    nombre: 'Miguel Francisco Crespo Alvarado',
-                    cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
-                    foto: 'cpc-mfca.jpg',
-                    img: 'cc-cpc.png',
-                    mail: 'miguel.crespo@cpccoahuila.org.mx'
-                },
-                {
                     nombre: 'Yolanda Guadalupe Montes Martínez',
-                    cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                    cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
                     foto: 'cpc-ygmm.jpg',
                     img: 'cc-cpc.png',
                     mail: 'yolanda.montes@cpccoahuila.org.mx'
@@ -318,13 +311,7 @@ export default {
                     img: 'cc-cpc.png',
                     mail: 'carlos.guzman@cpccoahuila.org.mx'
                 },
-                {
-                    nombre: 'Karla Samperio Flores',
-                    cargo: 'Consejera  del Consejo de Participación Ciudadana.',
-                    foto: 'cpc-ksf.png',
-                    img: 'cc-cpc.png',
-                    mail: 'karla.samperio@cpccoahuila.org.mx'
-                },
+               
 
             ],
             integrantesRed: [

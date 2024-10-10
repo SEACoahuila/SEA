@@ -289,26 +289,20 @@ export default {
             integrantes: [
 
                 {
-                    nombre: 'MIGUEL FRANCISCO CRESPO ALVARADO',
-                    cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
-                    foto: 'cpc-mfca.jpg',
+                    nombre: 'YOLANDA GUADALUPE MONTES MARTÍNEZ',
+                    cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-ygmm.jpg',
                     img: 'cc-cpc.png',
                     web: 'http://www.cpccoahuila.org.mx/',
                     curriculum: [{
                         subtitulo: 'Formación Académica',
                         lista: [
-                            'Doctor en Ciencias Aplicadas.',
-                            'Maestrías en Administración, Educación y en Sistemología Interpretativa.',
-                            'Licenciatura en Administración de Recursos Humanos.'
                         ]
                     },
                     {
                         subtitulo: 'Experiencia profesional:',
                         lista: [
-                            'CEO de Grupo GIISI.',
-                            'Miembro fundador de la Escuela Latinoamericana de Pensamiento y Diseños Sistémicos.',
-                            'Miembro permanente del Grupo de Investigación de Pensamiento Sistémico (UNAB, Colombia)',
-                            'Miembro del Grupo de Modelado y Simulación de Sistemas Sociales Complejos (Unibagué, Colombia)'
+                            
                         ]
                     }
                     ]
@@ -401,45 +395,22 @@ export default {
                 },
 
                 {
-                    nombre: 'MAESTRO JESÚS HOMERO FLORES MIER',
+                    nombre: 'KARLA SAMPERIO FLORES',
                     cargo: 'Titular de la Fiscalía Especializada en Delitos por Hechos de Corrupción.',
-                    foto: 'cc-fech-jhfm.jpg',
+                    foto: 'cc-fech-ksf.png',
                     img: 'cc-fehc.png',
                     web: 'https://www.fehc.gob.mx/',
                     curriculum: [{
                         subtitulo: 'Datos Profesionales',
                         lista: [
-                            'Es Maestro y Licenciado en Derecho, por la Facultad de Jurisprudencia de la Universidad Autónoma de Coahuila.',
-                            'Es el Titular de la Fiscalía Especializada en Delitos por Hechos de Corrupción del Estado de Coahuila de Zaragoza.',
-                            'Es Presidente de la Comisión de Políticas Publicas y estudios en Materia de Prevención, Detección, Evaluación, e Investigación de Delitos de la Convención Nacional de Fiscales Anticorrupción.',
-                            'Anteriormente fungió como Comisionado Presidente del Instituto Coahuilense de Acceso a la Información Pública del Estado de Coahuila de Zaragoza.'
+                         
                         ]
                     },
-                    {
-                        subtitulo: 'Ha cursado las maestrías en',
-                        lista: [
-                            'Derechos Humanos con acentuación en Gobierno Abierto y Rendición de Cuentas en la Facultad de Jurisprudencia;',
-                            'Gobernanza y Derechos Humanos en la Universidad Autónoma del Noreste.'
-                        ]
-                    },
-                    {
-                        subtitulo: 'Ha tomado diversos cursos como',
-                        lista: [
-                            'Taller de Gerencia Política de Proyectos de Cambio, The George Washington University, en Washington, D.C.',
-                            'Curso Internacional sobre "Gobierno Abierto" en la subsede de la Comisión Económica para América Latina y el Caribe - CEPAL;',
-                            'Modulo sobre Derecho Penal "Nueva Legislación para la Procuración de Justicia y Seguridad Pública".',
-                            'Seminario "Constitución, Democracia y Elecciones: La Reforma que Viene" en el Instituto de Investigaciones Jurídicas de la UNAM.',
-                            'Cuarto Foro Regional de Difusión del Código Modelo del Proceso Penal Acusatorio para los Estados de la Federación, impartido por el Poder Judicial del Estado de Coahuila de Zaragoza y la Comisión Nacional de Tribunales Superiores de Justicia.'
-                        ]
-                    },
+                   
                     {
                         subtitulo: 'Se desempeñó como',
                         lista: [
-                            'Coordinador y Fundador de la Comisión de Gestión Documental, Tecnologías de la Información y Gobierno Abierto de la Conferencia Mexicana para el Acceso a la Información.',
-                            'Integrante de la Comisión de Indicadores, Evaluación e Investigación y Comisión de Archivos y Gestión Documental.',
-                            'Coordinador de los Institutos de Transparencia del País representándolos en la transición al actual Sistema Nacional de Transparencia.',
-                            'Representante en el Consejo Nacional de Archivos de los Institutos y Consejos Estatales de Transparencia.',
-                            'Ha impartido diversas pláticas y conferencias en relación a temas en materia de anticorrupción, de acceso a la información, datos personales, redes sociales y archivos, en eventos Internacionales y Nacionales, organizadas por Instituciones especialistas en las materias.'
+                          
                         ]
                     },
                     ]
@@ -469,7 +440,7 @@ export default {
                         ]
                     },
                     {
-                        subtitulo: 'diplomados y cursos',
+                        subtitulo: 'Diplomados y cursos',
                         lista: [
                             'Normas Profesionales de Auditoría del Sistema Nacional de Fiscalización',
                             'Ley General de Responsabilidades Administrativas',
@@ -510,7 +481,7 @@ export default {
                         ]
                     },
                     {
-                        subtitulo: 'diplomados y cursos',
+                        subtitulo: 'Diplomados y cursos',
                         lista: [
                             'Curso de Actualización en Materia Jurídica 2022 • Coordinación de Posgrado Facultad de Jurisprudencia de la UAdeC.',
                             'Curso de Gobierno Abierto 2022 • Programa de las Naciones Unidas para el Desarrollo Instituto Nacional de Transparencia, Acceso a la Información Y Protección de Datos Personales.',
