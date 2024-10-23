@@ -51,7 +51,10 @@ export default {
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
-              
+                {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(2).png?alt=media&token=8d0209a8-5175-49d1-a310-d42a40757a52",
+                    to: "https://www.seacoahuila.org.mx/publicaciones/nota/?id=20240009"
+                },
 
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(1)%20(1).png?alt=media&token=774cd029-8001-4457-a005-d2b205f0bbae",
