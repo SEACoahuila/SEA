@@ -176,7 +176,7 @@ export default {
                 },
                 {
                     avatar: 'peaclog.png',
-                    title: 'Política Estatal Anticorrupción Coahuila (PEAC)',
+                    title: 'Política Estatal Anticorrupción de Coahuila (PEAC)',
                     to: '/peac',
                     color: 'warning'
                 },
