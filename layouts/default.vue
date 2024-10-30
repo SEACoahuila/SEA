@@ -126,7 +126,7 @@
         <v-container class="mb-8 pa-3">
            
             <v-row justify="center">
-                <v-col cols="8" xl="11">
+                <v-col cols="12" xl="11">
                     <Nuxt />
                 </v-col>
                 

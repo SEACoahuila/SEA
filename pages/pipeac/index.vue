@@ -18,7 +18,7 @@
                             <v-col cols="12" align="center">
 
                             </v-col>
-                            <v-col cols="12" lg="8" sm="12" v-for="(e, i) in btnitem" :key="i">
+                            <v-col cols="12" lg="12" sm="12" v-for="(e, i) in btnitem" :key="i">
 
                                 <v-card class="pa-2 mb-10 mx-auto text-justify" tile color="article">
                                     <v-row align="center">
