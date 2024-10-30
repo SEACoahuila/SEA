@@ -126,7 +126,7 @@
         <v-container class="mb-8 pa-3">
            
             <v-row justify="center">
-                <v-col cols="12" xl="11">
+                <v-col cols="8" xl="11">
                     <Nuxt />
                 </v-col>
                 
@@ -178,6 +178,12 @@ export default {
                     avatar: 'peaclog.png',
                     title: 'Política Estatal Anticorrupción',
                     to: '/peac',
+                    color: 'warning'
+                },
+                {
+                    avatar: 'pipeaclog.png',
+                    title: 'Programa de Implementación de la Política Estatal Anticorrupción Coahuila',
+                    to: '/pipeac',
                     color: 'warning'
                 },
                 {
