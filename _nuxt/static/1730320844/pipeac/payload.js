@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pipeac", {data:[{}],fetch:{},mutations:[]});
