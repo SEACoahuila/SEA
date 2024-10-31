@@ -54,6 +54,13 @@ export default {
                 link: '/peac'
             },
             {
+                title: 'Programa de Implementación de la Política Estatal Anticorrupción',
+                desc: 'Conoce aquí el documento que establece las prioridades, objetivos, estrategias, líneas de acción e indicadores de la Política Estatal Anticorrupción de Coahuila.',
+                src1: 'pipeac1.png',
+                src2: 'pipeac2.png',
+                link: '/pipeac'
+            },
+            {
                 title: 'Sistema Estatal de Información',
                 desc: 'Sistema de inteligencia para construir integridad y combatir la corrupción, que creará valor para el gobierno y la sociedad, a partir de grandes cantidades de datos.',
                 src1: 'sistema1.jpg',
