@@ -134,7 +134,8 @@
                                 <v-row justify="center">
                                     <div v-for=" (e, i) in programas" :key="i">
                                         <v-btn v-if="e.src" class="ma-2"
-                                            :href="require('@/static/comiteCoordinador/' + e.src)">{{ e.year }}</v-btn>
+                                            :href="require('@/static/comiteCoordinador/' + e.src)">{{
+                                                e.year }}</v-btn>
                                         <v-btn v-if="e.to" class="ma-2" :href="e.to">{{ e.year }}</v-btn>
                                     </div>
 
@@ -155,9 +156,9 @@
                                 <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                                 <v-row justify="center">
                                     <div v-for="(e, i) in informes" :key="i">
-                                    <v-btn v-if="e.src" class="ma-2" 
-                                        :href="require('@/static/comiteCoordinador/' + e.src)" label color=""
-                                        max-width="100%">{{ e.year }}</v-btn>
+                                        <v-btn v-if="e.src" class="ma-2"
+                                            :href="require('@/static/comiteCoordinador/' + e.src)" label color=""
+                                            max-width="100%">{{ e.year }}</v-btn>
                                         <v-btn v-if="e.to" class="ma-2" :href="e.to">{{ e.year }}</v-btn>
                                     </div>
                                 </v-row>
@@ -176,7 +177,8 @@
                                 <v-row justify="center">
                                     <div v-for=" (e, i) in actas" :key="i">
                                         <v-btn v-if="e.src" class="ma-2"
-                                            :href="require('@/static/comiteCoordinador/' + e.src)">{{ e.sesion }}</v-btn>
+                                            :href="require('@/static/comiteCoordinador/' + e.src)">{{
+                                                e.sesion }}</v-btn>
                                         <v-btn v-if="e.to" class="ma-2" :href="e.to">{{ e.sesion }}</v-btn>
                                     </div>
                                 </v-row>
@@ -262,7 +264,7 @@ export default {
                     sesion: 'Actas',
                     to: "https://www.seacoahuila.org.mx/transparencia/21-21"
                 },
-                
+
 
             ],
 
@@ -297,12 +299,24 @@ export default {
                     curriculum: [{
                         subtitulo: 'Formación Académica',
                         lista: [
+                            'Licenciada en Derecho egresada de la Facultad de Jurisprudencia de la UA de C.',
+                            'Cursó estudios en planeación y administración de proyectos, Economía Global e Influencia de la Teoría Económica en The Washington Center y Georgetown University.',
+                            'Egresada de la maestría en Prospectiva Estratégica de la Escuela de Gobierno y Transformación Pública del Instituto Tecnológico de Estudios Superiores de Monterrey.'
                         ]
                     },
                     {
                         subtitulo: 'Experiencia profesional:',
                         lista: [
-                            
+                            'Actualmente se  desempeña como Consejera del Consejo de Participación Ciudadana dentro del Sistema Estatal Anticorrupción, y a su vez  como Directora de Hermes Industrial Services; consultora Especializada en desarrollo inmobiliario para la industria  y planeación de nuevos proyectos.',
+                            'Se desempeñó como Gerente Comercial de Parque Industrial Alianza Derramadero y estuvo al frente del Departamento técnico de Proyectos Industriales en la Secretaría de Fomento Económico del Estado de Coahuila',
+                            'Durante el 2007 fungió como Asistente de Presidencia del U.S.-Mexico Chamber of Commerce en Washington D.C., Estados Unidos.'
+                        ]
+                    },
+                    {
+                        subtitulo: 'Logros y proyectos realizados',
+                        lista: [
+                            'Ha escrito en relación con el desempeño de las mujeres en la vida laboral, destacando el estudio titulado: Work/family life by 2040: Between a gig economy and traditional roles Yolanda Montes/ Guillermina Benavides Rincón.',
+                            'Publicado en la revista especializada WORLD FUTURE STUDIES FEDERATION y la disertación: Family and work: scenarios of work/life balance for mexican families by 2040 Yolanda Montes/Guillermina Benavides.'
                         ]
                     }
                     ]
@@ -403,14 +417,14 @@ export default {
                     curriculum: [{
                         subtitulo: 'Datos Profesionales',
                         lista: [
-                         
+
                         ]
                     },
-                   
+
                     {
                         subtitulo: 'Se desempeñó como',
                         lista: [
-                          
+
                         ]
                     },
                     ]
