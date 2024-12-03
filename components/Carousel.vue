@@ -52,6 +52,10 @@ export default {
                 //     to: "https://www.google.com/"
                 // },
                 {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FComisi%C3%B3n%20de%20selecci%C3%B3n.png?alt=media&token=a68c68d2-2589-4baf-a06e-102598986f6f",
+                    to: "https://www.comisionseacoahuila.mx/procesos/2024/"
+                },
+                {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(2).png?alt=media&token=8d0209a8-5175-49d1-a310-d42a40757a52",
                     to: "https://www.seacoahuila.org.mx/publicaciones/nota/?id=20240009"
                 },
@@ -59,6 +63,10 @@ export default {
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(1)%20(1).png?alt=media&token=774cd029-8001-4457-a005-d2b205f0bbae",
                     to: "publicaciones/dibuja-tus-valores-6"
+                },
+                {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanner%20Programa%20Anual%20de%20Trabajo%20del%20CC%202024%20(1).png?alt=media&token=090078f0-c088-49eb-b32a-574c81c99b2f",
+                    to: "https://www.seacoahuila.org.mx/"
                 },
                 //{
                 //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FWhatsApp%20Image%202024-04-30%20at%2010.08.48.jpeg?alt=media&token=8c4ebaf9-716d-462f-85db-6cc7550e9716",
