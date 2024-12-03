@@ -233,6 +233,10 @@ export default {
             ],
             programas: [
                 {
+                    year: '2024-2025',
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FONP1aDRsiTSul2p1sFZi%2FPrograma%20Anual%20de%20Trabajo%20del%20CC%202024%20-%202025%20....pdf?alt=media&token=4ab8a15e-8647-4201-841f-36d3f4aa0b45"
+                },
+                {
                     year: '2023-2024',
                     to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/InformesCC%2FPROGRAMA%20CC.pdf?alt=media&token=640d3267-ab3a-4b6b-8c1d-94ac9d9f9c8e"
                 },

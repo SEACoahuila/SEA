@@ -66,7 +66,7 @@ export default {
                 },
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanner%20Programa%20Anual%20de%20Trabajo%20del%20CC%202024%20(1).png?alt=media&token=090078f0-c088-49eb-b32a-574c81c99b2f",
-                    to: "https://www.seacoahuila.org.mx/"
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FONP1aDRsiTSul2p1sFZi%2FPrograma%20Anual%20de%20Trabajo%20del%20CC%202024%20-%202025%20....pdf?alt=media&token=4ab8a15e-8647-4201-841f-36d3f4aa0b45"
                 },
                 //{
                 //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FWhatsApp%20Image%202024-04-30%20at%2010.08.48.jpeg?alt=media&token=8c4ebaf9-716d-462f-85db-6cc7550e9716",
