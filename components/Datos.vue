@@ -1,45 +1,54 @@
 <template>
-<div>
-    <v-container>
-        <v-row justify="center" align="center" class="mt-5">
+    <div>
+        <v-container>
+            <v-row justify="center" align="center" class="mt-5">
 
-            <v-col cols="12" align="center" >
-                
-            </v-col>
-            <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
+                <v-col cols="12" align="center">
 
-                <v-card class="pa-2 mx-auto text-justify" tile color="article"  >
-                    <v-row align="center">
-                        <v-col cols="12" lg="6" sm="12" align="center" justify="center">
+                </v-col>
+                <v-col cols="12" lg="8" sm="12" v-for="(e, i) in btnitem" :key="i">
 
-                            <h2> {{e.title}}</h2>
-                            <v-card-subtitle class="text-justify">
-                                {{e.desc}}
-                            </v-card-subtitle>
-                        </v-col>
-                       
-                        <v-col cols="12" lg="6" sm="12">
-                            <nuxt-link :to="e.link">
+                    <v-card class="pa-2 mx-auto text-justify" tile color="article">
+                        <v-row align="center">
+                            <v-col cols="12" lg="6" sm="12" align="center" justify="center">
 
-                            <v-hover>
-                                 
-                                <v-img slot-scope="{ hover }" v-if="hover" :src="require('@/static/img/botonera/'+ e.src2)" >
-                                </v-img>
-                                <v-img v-else :src="require('@/static/img/botonera/'+ e.src1)">
-                                </v-img>
-                                
-                            </v-hover>
-                            </nuxt-link>
-                        </v-col>
+                                <h2> {{ e.title }}</h2>
+                                <v-card-subtitle class="text-justify">
+                                    {{ e.desc }}
+                             
+                                </v-card-subtitle>
+                                <div class="mt-5" v-if="e.button">
+                                        <a :href=e.buttonlink >
 
-                    </v-row>
-                </v-card>
+                                            <v-btn color="#54865A" elevation="2"  outlined> {{ e.button }}</v-btn>
+                                        </a>
+                                </div>
+                            </v-col>
 
-            </v-col>
+                            <v-col cols="12" lg="6" sm="12">
+                                <nuxt-link :to="e.link">
 
-        </v-row>
-    </v-container>
-</div>
+                                    <v-hover>
+
+                                        <v-img slot-scope="{ hover }" v-if="hover"
+                                            :src="require('@/static/img/botonera/' + e.src2)">
+                                        </v-img>
+                                        <v-img v-else :src="require('@/static/img/botonera/' + e.src1)">
+                                        </v-img>
+
+                                    </v-hover>
+                                </nuxt-link>
+
+                            </v-col>
+
+                        </v-row>
+                    </v-card>
+
+                </v-col>
+
+            </v-row>
+        </v-container>
+    </div>
 </template>
 
 <script>
@@ -58,7 +67,10 @@ export default {
                 desc: 'Conoce aquí el documento que establece las prioridades, objetivos, estrategias, líneas de acción e indicadores de la Política Estatal Anticorrupción de Coahuila.',
                 src1: 'pipeac1.png',
                 src2: 'pipeac2.png',
-                link: '/pipeac'
+                link: '/pipeac',
+                button: "Entrar Monitor SEA",
+                buttonlink: "https://monitor.seacoahuila.org.mx/"
+
             },
             {
                 title: 'Sistema Estatal de Información',
@@ -76,12 +88,10 @@ export default {
             },
 
         ],
-        
 
-}),
+
+    }),
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
