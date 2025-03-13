@@ -11,7 +11,7 @@
     "pages": "gh-pages -d dist"
   },
   "engines": {
-    "node": ">=16.0.0 <19.0.0"
+    "node": ">=16.0.0 <23.0.0"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
