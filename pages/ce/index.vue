@@ -416,6 +416,27 @@ export default {
                     mail: 'carlos.guzman@cpccoahuila.org.mx'
                 },
                 {
+                    nombre: 'Karla Ivonne Natividad González',
+                    cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-king.png',
+                    img: 'cc-cpc.png',
+                    mail: 'karla.natividad@cpccoahuila.org.mx'
+                },
+                {
+                    nombre: 'Carlos Antonio Franco Flores',
+                    cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-caff.png',
+                    img: 'cc-cpc.png',
+                    mail: 'carlos.franco@cpccoahuila.org.mx'
+                },
+                {
+                    nombre: 'Diana Marisol Flores Rivera',
+                    cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-dmfr.png',
+                    img: 'cc-cpc.png',
+                    mail: 'diana.flores@cpccoahuila.org.mx'
+                },
+                {
                     nombre: 'Elidé Alejandrina Acosta Reyes ',
                     cargo: 'Secretaria Técnica del Sistema Estatal Anticorrupción',
                     foto: 'st-ear.jpg',
