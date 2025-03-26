@@ -26,7 +26,7 @@
                                 <div class="mt-2" v-if="e.button2">
                                         <a :href=e.buttonlink >
 
-                                            <v-btn color="#ecc867" elevation="2"  outlined> {{ e.button2 }}</v-btn>
+                                            <v-btn color="#d9a79e" elevation="2"  outlined> {{ e.button2 }}</v-btn>
                                         </a>
                                 </div>
                             </v-col>
