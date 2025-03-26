@@ -68,7 +68,7 @@ export default {
                 src1: 'pipeac1.png',
                 src2: 'pipeac2.png',
                 link: '/pipeac',
-                button: "Entrar Monitor SEA",
+                button: "Plataforma monitor SEA Coahuila",
                 buttonlink: "https://monitor.seacoahuila.org.mx/"
 
             },
