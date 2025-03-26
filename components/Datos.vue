@@ -24,7 +24,7 @@
                                         </a>
                                 </div>
                                 <div class="mt-2" v-if="e.button2">
-                                        <a :href=e.buttonlink >
+                                        <a :href=e.button2link >
 
                                             <v-btn color="#d9a79e" elevation="2"  outlined> {{ e.button2 }}</v-btn>
                                         </a>
@@ -77,7 +77,7 @@ export default {
                 button: "Plataforma monitor SEA Coahuila",
                 buttonlink: "https://monitor.seacoahuila.org.mx/",
                 button2: "Manual de usuario",
-                buttonlink:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FManual%20del%20Usuario%20Plataforma%20Monitor%20SEA%20Coahuila.pdf?alt=media&token=e6e7fca1-cc2c-47ce-8dd7-b006a6b482ba"
+                button2link:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FManual%20del%20Usuario%20Plataforma%20Monitor%20SEA%20Coahuila.pdf?alt=media&token=e6e7fca1-cc2c-47ce-8dd7-b006a6b482ba"
 
             },
             {
