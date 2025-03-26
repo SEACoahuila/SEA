@@ -23,6 +23,12 @@
                                             <v-btn color="#54865A" elevation="2"  outlined> {{ e.button }}</v-btn>
                                         </a>
                                 </div>
+                                <div class="mt-2" v-if="e.button2">
+                                        <a :href=e.buttonlink >
+
+                                            <v-btn color="#ecc867" elevation="2"  outlined> {{ e.button2 }}</v-btn>
+                                        </a>
+                                </div>
                             </v-col>
 
                             <v-col cols="12" lg="6" sm="12">
@@ -69,7 +75,9 @@ export default {
                 src2: 'pipeac2.png',
                 link: '/pipeac',
                 button: "Plataforma monitor SEA Coahuila",
-                buttonlink: "https://monitor.seacoahuila.org.mx/"
+                buttonlink: "https://monitor.seacoahuila.org.mx/",
+                button2: "Manual de usuario",
+                buttonlink:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FhydCDe7h1EAolvzP0tq0%2FManual%20del%20Usuario%20Plataforma%20Monitor%20SEA%20Coahuila.pdf?alt=media&token=e6e7fca1-cc2c-47ce-8dd7-b006a6b482ba"
 
             },
             {
