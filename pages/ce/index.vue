@@ -232,7 +232,7 @@ export default {
                         },
                         {
                             nombre: 'Sexta Ordinaria',
-                            link: 'https://drive.google.com/file/d/1bZ3TTrDhijF1uaNlJpZQ_YOkegVGSXQr/view?usp=drive_link',
+                            link: 'https://drive.google.com/file/d/1knk3no1fgg0pSXQwhr_MYue2wa6Nzv9u/view?usp=sharing',
                         },
                         {
                             nombre: 'Séptima Ordinaria',
