@@ -391,7 +391,7 @@ export default {
                     actas: [
                         {
                             nombre: 'Calendario',
-                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCalendario%20CE%2024-25.pdf?alt=media&token=3ead6b73-00d9-4810-8043-f587942821be',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCalendario.pdf?alt=media&token=950a7524-fcc3-488a-a450-2247af789112',
                         },
 
                     ]
