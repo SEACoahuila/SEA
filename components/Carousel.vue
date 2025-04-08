@@ -52,8 +52,8 @@ export default {
                 //     to: "https://www.google.com/"
                 // },
                 {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FComisi%C3%B3n%20de%20selecci%C3%B3n.png?alt=media&token=a68c68d2-2589-4baf-a06e-102598986f6f",
-                    to: "https://www.comisionseacoahuila.mx/procesos/2024/"
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(4).png?alt=media&token=c8b01e99-8283-4718-8341-9fafa144fe4a",
+                    to: "https://paa.sesna.gob.mx/"
                 },
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(2).png?alt=media&token=8d0209a8-5175-49d1-a310-d42a40757a52",
