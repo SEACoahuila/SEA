@@ -168,6 +168,11 @@ export default {
                     to: 'https://www.seacoahuila.org.mx/SE/monitoreo-legislativo/',
                 },
                 {
+                    titulo: 'Representantes de municipios',
+                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FREPRESENTANTES%20DE%20MUNICIPIOSS.pdf?alt=media&token=2a7f3b52-7255-4be9-b2f4-d713385272d2',
+                },
+                
+                {
                     titulo: 'Sistema de Gestión Antisoborno',
                     to: "https://www.seacoahuila.org.mx/SE/sga/",
                 },
