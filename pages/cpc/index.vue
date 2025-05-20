@@ -301,6 +301,14 @@ export default {
                 src: 'plan-de-comunicacion-cpc.pdf'
             },
             {
+                year: '2024-2025',
+                to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FlzWpOqQLrhKNTDAec7Vy%2FCPC%202024-25%20(1)%20(2).pdf?alt=media&token=9a51c5ad-b9ec-419d-93a4-3a97326bb6b2'
+            },
+            {
+                year: '2023-2024',
+                to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FlzWpOqQLrhKNTDAec7Vy%2FPrograma%20anual%20CPC%202023%202024.pdf?alt=media&token=6497eef6-a382-4211-ae66-8baa1a81a059'
+            },
+            {
                 year: '2022-2023',
                 to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/2lIvc2aFyVqrZZw4fJGI%2FYFHlnCOlgSnI90J1wDAs%2Fprograma-anual-cpc-23.pdf?alt=media&token=7501db05-06af-4708-9b8f-7d522b14671a'
             },
