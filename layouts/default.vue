@@ -59,7 +59,7 @@
 
         </v-list>
         <template v-slot:append>
-          <div v-show="!$store.state.usuario.status">
+          <!-- <div v-show="!$store.state.usuario.status">
                 <v-list-item to="/admin" @click.stop="drawer = !drawer; miniVariant = true">
                 <v-list-item-action>
                     <v-icon>mdi-badge-account</v-icon>
@@ -71,7 +71,7 @@
                 </v-list-item-content>
 
             </v-list-item>
-          </div>
+          </div> -->
           <div v-show="$store.state.usuario.status">
                 <v-list-item to="/admin" @click.stop="cerrarSesion">
                 <v-list-item-action>
@@ -283,7 +283,7 @@ export default {
                 },
 
             ],
-            miniVariant: false,
+            miniVariant: true,
             right: true,
             rightDrawer: false,
             title: 'SEA Coahuila',
