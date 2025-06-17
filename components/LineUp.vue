@@ -30,7 +30,7 @@ export default {
                 },
                 {
                     img: 'cc-fehc.png',
-                    web: 'https://www.fehc.gob.mx/',
+                    web: 'https://sitio.fgecoahuila.gob.mx/',
                     size: '160'
                 },
                 {
