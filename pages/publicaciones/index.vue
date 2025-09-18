@@ -54,7 +54,7 @@ export default {
         return {
             page: {
                 color: 'green lighten-2',
-                title: 'Publicaciones',
+                title: 'Noticias',
                 icon: 'mdi-comma-circle-outline'
             },
             publicaciones:[],

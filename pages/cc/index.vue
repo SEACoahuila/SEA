@@ -472,55 +472,7 @@ export default {
 
                 },
 
-                {
-                    nombre: 'DULCE MARIA FUENTES MANCILLAS',
-                    cargo: 'Comisionada Presidenta del Instituto Coahuilense de Acceso a la Información Pública.',
-                    foto: 'cc-icai-lgb.jpg',
-                    img: 'cc-ica.png',
-                    web: 'http://www.icai.org.mx/',
-                    curriculum: [{
-                        subtitulo: 'Formación Académica',
-                        lista: [
-                            'Licenciatura en Derecho• noviembre del 2004 • Facultad de Jurisprudencia de la UAdeC.',
-                            'Licenciatura en Educación Media en Ciencias Sociales• Agosto del 2004 • Escuela Normal Superior de Tamaulipas.',
-                            'Maestría en Derecho Constitucional y Políticas Gubernamentales.'
-                        ]
-                    },
-                    {
-                        subtitulo: 'Experiencia',
-                        lista: [
-                            'Comisionada • ICAI • 04 de agosto del 2023-Actual',
-                            'Titular de la Unidad de Acceso a la Información •Municipio de Saltillo •2022-2023',
-                            'Subsecretaria del Republicano Ayuntamiento • Municipio de Saltillo. • 2019-2021',
-                            'Titular de la Unidad de Acceso a la Información •Municipio de Saltillo •2018-2019',
-                            'Catedrática en la materia de Comunicación Política •Universidad La Salle •2017',
-                            'Coordinadora de Comunicación Social •Secretaria de Fiscalización y Rendición de Cuentas del Gobierno del Estado de Coahuila •2013-2017'
-
-                        ]
-                    },
-                    {
-                        subtitulo: 'Diplomados y cursos',
-                        lista: [
-                            'Curso de Actualización en Materia Jurídica 2022 • Coordinación de Posgrado Facultad de Jurisprudencia de la UAdeC.',
-                            'Curso de Gobierno Abierto 2022 • Programa de las Naciones Unidas para el Desarrollo Instituto Nacional de Transparencia, Acceso a la Información Y Protección de Datos Personales.',
-                            'Curso ABC de la Ley General de Archivos 2022• Instituto Coahuilense de Acceso a la Información Púbica.',
-                            'Curso Teórico Practico sobre el uso del Sistema de Portales de Obligaciones de Transparencia (SIPOT) •Instituto Nacional de Transparencia y Acceso a la Información en conjunto con el ICAI.',
-                            'Curso Estrategias de Redes Sociales con Resultados de Negocio 2016 • INTELEKIA.',
-                            'Seminario Marketing Político 2014 • Sufragio Consultores.',
-                            'Diplomado en Comunicación Política 2012• Universidad Nacional Autónoma de México.',
-                            'Seminario Internacional Temas Actuales del Derecho a la Información en Materia Electoral 2011• Instituto Electoral de Participación Ciudadana de Coahuila, Centro de Derechos Políticos de la Universidad Autónoma de Coahuila.',
-                            'Diplomado Psicología y Genero en la Procuración de Justicia 2008• Facultad de Psicología de la Universidad Nacional Autónoma de México.',
-                            'Seminario Internacional sobre Democracia y Gobernabilidad 2007• Facultad de Jurisprudencia de la UAdeC, Universidad de Barcelona y el Instituto Electora de Participación Ciudadana.',
-                            'Curso Taller Jornada de Inducción Docente 2017• Universidad La Salle.',
-                            'Curso Taller Negociación y Manejo de Conflictos 2008 • Universidad Iberoamericana de Torreón, Instituto de Administración Pública de Coahuila.',
-                            'Curso taller Lenguaje Incluyente •secretaria de las Mujeres del Gobierno del Estado de Coahuila de Zaragoza.',
-                            'Curso taller Violencia, Hostigamiento y Acoso Sexual Laboral, Hacia las mujeres 2011 • Instituto Coahuilense de las Mujeres.'
-                        ]
-                    },
-
-                    ]
-
-                },
+               
                 {
                     nombre: 'JESÚS GERARDO SOTOMAYOR HERNÁNDEZ',
                     cargo: 'Magistrado Presidente del Tribunal de Justicia Administrativa de Coahuila de Zaragoza.',

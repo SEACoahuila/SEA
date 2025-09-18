@@ -43,11 +43,6 @@ export default {
                     web: 'https://www.pjecz.gob.mx/',
                     size: '100'
                 },
-                {
-                    img: 'cc-ica.png',
-                    web: 'http://www.icai.org.mx/',
-                    size: '130'
-                },
 
                 {
                     img: 'cc-tjacz.png',
