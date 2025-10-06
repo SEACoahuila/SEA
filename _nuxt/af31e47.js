@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[44],{917:function(n,t,e){"use strict";e.r(t);var o={mounted:function(){this.$router.push("/transparencia/")}},c=e(69),component=Object(c.a)(o,(function(){return(0,this._self._c)("h1",[this._v("Redireccionando...")])}),[],!1,null,"49673b40",null);t.default=component.exports}}]);
