@@ -195,8 +195,8 @@ export default {
 
                 {
                     avatar: 'azimutlog.png',
-                    title: 'Revista Azimut',
-                    to: '/azimut',
+                    title: 'Hemeroteca',
+                    to: '/hemeroteca',
                 },
                 {
                     icon: 'mdi-comma-circle-outline',
