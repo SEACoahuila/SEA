@@ -51,6 +51,10 @@ export default {
                 //     src: "banner_unodc.png",
                 //     to: "https://www.google.com/"
                 // },
+                 {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(10).png?alt=media&token=941fdbfd-1df3-4e5d-8f83-f920b4b9900e",
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfhAGuLD6a522k8FYDufB%2Finforme%20sistema%20DIGITAL.pdf?alt=media&token=c9bc8294-d764-4c58-ad2a-467cadf4c032"
+                },
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(4).png?alt=media&token=c8b01e99-8283-4718-8341-9fafa144fe4a",
                     to: "https://paa.sesna.gob.mx/"
