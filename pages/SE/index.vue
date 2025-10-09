@@ -171,7 +171,10 @@ export default {
                     titulo: 'Representantes de municipios',
                     to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FREPRESENTANTES%20DE%20MUNICIPIOSS.pdf?alt=media&token=2a7f3b52-7255-4be9-b2f4-d713385272d2',
                 },
-                
+                {
+                    titulo: 'Pronunciamiento',
+                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FPronunciamiento%20Cero%20Tolerancia%20al%20HAS.pdf?alt=media&token=06d2e345-7656-4318-a684-71f58c935232',
+                },
                 {
                     titulo: 'Sistema de Gestión Antisoborno',
                     to: "https://www.seacoahuila.org.mx/SE/sga/",
