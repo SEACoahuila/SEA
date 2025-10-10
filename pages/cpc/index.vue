@@ -331,16 +331,10 @@ export default {
 
             ],
             integrantes: [
-                {
-                    nombre: 'Yolanda Guadalupe Montes Martínez',
-                    cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
-                    foto: 'cpc-ygmm.jpg',
-                    img: 'cc-cpc.png',
-                    mail: 'yolanda.montes@cpccoahuila.org.mx'
-                },
+               
                 {
                     nombre: 'Juan Carlos Guzmán Escobedo',
-                    cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                    cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
                     foto: 'cpc-jcge.jpg',
                     img: 'cc-cpc.png',
                     mail: 'carlos.guzman@cpccoahuila.org.mx'
