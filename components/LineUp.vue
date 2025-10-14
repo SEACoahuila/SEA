@@ -36,18 +36,18 @@ export default {
                 {
                     img: 'cc-sefirc.png',
                     web: 'http://www.sefircoahuila.gob.mx/',
-                    size: '120'
+                    size: '200'
                 },
                 {
-                    img: 'pj-logo-azul.png',
+                    img: 'cc-pjecz.png',
                     web: 'https://www.pjecz.gob.mx/',
-                    size: '100'
+                    size: '150'
                 },
 
                 {
                     img: 'cc-tjacz.png',
                     web: 'http://www.tjacoahuila.org/',
-                    size: '120'
+                    size: '150'
                 },
                 {
                     img: 'cpc.png',
