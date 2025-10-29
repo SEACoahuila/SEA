@@ -391,7 +391,7 @@ export default {
                     actas: [
                         {
                             nombre: 'Calendario',
-                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCalendario.pdf?alt=media&token=950a7524-fcc3-488a-a450-2247af789112',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCALENDARIO%20DE%20SESIONES%202025-2026.pdf?alt=media&token=b1cdf858-b348-44b3-a94a-468cfae31997',
                         },
 
                     ]
@@ -408,16 +408,9 @@ export default {
             ],
 
             integrantes: [
-            {
-                    nombre: 'Juan Carlos Guzmán Escobedo',
-                    cargo: 'Cooordinador de la Comisión Ejecutiva',
-                    foto: 'cpc-jcge.jpg',
-                    img: 'cc-cpc.png',
-                    mail: 'carlos.guzman@cpccoahuila.org.mx'
-                },
                 {
                     nombre: 'Karla Ivonne Natividad González',
-                    cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                    cargo: 'Cooordinadora de la Comisión Ejecutiva.',
                     foto: 'cpc-king.png',
                     img: 'cc-cpc.png',
                     mail: 'karla.natividad@cpccoahuila.org.mx'
