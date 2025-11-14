@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/SE/ciye/ce", {data:[{}],fetch:{},mutations:[]});

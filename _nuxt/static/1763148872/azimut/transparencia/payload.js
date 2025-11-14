@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/azimut/transparencia", {data:[{}],fetch:{},mutations:[]});
