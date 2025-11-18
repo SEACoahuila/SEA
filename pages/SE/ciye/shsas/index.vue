@@ -1,5 +1,18 @@
 <template>
     <v-container>
+        <v-row justify="center">
+            <v-col cols="12">
+                <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2"
+                    :icon="page.icon" prominent>
+
+                    <div align="center" class="mb-5 text-h4 text-xl-h2 text-md-h3 ">{{ page.title }}</div>
+
+                </v-alert>
+
+
+            </v-col>
+        </v-row>
+
         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon" fill-dot>
                 <v-card :color="item.color" dark>
@@ -9,12 +22,13 @@
                     <v-card-text class="white text--primary">
                         <br>
                         <p align="center" class="text-justify text-md-h7 texto-negrita">{{ item.texto }}</p>
-                        
+
                         <div><v-btn v-if="item.doc" :color="item.color" class="mx-0" outlined
                                 :href="require('@/static/secretaria-ejecutiva/material-capacitaciones/' + item.doc)">{{
                                     item.nombre }}</v-btn>
-                            <v-btn v-if="item.to" :color="item.color" class="ma-2 text-md-h7" outlined :href="item.to">{{
-                                item.nombre
+                            <v-btn v-if="item.to" :color="item.color" class="ma-2 text-md-h7" outlined
+                                :href="item.to">{{
+                                    item.nombre
                                 }}</v-btn>
                         </div>
                     </v-card-text>
@@ -22,6 +36,14 @@
 
             </v-timeline-item>
         </v-timeline>
+
+        
+        <v-row justify="end" class="mt-4 mb-6">
+            <v-btn color="#58609F" outlined class="text-md-h7" :to="'/SE/ciye'">
+                <v-icon left>mdi-arrow-left</v-icon>
+                Volver
+            </v-btn>
+        </v-row>
 
         <v-divider></v-divider>
 
@@ -33,6 +55,15 @@
 <script>
 export default {
     data: () => ({
+
+        page: {
+            color: '#77825e',
+            title: 'Subcomité de Hostigamiento Sexual y Acoso Sexual',
+            icon: 'mdi-account-group',
+
+        },
+
+
         items: [
             {
                 color: '#58609F',
@@ -80,7 +111,6 @@ h1 {
 }
 
 .texto-negrita {
-  font-weight: bold;
+    font-weight: bold;
 }
-
 </style>

@@ -1,5 +1,19 @@
 <template>
     <v-container>
+<v-row justify="center">
+            <v-col cols="12">
+                <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2"
+                    :icon="page.icon" prominent>
+
+                    <div align="center" class="mb-5 text-h4 text-xl-h2 text-md-h3 ">{{ page.title }}</div>
+
+                </v-alert>
+
+
+            </v-col>
+        </v-row>
+
+
         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon" fill-dot>
                 <v-card :color="item.color" dark>
@@ -23,6 +37,14 @@
             </v-timeline-item>
         </v-timeline>
 
+        
+        <v-row justify="end" class="mt-4 mb-6">
+            <v-btn color="#58609F" outlined class="text-md-h7" :to="'/SE/ciye'">
+                <v-icon left>mdi-arrow-left</v-icon>
+                Volver
+            </v-btn>
+        </v-row>
+
         <v-divider></v-divider>
 
 
@@ -33,6 +55,13 @@
 <script>
 export default {
     data: () => ({
+
+        page: {
+            color: '#77825e',
+            title: 'Comité de Ética',
+            icon: 'mdi-scale-balance',
+
+        },
         items: [
             {
                 color: '#58609F',
