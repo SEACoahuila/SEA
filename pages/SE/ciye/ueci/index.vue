@@ -85,12 +85,7 @@ export default {
                 to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2F03%20Integrantes%20del%20Comit%C3%A9%20de%20Control%20y%20Desempe%C3%B1o%20Institucional.%20(COCODI)..pdf?alt=media&token=03d0cf2f-44de-4b2a-97eb-1a882b08b2a9",
                 icon: 'mdi-star',
             },
-            {
-                color: '#58609F',
-                titulo: 'Correo electrónico para denuncias',
-                texto: '@seacoahuila.org.mx',
-                icon: 'mdi-star',
-            },
+          
         ],
     }),
 }

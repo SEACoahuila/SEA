@@ -91,6 +91,12 @@ export default {
                 to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2F07%20Formato%20de%20denuncia%20%C3%A9tica.xlsx?alt=media&token=8d7b9401-8f2d-4ca5-85e7-1938fae38873",
                 icon: 'mdi-star',
             },
+              {
+                color: '#58609F',
+                titulo: 'Correo electrónico para denuncias',
+                texto: 'comite.etica@seacoahuila.org.mx',
+                icon: 'mdi-star',
+            },
         ],
     }),
 }
