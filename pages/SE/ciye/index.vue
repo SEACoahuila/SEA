@@ -14,20 +14,23 @@
             </v-col>
         </v-row>
 
-        <v-row justify="center" align="stretch">
+        <v-row justify="center" align="stretch" >
             <!-- Tarjeta 1 -->
-            <v-col v-for="(e, i) in tarj" :key="i">
+            <v-col  v-for="(e, i) in tarj" :key="i" cols="12" sm="6" md="6" lg="4" xl="3" >
 
-                <v-card class="mx-auto mt-5"  dark color='#515790' shaped>
-                    <v-img :src="e.img" ></v-img>
+                <v-card class="mx-auto mt-5 d-flex flex-column "  dark color='#515790' height="100%"  shaped>
+                    <v-col>
+                    <v-img :src="e.img" width="100%" ></v-img>
+                    </v-col>
+                  
 
-                    <v-card-title>
+                    <v-card-title class="text-center justify-center">
                         {{ e.titulo }}
                     </v-card-title>
 
 
-                    <v-card-actions>
-                        <v-btn color="#000000" :href="e.to">Conoce más
+                    <v-card-actions class="justify-center ">
+                        <v-btn color="white" class="black--text" block :href="e.to">Conoce más
                         </v-btn>
 
 
@@ -64,7 +67,7 @@ export default {
                     to: '/SE/ciye/ueci',
                 },
                 {
-                    titulo: 'Comité de ética',
+                    titulo: 'Comité de Ética',
                     img: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2Fce.png?alt=media&token=1c77c9e0-3ab4-4085-84d5-a209fe496d3c",
                     to: '/SE/ciye/ce',
                 },
