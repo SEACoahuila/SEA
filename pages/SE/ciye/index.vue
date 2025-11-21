@@ -24,8 +24,8 @@
                     </v-col>
                   
 
-                    <v-card-title class="text-center justify-center">
-                        {{ e.titulo }}
+                    <v-card-title class="text-center justify-center" style="word-break: break-word; line-height: 1.2;">
+                       {{ e.titulo }} 
                     </v-card-title>
 
 
