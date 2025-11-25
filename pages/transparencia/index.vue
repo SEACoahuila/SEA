@@ -58,28 +58,33 @@
 
             <v-card class="mt-3 pa-4">
                 <v-row justify='center'>
-                    <v-col aling="center" justify="center" cols="10">
-                        <v-card-title class="justify-center" align="center">
-                            <div class=" text-xl-h2 text-md-h4 mt-8 ">Art. 21 Información Pública de Oficio</div>
+                                         <v-col  cols="10">                        <v-card-title class="justify-center" align="center">
+                           
                         </v-card-title>
-                        <v-card-text class="pa-3 text-md-h6" align="center"> De la "Ley de Acceso a la Información Pública para el Estado de
-                            Coahuila de Zaragoza" Art. 21 y "Ley General de Transparencia y Acceso
-                            a la Información Pública" (Art. 70).</v-card-text>
-
+                       
                         <v-divider></v-divider>
                     </v-col>
                     <v-col cols="10" class="mt-8">
                         <v-row>
-                            <v-col cols="12" md="4" v-for="(fraccion, i) in fracciones" :key="i">
-                                <v-list color="bluegreyt">
+                            <v-col cols="12" md="4" v-for="(fraccion, i) in fracciones" :key="i" :alt=fraccion.titulo >
+                                <v-list color="#2f506d" :alt="`Link a ${fraccion.titulo}`" dark elevation="2"     
+                                style= "border-radius: 15px;">
 
-                                    <v-list-item class="justify-center" align="center" :to="'/transparencia/'+fraccion.to" router exact>
-                                        <v-row>
-                                            <v-col cols="12">
-                                                <v-btn icon class="text-h4">{{i +1}}</v-btn>
-                                                <v-icon large>{{fraccion.icon}}</v-icon>
+                                    <v-list-item 
+                                    class="d-flex align-center"
+                                    align="center" justify="center" :to="'/transparencia/'+fraccion.to" router 
+                                     exact> 
+                                        <v-row no-gutters class="pa-2 fill-height">
+                                                    
+                                            
+                                            <v-col cols="12" class="text-h4" :alt="`Fraccion ${i + 1}`" > 
+                                               {{ i + 1 }}
+                                                <v-icon large >{{fraccion.icon}}</v-icon>
                                             </v-col>
-                                            <v-col cols="12"> {{ fraccion.titulo  }}</v-col>
+                                             
+                                            <v-col cols="12" class=""><p class="font-weight-medium text-caption">
+                                            {{ fraccion.titulo  }}
+                                            </p></v-col>
                                         </v-row>
 
                                     </v-list-item>

@@ -27,7 +27,7 @@
                 </v-card>
             </v-col>
 
-            <v-col cols="12">
+            <v-col cols="12" >
                 <v-card class="pa-8" color="revista">
                     <div align="center" class="mb-8 text-xl-h2 text-md-h3 ">Revista</div>
 
@@ -64,26 +64,26 @@
                 </v-card>
                 <v-divider></v-divider>
 
-                <v-card class="pa-8" color="revista">
+                <v-card class="pa-8 mt-4" color="revista">
                     <div align="center" class="mb-8 text-xl-h2 text-md-h3 ">Colaboraciones</div>
 
                     <v-divider></v-divider>
                     <v-row>
-                        <v-col v-for="(e, i) in page.colabs" :key="i">
+                        <v-col cols="" v-for="(e, i) in page.colabs" :key="i">
 
                             <v-card class="mx-auto mt-5" max-width="356" dark color='#800040' shaped>
                                 <v-img :src="require('@/pages/azimut/revistas/' + e.img)" height="500"></v-img>
 
-                                <v-card-title>
+                                <v-card-subtitle>
                                     {{ e.titulo }}
-                                </v-card-title>
+                                </v-card-subtitle>
 
 
                                 <v-card-actions>
                                     <v-btn color="#f2e394" :href="e.to" text
                                         download >Descargar
                                     </v-btn>
-                                    <v-btn color="" :href="e.to">
+                                    <v-btn color="white" outlined small :href="e.to">
                                         Ver
                                     </v-btn>
 
