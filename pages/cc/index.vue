@@ -237,6 +237,11 @@ export default {
             ],
             programas: [
                 {
+                    year: '2025-2026',
+                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FONP1aDRsiTSul2p1sFZi%2FPROGRAMA%20ANUAL%20DE%20TRABAJO%20CC%202026%20(1).pdf?alt=media&token=23e0c056-ccba-4e5a-bbea-150461abd39e"
+                },
+
+                {
                     year: '2024-2025',
                     to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FONP1aDRsiTSul2p1sFZi%2FPrograma%20Anual%20de%20Trabajo%20del%20CC%202024%20-%202025%20....pdf?alt=media&token=4ab8a15e-8647-4201-841f-36d3f4aa0b45"
                 },
@@ -307,21 +312,29 @@ export default {
                     curriculum: [{
                         subtitulo: 'Formación Académica',
                         lista: [
+                            'Obtuvo el título de contador público auditor por la Universidad Metropolitana de Coahuila.',
+                            'Cursó la maestría en planeación con acentuación en formulación y evaluación de proyectos por la Facultad de Economía de la Universidad Autónoma de Coahuila.',
+                            'Además, cursó la especialidad en Derecho a la Información, Fiscalización y Combate a la Corrupción en la Academia Interamericana de Derechos Humanos de la Universidad Autónoma de Coahuila.',
                             
                         ]
                     },
                     {
                         subtitulo: 'Experiencia profesional:',
                         lista: [
+                            'El Maestro Guzmán se ha desempeñado tanto en el sector público como en el privado.',
+	                        'Contralor, subgerente de control y subgerente de servicios en varias sucursales del Banco Nacional de México.',
+	                        'Director de la Unidad Catastral del municipio de Acuña en dos administraciones.',
+	                        'Gerente y conductor de programas en reconocida estación de radio en Acuña, Coah.',
+	                        'Propietario de Guzmán Despacho Contable en Acuña, Coahuila.',
+	                        'Subdirector de Finanzas de los Servicios de Salud de Coahuila.',
+	                        'Director de administración de la Academia Interamericana de Derechos Humanos de la UAdeC.',
+	                        'Director General de Administración del Tribunal Electoral de Coahuila.',
+	                        'A partir de octubre del 2021 se desempeña como consejero de Participación Ciudadana del Sistema Anticorrupción del estado de Coahuila.',
+
                             
                         ]
-                    },
-                    {
-                        subtitulo: 'Logros y proyectos realizados',
-                        lista: [
-                           
-                        ]
                     }
+                    
                     ]
 
                 },
