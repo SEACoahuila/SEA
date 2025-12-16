@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/SE/ciye/cocodi", {data:[{}],fetch:{},mutations:[]});
