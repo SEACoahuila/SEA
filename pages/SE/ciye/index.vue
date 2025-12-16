@@ -78,6 +78,12 @@ export default {
                     to: '/SE/ciye/shsas',
                 },
 
+                {
+                    titulo: 'Comité de Control y Desempeño Institucional (COCODI)',
+                    img: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FCOCODI.png?alt=media&token=5b361612-ddd6-4207-b158-c3aab8e0c354',
+                    to: '/SE/ciye/cocodi',
+                },
+
             ],  
 
 
