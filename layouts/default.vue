@@ -38,7 +38,7 @@
 
                 </v-list-item>
             </div>
-            
+<!--             
             <div v-show="$store.state.usuario.status">
                 
               <v-list-item v-for="(item, i) in tipoItem" two-line :key="i" :to="item.to" router exact @click.stop="drawer = !drawer; miniVariant = true">
@@ -55,7 +55,7 @@
                     </v-list-item-content>
 
                 </v-list-item>
-            </div>
+            </div> -->
 
         </v-list>
         <template v-slot:append>
@@ -72,7 +72,7 @@
 
             </v-list-item>
           </div> -->
-          <div v-show="$store.state.usuario.status">
+          <!-- <div v-show="$store.state.usuario.status">
                 <v-list-item to="/admin" @click.stop="cerrarSesion">
                 <v-list-item-action>
                     <v-icon>mdi-badge-account</v-icon>
@@ -84,7 +84,7 @@
                 </v-list-item-content>
 
             </v-list-item>
-          </div>
+          </div> -->
 
         </template>
  
@@ -106,11 +106,11 @@
                 {{ icon.icon }}
             </v-icon>
         </v-btn>
-        <v-btn v-show="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
+        <!-- <v-btn v-show="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
             <v-icon size="24px">
                 mdi mdi-logout
             </v-icon>Salir
-        </v-btn>
+        </v-btn> -->
         
         <v-switch v-if="!$vuetify.breakpoint.xs" class="mt-4 ml-8" v-model="$vuetify.theme.dark" inset  
         persistent-hint>
@@ -305,7 +305,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['readUserLocalStorage', 'cerrarSesion']),
+        // ...mapActions(['readUserLocalStorage', 'cerrarSesion']),
 updateMenuItems(newRole) {
     switch (newRole) {
       case "ADMIN":
