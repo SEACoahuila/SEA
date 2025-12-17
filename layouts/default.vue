@@ -380,11 +380,11 @@ updateMenuItems(newRole) {
     computed: {
    
     },
-    created() {
-        if (this.$store.state.usuario) {
-        this.updateMenuItems(this.$store.state.usuario.data.Role);
-  }
-    },
+//     created() {
+//         if (this.$store.state.usuario) {
+//         this.updateMenuItems(this.$store.state.usuario.data.Role);
+//   }
+//     },
     //   beforeMount() {
     //     this.readUserLocalStorage()
 
@@ -392,14 +392,12 @@ updateMenuItems(newRole) {
     mounted() {
        
         },
- watch: {
-  "$store.state.usuario.data.Role": function(newRole) {
-    this.updateMenuItems(newRole);
-  },
+//  watch: {
+//   "$store.state.usuario.data.Role": function(newRole) {
+//     this.updateMenuItems(newRole);
+//   },
 
-    // beforeCreate(){
-    //   this.readUserLocalStorage()
-    // }
-},
+   
+// },
 }
 </script>
