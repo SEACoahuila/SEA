@@ -4,7 +4,6 @@
     <v-container>
 
         <Carrusel />
-
         <Data />
         <Organismos />
 
