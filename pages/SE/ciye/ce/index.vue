@@ -98,14 +98,14 @@ export default {
                 color: '#58609F',
                 titulo: 'Formato de denuncia ética',
                 nombre: 'Ver',
-                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2F07%20Formato%20de%20denuncia%20%C3%A9tica.xlsx?alt=media&token=8d7b9401-8f2d-4ca5-85e7-1938fae38873",
+                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2F07%20Formato%20de%20denuncia%20%C3%A9tica.pdf?alt=media&token=e167b953-4c5e-4434-b217-4d21d7e24f94",
                 icon: 'mdi-star',
             },
             {
                 color: '#58609F',
                 titulo: 'Anexo 14 Formato de presentación de una duda.',
                 nombre: 'Ver',
-                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FANEXO%2014%20FORMATO%20DE%20PRESENTACI%C3%93N%20DE%20UNA%20DUDA.docx?alt=media&token=90a6728c-3b0d-4e4b-adaa-5b1cea2b844b",
+                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FANEXO%2014%20FORMATO%20DE%20PRESENTACI%C3%93N%20DE%20UNA%20DUDA.pdf?alt=media&token=f0939e9b-7fec-46eb-83e4-7345555f39a7",
                 icon: 'mdi-star',
             },
             {

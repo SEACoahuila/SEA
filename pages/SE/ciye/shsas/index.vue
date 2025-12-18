@@ -98,7 +98,7 @@ export default {
                 color: '#58609F',
                 titulo: 'Formato de denuncia. Anexo 5',
                 nombre: 'Ver',
-                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FAnexo%205%20Formato%20de%20denuncia.docx?alt=media&token=1c3ce66a-6660-437f-8db3-4844dc7e2a3c",
+                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FAnexo%205%20Formato%20de%20denuncia.pdf?alt=media&token=ab161643-037e-4a88-a1fc-3dc1fb88d8ae",
                 icon: 'mdi-star',
             },
         ],
