@@ -172,8 +172,8 @@ export default {
                     to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FREPRESENTANTES%20DE%20MUNICIPIOSS%20(1).pdf?alt=media&token=db588fd9-9dbb-4232-aa6a-745819a20764',
                 },
                 {
-                    titulo: 'Pronunciamiento',
-                    to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FPronunciamiento%20Cero%20Tolerancia%20al%20HAS.pdf?alt=media&token=06d2e345-7656-4318-a684-71f58c935232',
+                    titulo: 'Control Interno y Ética',
+                    to: 'https://www.seacoahuila.org.mx/SE/ciye/',
                 },
                 {
                     titulo: 'Sistema de Gestión Antisoborno',

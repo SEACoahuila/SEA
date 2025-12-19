@@ -101,6 +101,13 @@ export default {
                 to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FAnexo%205%20Formato%20de%20denuncia.pdf?alt=media&token=ab161643-037e-4a88-a1fc-3dc1fb88d8ae",
                 icon: 'mdi-star',
             },
+            {
+                color: '#58609F',
+                titulo: 'Pronunciamiento Cero Tolerancia',
+                nombre: 'Ver',
+                to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FPronunciamiento%20Cero%20Tolerancia%20al%20HAS.pdf?alt=media&token=06d2e345-7656-4318-a684-71f58c935232',
+                icon: 'mdi-star',
+            },
         ],
     }),
 }
