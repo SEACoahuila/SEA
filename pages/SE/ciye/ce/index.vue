@@ -115,6 +115,13 @@ export default {
                 to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FANEXO%208%20%20PROGRAMA%20DE%20TRABAJO%20DE%20INTEGRIDAD%20PTI%20F-017.pdf?alt=media&token=54b3ae69-d8c8-4d78-9b68-a18ff894a0b7",
                 icon: 'mdi-star',
             },
+            {
+                color: '#58609F',
+                titulo: 'ANEXO 7 FORMATO CONFLICTO DE INTERESES',
+                nombre: 'Ver',
+                to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FLbcD28hIEDbb8BJ83Ndm%2FANEXO%207%20CONFLICTO%20DE%20INTERES%20F-016.pdf?alt=media&token=62b2c0f6-3168-46b8-8074-dbe1de9bc780",
+                icon: 'mdi-star',
+            },
 
 
             {
